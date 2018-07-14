@@ -1,0 +1,69 @@
+.content{
+	width: 75%;
+	height: 1850px;
+	margin: 0 auto;
+	padding-top: 40px;
+	border: 1px solid #CCCCCC;
+	margin-bottom: 50px;
+}
+.content-img{
+	border: 1px solid #CCCCCC;
+	margin-top: 50px;
+	width: 100%;
+}
+.content-detail{
+	margin-top: 10px;
+	/*width: 70.2%;*/
+	border: 1px solid #CCCCCC;
+}
+.content-detail-every{
+	border: 1px solid #CCCCCC;
+	height: 150px;
+}
+.content-left{
+	width: 70.2%;
+}
+.content-right{
+	margin-right: 20px;
+	margin-top: 50px;
+	width: 26%;
+	text-align: center;
+}
+.content-right .write-btn{
+	margin-top: 20px;
+	color: #FFFFFF;
+	display: inline-block;
+	width: 80%;
+	height: 100px;
+	line-height: 100px;
+	background-color: #FD05BA;
+	text-align: center;
+	border-radius: 25%;
+	font-size: 25px;
+	text-decoration: none;
+	letter-spacing: 5px;
+}
+.tuijian{
+	margin-top: 31px;
+	border: 1px solid #CCCCCC;
+	padding-bottom: 10px;
+}
+.tuijian .tuijian-title{
+	display: inline-block;
+	height: 35px;
+	width: 90%;
+	line-height: 35px;
+	border-bottom: 1px solid #CCCCCC;
+}
+.tuijian .tuijian-content li{
+	margin-top: 8px;
+}
+.tuijian .tuijian-content li a{
+	text-decoration: none;
+	color:#4E4C4C;
+	border-bottom: 1px solid #CCCCCC;
+	padding-bottom: 5px;
+}
+.tuijian .tuijian-content li a:hover{
+	color: #CCCCCC;
+}

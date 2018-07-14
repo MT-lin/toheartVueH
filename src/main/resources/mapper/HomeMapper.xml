@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="xin.toheart.door.mapper.HomeMapper">
+
+    <select id="findFiveConfession" resultType="xin.toheart.door.pojo.Confession">
+        SELECT * FROM confession ORDER BY confessorId DESC LIMIT 0,5
+    </select>
+    <select id="findFarConfession" resultType="xin.toheart.door.pojo.Confession">
+        SELECT * FROM confession ORDER BY confessionLike DESC LIMIT 0,1
+    </select>
+    <select id="findNewFiveStory" resultType="xin.toheart.door.pojo.Story">
+         SELECT * FROM story ORDER BY storyId DESC LIMIT 0,5
+    </select>
+    <select id="findLikeEightStory" resultType="xin.toheart.door.pojo.Story">
+         SELECT * FROM story ORDER BY storyZan DESC LIMIT 0,8
+    </select>
+</mapper>

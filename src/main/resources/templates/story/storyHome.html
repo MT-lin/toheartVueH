@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+	<head>
+		<meta charset="utf-8">
+		<title>toheart-story</title>
+		<link rel="stylesheet" th:href="@{/css/cssreset.css}" />
+		<link rel="stylesheet" th:href="@{/css/common.css}" />
+		<link rel="stylesheet" th:href="@{/css/storyHome.css}" />
+		<script type="text/javascript">
+            function change(index,size){
+                window.location.href="/story/storyHome/"+index+"/"+size;
+            }
+		</script>
+	</head>
+	<body>
+		<div class="top">
+			<div class="float-left">
+				<div class="title float-left">
+					toheart
+				</div>
+					<ul class="sort float-left">
+					<li><a th:href="@{/}">首页</a></li>
+					<li><a th:href="@{storyHome/1/10}">故事</a></li>
+					<li><a th:href="@{../../../confession}">表白墙</a></li>
+					<li><a th:href="@{../../../game/gameHome}">轻松一刻</a></li>
+				</ul>
+			</div>
+			<div class="float-right top-right">
+				<form action="#" method="get" target="_blank" style="display: inline-block;">
+					<input class="search" type="text" placeholder="20岁那年" />
+					<label for="search-sub">
+						<em class="search-ico"></em>
+					</label>
+					<input type="submit" id="search-sub" class="hidden-sub"/>
+				</form>
+				<a th:href="@{/login}" class="btn-login">QQ登录</a>
+				<!--<span  class="btn-login" th:if="${userInfo.nickname != null}">[[userInfo.nickname]]</span>-->
+
+			</div>
+		</div>
+		<div class="content">
+			<div class="float-left content-left">
+				<img th:src="@{/img/pingfan.png}" class="content-img"/>
+				<div class="content-detail float-left">
+					<div th:each="story:${storyList}">
+							<div class="story-every">
+								<a th:href="@{'/story/showStory/'+${story.storyId}}">
+									<img th:src="@{${story.storyImgUrl}}" class="story-every-img float-left"/>
+								</a>
+								<div class="story-every-detail float-left">
+									<a th:href="@{'/story/showStory/'+${story.storyId}}">
+										<h2 th:text="${story.storyTitle}">烟花不堪剪，烟花何须剪</h2>
+									</a>
+									<div class="info" th:text="${story.storyBrief}">烟花的美丽，在于入空的那一刹那，姹紫嫣红好不绚丽，装点夜空也装点着众人的梦啊！人说，
+										烟花易冷，我说，它只是把生命之大美毫无保留的交出不堪余力才会变冷，消散于它曾经热爱的天空！
+										，消散于它曾经热爱的天空！
+									</div>
+									<div class="story-every-bottom">
+										<span class="icon-autor autor" th:text="${story.storyAutor}">水舞清荷</span>
+										<span class="icon-praise praise" th:text="${story.storyZan}">20</span>
+										<span class="icon-comment comment">20</span>
+									</div>
+								</div>
+							</div>
+					</div>
+
+				</div>
+				<tr>
+					<td colspan="9" align="center">
+						<a th:href="'javascript:change(1,\''+${pageBean.size}+'\')'">首页</a>
+						<a th:href="'javascript:change(\''+${pageBean.index-1}+'\',\''+${pageBean.size]]}+'\')'" th:if="${pageBean.index !=1}">上一页</a>
+						<span th:if="${pageBean.index ==1}">上一页</span>
+						<div th:each="number:${pageBean.numbers}" style="display: inline-block">
+							[<a th:href="'javascript:change(\''+${number}+'\',\''+${pageBean.size}+'\')'" style="color:red" th:if="${pageBean.index==number}" th:text="${number}"></a>]
+							<a th:href="'javascript:change(\''+${number}+'\',\''+${pageBean.size}+'\')'" th:if="${pageBean.index!=number}">[[number]]</a>
+						</div>
+						<a th:href="'javascript:change(\''+${pageBean.index-1}+'\',\''+${pageBean.size}+'\')'" th:if="${pageBean.index !=pageBean.totalPageCount}">下一页</a>
+						<span th:if="${pageBean.index ==pageBean.totalPageCount}">下一页</span>
+						<a th:href="'javascript:change(\''+${pageBean.totalPageCount}+'\',\''+${pageBean.size}+'\')'">末页 </a>
+					</td>
+				</tr>
+			</div>
+			<div class="content-right float-right">
+				<a th:href="@{/story}" class="write-btn">写故事</a>
+				<div class="tuijian">
+					<span class="tuijian-title">精彩推荐</span>
+					<ul class="tuijian-content" th:each="storyTui:${storyLileList}">
+						<li><a th:href="@{'http://www.toheart.xin/story/showStory/'+${storyTui.storyId}}" th:text="${storyTui.storyTitle}">烟花不堪剪，烟花何须剪 [<span th:text="${storyTui.storyAutor}">水舞清荷</span>]</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		
+		<div class="bottom">
+			<ul class="aboutUs">
+				<li>关于我们</li>
+				<li>加入我们</li>
+				<li>提交建议</li>
+				<li class="li-after">友情链接</li>
+			</ul>
+			<div class="copyright">© 2018 www.toheart.xin. All rights reserved. <a href="http://www.miitbeian.gov.cn/">京ICP备18028659号-1</a></div>
+			<div class="contact">联系我：邮箱：15801374807@163.com QQ：954186642</div>
+		</div>
+	</body>
+</html>

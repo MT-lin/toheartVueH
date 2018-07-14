@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="xin.toheart.door.mapper.StoryMapper">
+    <insert id="insertStory" parameterType="xin.toheart.door.pojo.Story">
+      INSERT INTO story(storyTitle,storyTime,storyImgUrl,storyAutor,storyContent,storyBrief)
+       VALUES(#{story.storyTitle},SYSDATE(),#{story.storyImgUrl},
+       #{story.storyAutor},#{story.storyContent},#{story.storyBrief})
+    </insert>
+    <select id="findStoryById" resultType="xin.toheart.door.pojo.Story">
+        SELECT * FROM story WHERE storyId=#{id}
+    </select>
+    <select id="findTotalCount" resultType="int">
+        SELECT COUNT(*) FROM story
+    </select>
+    <select id="findAllStory" resultType="xin.toheart.door.pojo.Story">
+        SELECT * FROM story ORDER BY storyId DESC limit #{start},#{size}
+    </select>
+    <select id="findStoryByLike" resultType="xin.toheart.door.pojo.Story">
+        SELECT * FROM story ORDER BY storyZan DESC limit 0,10
+    </select>
+</mapper>

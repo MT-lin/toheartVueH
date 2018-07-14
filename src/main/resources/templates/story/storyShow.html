@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+	<head>
+		<meta charset="utf-8">
+		<title>toheart-story-烟花</title>
+		<link rel="stylesheet" th:href="@{/css/cssreset.css}" />
+		<link rel="stylesheet" th:href="@{/css/storyShow.css}" />
+	</head>
+	<body>
+		<div class="content">
+			<h2 class="timu" th:text="${story.storyTitle}">cvc </h2>
+			<div class="autorTime"><span th:text="${story.storyAutor}"></span><em th:text="${story.storyTime}"></em></div>
+			<div class="neirong" th:utext="${story.storyContent}">
+			</div>
+		</div>
+	</body>
+</html>

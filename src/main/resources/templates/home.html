@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+	<head>
+		<meta charset="utf-8" />
+		<title>toheart</title>
+		<link rel="stylesheet" th:href="@{/css/cssreset.css}" />
+		<link rel="stylesheet" th:href="@{/css/common.css}" />
+		<link rel="stylesheet" th:href="@{/css/home.css}" />
+	</head>
+	<body>
+		<div class="top">
+			<div class="float-left">
+				<div class="title float-left">
+					toheart
+				</div>
+				<ul class="sort float-left">
+					<li><a th:href="@{/}">首页</a></li>
+					<li><a th:href="@{/story/storyHome/1/10}">故事</a></li>
+					<li><a th:href="@{/confession}">表白墙</a></li>
+					<li><a th:href="@{/game/gameHome}">轻松一刻</a></li>
+				</ul>
+			</div>
+			<div class="float-right top-right">
+				<form action="#" method="get" target="_blank" style="display: inline-block;">
+					<input class="search" type="text" placeholder="20岁那年" />
+					<label for="search-sub">
+						<em class="search-ico"></em>
+					</label>
+					<input type="submit" id="search-sub" class="hidden-sub"/>
+				</form>
+				<a th:href="@{/login}" class="btn-login" >QQ登录</a>
+				<!--<span  class="btn-login" th:if="${userInfo.nickname != null}">[[userInfo.nickname]]</span>-->
+			</div>
+		</div>
+		<div class="content">
+			<div class="float-left content-left">
+				<div class="story">
+					<a th:href="@{story/storyHome/1/10}">
+						<img th:src="@{/img/btgs.png}" class="story-icon"/>
+					</a>
+					<div class="story-content">
+						<div class="story-every" th:each="story:${storyNewFiveList}">
+							<a th:href="'/story/showStory/'+${story.storyId}"  target="_blank">
+								<img th:src="@{${story.storyImgUrl}}" class="story-every-img float-left"/>
+							</a>
+							<div class="story-every-detail float-left">
+								<a th:href="@{'/story/showStory/'+${story.storyId}}"  target="_blank">
+								 	<h2 th:text="${story.storyTitle}">烟花不堪剪，烟花何须剪</h2>
+								</a>
+								<div class="info" th:text="${story.storyBrief}">烟花的美丽，在于入空的那一刹那，姹紫嫣红好不绚丽，装点夜空也装点着众人的梦啊！人说，
+									烟花易冷，我说，它只是把生命之大美毫无保留的交出不堪余力才会变冷，消散于它曾经热爱的天空！
+									，消散于它曾经热爱的天空！
+								</div>
+								<div class="story-every-bottom">
+									<span class="icon-autor autor" th:text="${story.storyAutor}">水舞清荷</span>
+									<span class="icon-praise praise" th:text="${story.storyZan}">20</span>
+									<span class="icon-comment comment">20</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="love">
+					<a th:href="@{/confession}">
+						<img th:src="@{/img/biaobai.png}" class="love-icon"/>
+					</a>
+					<div class="love-every" th:each="confession:${confessionList}">
+						<p th:text="${confession.confessionContent}">酒不醉人人自醉！未饮先醉，眼中无泪，心内成灰！与其认真，不如随便，有钱寻一醉，无钱寻一睡！</p>
+						<span th:text="'---'+${confession.confessor}">---话梦人生</span>
+						<div class="love-every-bottom">
+							<div class="love-zan"><img th:src="@{/img/favorites.png}"/> <em th:text="${confession.confessionLike}">20</em></div>
+							<a href="#">详情</a>
+							<span th:text="${confession.confessionTime}">2018-6-21</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="content-right float-right">
+				<div class="confession">
+					<p th:text="${farConfession.confessionContent}">酒不醉人人自醉！未饮先醉，眼中无泪，心内成灰！与其认真，不如随便，有钱寻一醉，无钱寻一睡！</p>
+					<span class="confession-autor" th:text="'---'+${farConfession.confessor}">---话梦人生</span>
+				</div>
+				<div class="dyh">
+					<img th:src="@{/img/dyh.jpg}"></img>
+					<span>关注许我倾心订阅号,获取更多精彩信息</span>
+				</div>
+				<div class="wonderfulStory">
+					<div class="wonderfulStory-title">精彩故事推荐</div>
+					<ul class="wonderfulStory-content" th:each="storyLike:${storyLikeEightList}">
+						<li><a th:href="@{'/story/showStory/'+${storyLike.storyId}}" th:text="${storyLike.storyTitle}">烟花不堪剪，烟花何须剪 [<span th:text="${storyLike.storyAutor}">水舞清荷</span>]</a></li>
+					</ul>
+					
+				</div>
+			</div>
+		</div>
+		<div class="bottom">
+			<ul class="aboutUs">
+				<li>关于我们</li>
+				<li>加入我们</li>
+				<li>提交建议</li>
+				<li class="li-after">友情链接</li>
+			</ul>
+			<div class="copyright">© 2018 www.toheart.xin. All rights reserved. <a href="http://www.miitbeian.gov.cn/">京ICP备18028659号-1</a></div>
+			<div class="contact">联系我：邮箱：15801374807@163.com QQ：954186642</div>
+		</div>
+	</body>
+</html>

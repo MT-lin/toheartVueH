@@ -1,0 +1,53 @@
+package xin.toheart.door.controller;
+
+import com.google.gson.Gson;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.multipart.MultipartFile;
+import xin.toheart.door.common.util.FtpUplodUtil;
+
+import java.util.HashMap;
+import java.util.Map;
+
+
+@Controller
+@RequestMapping("/pic")
+public class PicUplodController {
+@Autowired
+    FtpUplodUtil ftpUplodUtil;
+    @Value("${ftp.host}")
+    String host;
+    @Value("${ftp.port}")
+    Integer port;
+    @Value("${ftp.username}")
+    String username;
+    @Value("${ftp.password}")
+    String password;
+    @Value("${ftp.path}")
+    String path;
+
+    /**
+     * 上传文件
+     */
+    @RequestMapping("/upload")
+    @ResponseBody
+    public String upload(MultipartFile img){
+        Map<String,Object> result = new HashMap<>();
+        try {
+            //1.初始化文件上传工具类
+            ftpUplodUtil.init(host, port, username, password);
+            //2.上传文件
+            String imageUrl = ftpUplodUtil.upload(path, img.getOriginalFilename(),
+                    img.getInputStream());
+            result.put("error",0);
+            result.put("url", imageUrl);
+        } catch (Exception e) {
+            result.put("error",1);
+        }
+        return new Gson().toJson(result);
+    }
+
+}

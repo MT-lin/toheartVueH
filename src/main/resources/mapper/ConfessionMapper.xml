@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="xin.toheart.door.mapper.ConfessionMapper">
+    <insert id="addConfession" parameterType="xin.toheart.door.pojo.Confession">
+        INSERT INTO confession(confessor,confessionContent,confessionTime) VALUES(#{confession.confessor},#{confession.confessionContent},SYSDATE())
+    </insert>
+    <select id="findAllConfession" resultType="xin.toheart.door.pojo.Confession">
+        SELECT * FROM confession ORDER BY confessorId DESC
+    </select>
+    <select id="findZanById" resultType="int">
+        SELECT confessionLike  FROM confession WHERE confessorId=#{confessorId}
+    </select>
+    <update id="updateConfessionZan">
+        UPDATE confession SET confessionLike=confessionLike+1 WHERE confessorId=#{confessorId}
+    </update>
+</mapper>

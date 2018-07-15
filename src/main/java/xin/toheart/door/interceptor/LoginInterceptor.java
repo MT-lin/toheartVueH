@@ -39,7 +39,7 @@ public class LoginInterceptor implements HandlerInterceptor{
         String url = request.getRequestURL().toString();
         System.out.println("请求的url: "+url);
         //后期使用数组，集合包含多个登录请求
-        if(!url.contains("")){
+        if(!url.contains("/")&&!url.contains("/login")){
            // User user = (User) sessionProvider.getAttribute(request, CommonsConstant.UserConstant.CURRENT_BUYER);
            User user = (User) request.getSession().getAttribute(CommonsConstant.UserConstant.CURRENT_BUYER);
             if(user==null){

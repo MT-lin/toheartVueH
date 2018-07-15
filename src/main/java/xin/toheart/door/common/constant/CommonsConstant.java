@@ -12,7 +12,7 @@ public class CommonsConstant {
 
 	public static class UserConstant{
 		//session中存储的用户信息的key
-		public final static String CURRENT_BUYER ="current_buyer";
+		public final static String CURRENT_BUYER ="current_user";
 		//cookie中存储的购物车信息
 		public final static String  BUYERCART = "buyerCart";
 	}

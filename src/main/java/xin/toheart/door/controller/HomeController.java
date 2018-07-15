@@ -6,6 +6,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import xin.toheart.door.common.constant.CommonsConstant;
 import xin.toheart.door.common.util.DateUtil;
 import xin.toheart.door.common.util.HttpUtil;
 import xin.toheart.door.pojo.Confession;
@@ -13,6 +14,7 @@ import xin.toheart.door.pojo.Story;
 import xin.toheart.door.pojo.User;
 import xin.toheart.door.service.HomeService;
 
+import javax.servlet.http.HttpSession;
 import java.sql.Date;
 import java.text.ParseException;
 import java.util.List;
@@ -40,7 +42,7 @@ public class HomeController {
         return "redirect:https://graph.qq.com/oauth2.0/authorize?response_type=code&client_id=101484099&redirect_uri=http://www.toheart.xin/QQLogin&state=test";
     }
     @RequestMapping("/QQLogin")
-    public String QQLogin(String code) throws ParseException {
+    public String QQLogin(String code, HttpSession session) throws ParseException {
         String accessToken=HttpUtil.getAccessToken(code);
         String openid = HttpUtil.getOpenId(accessToken);
         JSONObject userInfo = HttpUtil.getUserInfo(openid,accessToken);
@@ -56,6 +58,9 @@ public class HomeController {
             user.setUserName((String)userInfo.get("nickname"));
             user.setOpenid(openid);
             int temp = homeService.insertUser(user);
+            session.setAttribute(CommonsConstant.UserConstant.CURRENT_BUYER,user);
+        }else {
+            session.setAttribute( CommonsConstant.UserConstant.CURRENT_BUYER,isUser);
         }
         return "redirect:/";
     }

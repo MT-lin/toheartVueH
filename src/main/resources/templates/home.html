@@ -28,8 +28,8 @@
 					</label>
 					<input type="submit" id="search-sub" class="hidden-sub"/>
 				</form>
-				<a th:href="@{/login}" class="btn-login" >QQ登录</a>
-				<!--<span  class="btn-login" th:if="${userInfo.nickname != null}">[[userInfo.nickname]]</span>-->
+				<a th:href="@{/login}" class="btn-login" th:if="${session.current_user==null}">QQ登录</a>
+				<span  class="btn-login" th:if="${session.current_user != null}" th:text="${session.current_user.userName}"></span>
 			</div>
 		</div>
 		<div class="content">

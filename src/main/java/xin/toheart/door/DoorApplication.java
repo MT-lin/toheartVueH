@@ -7,7 +7,6 @@ import org.springframework.context.annotation.ComponentScan;
 
 @SpringBootApplication
 @MapperScan("xin.toheart.door.mapper")
-@ComponentScan("xin.toheart.door")
 public class DoorApplication {
 
 	public static void main(String[] args) {

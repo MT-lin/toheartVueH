@@ -43,7 +43,7 @@ public class HomeController {
     public String QQLogin(String code) throws ParseException {
         String accessToken=HttpUtil.getAccessToken(code);
         String openid = HttpUtil.getOpenId(accessToken);
-        User user=homeService.findUserByOpenid(openid);
+        User isUser=homeService.findUserByOpenid(openid);
         JSONObject userInfo = HttpUtil.getUserInfo(openid,accessToken);
         User user = new User();
         user.setBirthday(new Date(DateUtil.stringToData((String)userInfo.get("year"),"yy").getTime()));

@@ -43,17 +43,20 @@ public class HomeController {
     public String QQLogin(String code) throws ParseException {
         String accessToken=HttpUtil.getAccessToken(code);
         String openid = HttpUtil.getOpenId(accessToken);
-        User isUser=homeService.findUserByOpenid(openid);
         JSONObject userInfo = HttpUtil.getUserInfo(openid,accessToken);
-        User user = new User();
-        user.setBirthday(new Date(DateUtil.stringToData((String)userInfo.get("year"),"yy").getTime()));
-        user.setCity((String)userInfo.get("city"));
-        user.setGender((String)userInfo.get("gender"));
-        user.setImgUrl((String)userInfo.get("figureurl_2"));
-        user.setProvince((String)userInfo.get("province"));
-        user.setUserName((String)userInfo.get("nickname"));
-        user.setOpenid((String)userInfo.get("openid"));
-
+        User isUser=homeService.findUserByOpenid(openid);
+        System.out.println(isUser==null);
+        if(isUser==null){
+            User user = new User();
+            user.setBirthday(new Date(DateUtil.stringToData((String)userInfo.get("year"),"yy").getTime()));
+            user.setCity((String)userInfo.get("city"));
+            user.setGender((String)userInfo.get("gender"));
+            user.setImgUrl((String)userInfo.get("figureurl_2"));
+            user.setProvince((String)userInfo.get("province"));
+            user.setUserName((String)userInfo.get("nickname"));
+            user.setOpenid(openid);
+            int temp = homeService.insertUser(user);
+        }
         return "redirect:/";
     }
 

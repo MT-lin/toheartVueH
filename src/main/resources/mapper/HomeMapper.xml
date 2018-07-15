@@ -17,4 +17,8 @@
     <select id="selectUserByOpenId" resultType="xin.toheart.door.pojo.User">
         SELECT * FROM user WHERE openid = #{openid}
     </select>
+    <insert id="insertUser" parameterType="xin.toheart.door.pojo.User">
+        INSERT INTO user(userName,gender,province,city,birthday,createTime,imgUrl,phone,openid)
+        VALUES (#{user.userName},#{user.gender},#{user.province},#{user.city},#{user.birthday},SYSDATE(),#{user.imgUrl},#{user.phone},#{user.openid})
+    </insert>
 </mapper>

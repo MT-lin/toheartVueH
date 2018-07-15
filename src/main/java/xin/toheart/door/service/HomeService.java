@@ -16,4 +16,6 @@ public interface HomeService {
     Confession findFarConfession();
 
     User findUserByOpenid(String openid);
+
+    int insertUser(User user);
 }

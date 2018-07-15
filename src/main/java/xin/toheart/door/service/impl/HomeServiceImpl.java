@@ -39,4 +39,9 @@ public class HomeServiceImpl implements HomeService {
     public User findUserByOpenid(String openid) {
         return homeMapper.selectUserByOpenId(openid);
     }
+
+    @Override
+    public int insertUser(User user) {
+        return homeMapper.insertUser(user);
+    }
 }

@@ -14,4 +14,7 @@
     <select id="findLikeEightStory" resultType="xin.toheart.door.pojo.Story">
          SELECT * FROM story ORDER BY storyZan DESC LIMIT 0,8
     </select>
+    <select id="selectUserByOpenId" resultType="xin.toheart.door.pojo.User">
+        SELECT * FROM user WHERE openid = #{openid}
+    </select>
 </mapper>

@@ -37,6 +37,8 @@ public class HttpUtil {
         requestParam.put("redirect_uri","http://www.toheart.xin/QQLogin");
         String result=sentGET(requestURL,requestParam);
         String token=result.substring(result.indexOf("=")+1,result.indexOf("&"));
+        System.out.println("token:"+result);
+        System.out.println("token2:"+result);
         return token;
     }
 
@@ -50,7 +52,9 @@ public class HttpUtil {
         ConcurrentHashMap<String,String> requestParam = new ConcurrentHashMap();
         requestParam.put("access_token",access_token);
         String result= sentGET(requestURL,requestParam);
+        System.out.println("openId1:"+result);
         String openId=result.substring(result.indexOf("openid")+9,result.lastIndexOf("\""));
+        System.out.println("openId2:"+openId);
         return openId;
     }
 

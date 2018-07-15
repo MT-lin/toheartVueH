@@ -10,7 +10,7 @@ import xin.toheart.door.interceptor.LoginInterceptor;
  * author   xieqx
  * createTime  2018/7/15
  */
-@Configuration
+//@Configuration
 public class LoginConfig extends WebMvcConfigurationSupport {
 
     /**
@@ -26,7 +26,7 @@ public class LoginConfig extends WebMvcConfigurationSupport {
     @Override
    public void addInterceptors(InterceptorRegistry registry) {
         //拦截所有请求
-//      registry.addInterceptor(new LoginInterceptor()).addPathPatterns("/**");
+      registry.addInterceptor(new LoginInterceptor()).addPathPatterns("/**");
         super.addInterceptors(registry);
     }
 

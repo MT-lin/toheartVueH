@@ -42,26 +42,10 @@ public class HomeController {
         return "redirect:https://graph.qq.com/oauth2.0/authorize?response_type=code&client_id=101484099&redirect_uri=http://www.toheart.xin/QQLogin&state=test";
     }
     @RequestMapping("/QQLogin")
-    public String QQLogin(String code, HttpSession session) throws ParseException {
+    public String QQLogin(String code){
         String accessToken=HttpUtil.getAccessToken(code);
         String openid = HttpUtil.getOpenId(accessToken);
-        JSONObject userInfo = HttpUtil.getUserInfo(openid,accessToken);
-        User isUser=homeService.findUserByOpenid(openid);
-        System.out.println(isUser==null);
-        if(isUser==null){
-            User user = new User();
-            user.setBirthday(new Date(DateUtil.stringToData((String)userInfo.get("year"),"yy").getTime()));
-            user.setCity((String)userInfo.get("city"));
-            user.setGender((String)userInfo.get("gender"));
-            user.setImgUrl((String)userInfo.get("figureurl_2"));
-            user.setProvince((String)userInfo.get("province"));
-            user.setUserName((String)userInfo.get("nickname"));
-            user.setOpenid(openid);
-            int temp = homeService.insertUser(user);
-            session.setAttribute(CommonsConstant.UserConstant.CURRENT_BUYER,user);
-        }else {
-            session.setAttribute( CommonsConstant.UserConstant.CURRENT_BUYER,isUser);
-        }
+        JSONObject userInfo = HttpUtil.getUserInfo(accessToken,openid);
         return "redirect:/";
     }
 

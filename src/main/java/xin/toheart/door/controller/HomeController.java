@@ -41,6 +41,11 @@ public class HomeController {
         return "home";
     }
 
+    /**
+     * 退出登录
+     * @param session
+     * @return
+     */
     @RequestMapping("/logout")
     public String logout(HttpSession session){
         session.removeAttribute(CommonsConstant.UserConstant.CURRENT_BUYER);

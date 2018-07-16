@@ -78,6 +78,7 @@ public class HomeController {
             user.setOpenid(openid);
             int temp = homeService.insertUser(user);
             session.setAttribute(CommonsConstant.UserConstant.CURRENT_BUYER,user);
+
         }else {
             session.setAttribute( CommonsConstant.UserConstant.CURRENT_BUYER,isUser);
         }

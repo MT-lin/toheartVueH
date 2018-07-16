@@ -1,0 +1,9 @@
+[2018-07-16 21:49:09] [WARN ] [org.thymeleaf.templatemode.TemplateMode:150]-- [THYMELEAF][main] Template Mode 'LEGACYHTML5' is deprecated. Using Template Mode 'HTML' instead.
+[2018-07-16 21:51:32] [WARN ] [org.thymeleaf.templatemode.TemplateMode:150]-- [THYMELEAF][main] Template Mode 'LEGACYHTML5' is deprecated. Using Template Mode 'HTML' instead.
+[2018-07-16 22:15:04] [WARN ] [org.thymeleaf.templatemode.TemplateMode:150]-- [THYMELEAF][main] Template Mode 'LEGACYHTML5' is deprecated. Using Template Mode 'HTML' instead.
+[2018-07-16 22:15:56] [WARN ] [xin.toheart.door.controller.ConfessionController:30]-- warn
+[2018-07-16 22:16:33] [WARN ] [xin.toheart.door.controller.ConfessionController:30]-- warn
+[2018-07-16 22:16:34] [WARN ] [xin.toheart.door.controller.ConfessionController:30]-- warn
+[2018-07-16 22:16:34] [WARN ] [xin.toheart.door.controller.ConfessionController:30]-- warn
+[2018-07-16 22:18:39] [WARN ] [org.thymeleaf.templatemode.TemplateMode:150]-- [THYMELEAF][main] Template Mode 'LEGACYHTML5' is deprecated. Using Template Mode 'HTML' instead.
+[2018-07-16 22:18:42] [WARN ] [xin.toheart.door.controller.ConfessionController:30]-- warn

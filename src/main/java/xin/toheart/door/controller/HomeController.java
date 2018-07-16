@@ -1,6 +1,8 @@
 package xin.toheart.door.controller;
 
 import com.alibaba.fastjson.JSONObject;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
@@ -22,6 +24,7 @@ import java.util.List;
 @Controller
 @RequestMapping("/")
 public class HomeController {
+    Logger LOGGER = LoggerFactory.getLogger(ConfessionController.class);
     @Autowired
     HomeService homeService;
 
@@ -61,7 +64,7 @@ public class HomeController {
      * @throws ParseException
      */
     @RequestMapping("/QQLogin")
-    public String QQLogin(String code, HttpSession session) throws ParseException {
+    public String QQLogin(String code,HttpSession session) throws ParseException {
         String accessToken=HttpUtil.getAccessToken(code);
         String openid = HttpUtil.getOpenId(accessToken);
         JSONObject userInfo = HttpUtil.getUserInfo(openid,accessToken);
@@ -82,6 +85,7 @@ public class HomeController {
         }else {
             session.setAttribute( CommonsConstant.UserConstant.CURRENT_BUYER,isUser);
         }
+        //JSONObject userInfo = HttpUtil.getUserInfo(accessToken,openid);
         return "redirect:/";
     }
 

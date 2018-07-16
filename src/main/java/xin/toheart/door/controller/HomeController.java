@@ -37,10 +37,29 @@ public class HomeController {
         map.addAttribute("storyNewFiveList",storyNewFiveList);
         return "home";
     }
+
+    @RequestMapping("/logout")
+    public String logout(HttpSession session){
+        session.removeAttribute(CommonsConstant.UserConstant.CURRENT_BUYER);
+        return "redirect:/";
+    }
+
+    /**
+     * QQ登录
+     * @return
+     */
     @RequestMapping("/login")
     public String login(){
         return "redirect:https://graph.qq.com/oauth2.0/authorize?response_type=code&client_id=101484099&redirect_uri=http://www.toheart.xin/QQLogin&state=test";
     }
+
+    /**
+     * QQ登录回调接口
+     * @param code
+     * @param session
+     * @return
+     * @throws ParseException
+     */
     @RequestMapping("/QQLogin")
     public String QQLogin(String code, HttpSession session) throws ParseException {
         String accessToken=HttpUtil.getAccessToken(code);

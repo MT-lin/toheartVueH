@@ -20,7 +20,7 @@
 				</div>
 					<ul class="sort float-left">
 					<li><a th:href="@{/}">首页</a></li>
-					<li><a th:href="@{storyHome/1/10}">故事</a></li>
+					<li><a th:href="@{../../storyHome/1/10}">故事</a></li>
 					<li><a th:href="@{../../../confession}">表白墙</a></li>
 					<li><a th:href="@{../../../game/gameHome}">轻松一刻</a></li>
 				</ul>
@@ -33,9 +33,9 @@
 					</label>
 					<input type="submit" id="search-sub" class="hidden-sub"/>
 				</form>
-				<a th:href="@{/login}" class="btn-login">QQ登录</a>
-				<!--<span  class="btn-login" th:if="${userInfo.nickname != null}">[[userInfo.nickname]]</span>-->
-
+				<a th:href="@{/login}" class="btn-login" th:if="${session.current_user==null}">QQ登录</a>
+				<span  th:if="${session.current_user != null}" th:text="${session.current_user.userName}"></span>
+				<a th:href="@{/logout}" class="btn-login"  th:if="${session.current_user != null}" style="margin-left: 5px;font-size: 15px;">[退出]</a>
 			</div>
 		</div>
 		<div class="content">

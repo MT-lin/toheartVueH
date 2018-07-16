@@ -43,8 +43,9 @@
 						</label>
 						<input type="submit" id="search-sub" class="hidden-sub"/>
 				</form>
-				<a href="#" class="btn-login">登录</a>
-				<a href="#" class="btn-login">注册</a>
+				<a th:href="@{/login}" class="btn-login" th:if="${session.current_user==null}">QQ登录</a>
+				<span  th:if="${session.current_user != null}" th:text="${session.current_user.userName}"></span>
+                <a th:href="@{/logout}" class="btn-login"  th:if="${session.current_user != null}" style="margin-left: 5px;font-size: 15px;">[退出]</a>
 			</div>
 		</div>
 		<div class="tt">

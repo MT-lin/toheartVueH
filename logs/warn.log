@@ -8,3 +8,5 @@
 [2018-07-16 22:18:39] [WARN ] [org.thymeleaf.templatemode.TemplateMode:150]-- [THYMELEAF][main] Template Mode 'LEGACYHTML5' is deprecated. Using Template Mode 'HTML' instead.
 [2018-07-16 22:18:42] [WARN ] [xin.toheart.door.controller.ConfessionController:30]-- warn
 [2018-07-16 23:43:21] [WARN ] [org.thymeleaf.templatemode.TemplateMode:150]-- [THYMELEAF][main] Template Mode 'LEGACYHTML5' is deprecated. Using Template Mode 'HTML' instead.
+[2018-07-16 23:39:39] [WARN ] [org.thymeleaf.templatemode.TemplateMode:150]-- [THYMELEAF][main] Template Mode 'LEGACYHTML5' is deprecated. Using Template Mode 'HTML' instead.
+>>>>>>> Stashed changes

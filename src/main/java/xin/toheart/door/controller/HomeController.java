@@ -4,6 +4,7 @@ import com.alibaba.fastjson.JSONObject;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -15,6 +16,7 @@ import xin.toheart.door.pojo.Confession;
 import xin.toheart.door.pojo.Story;
 import xin.toheart.door.pojo.User;
 import xin.toheart.door.service.HomeService;
+import xin.toheart.door.web.session.SessionProvider;
 
 import javax.servlet.http.HttpSession;
 import java.sql.Date;
@@ -27,6 +29,10 @@ public class HomeController {
     Logger LOGGER = LoggerFactory.getLogger(ConfessionController.class);
     @Autowired
     HomeService homeService;
+
+    @Autowired
+    private SessionProvider sessionProvider;
+
 
     @RequestMapping(method = RequestMethod.GET)
     public String home(ModelMap map){

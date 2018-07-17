@@ -15,7 +15,6 @@ import javax.servlet.http.HttpSession;
  *
  */
 //@Component
-@Service
 public class HttpSessionProvider implements SessionProvider {
 
 	//设置session属性

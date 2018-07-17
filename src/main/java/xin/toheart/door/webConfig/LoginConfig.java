@@ -1,5 +1,6 @@
 package xin.toheart.door.webConfig;
 
+import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.InterceptorRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurationSupport;
@@ -23,10 +24,15 @@ public class LoginConfig extends WebMvcConfigurationSupport {
     }
      */
 
+    @Bean
+    LoginInterceptor localInterceptor() {
+        return new LoginInterceptor();
+    }
+
     @Override
    public void addInterceptors(InterceptorRegistry registry) {
         //拦截所有请求
-        registry.addInterceptor(new LoginInterceptor()).addPathPatterns("/**")
+        registry.addInterceptor(localInterceptor()).addPathPatterns("/**")
                 .excludePathPatterns("/index.html","/static/**");
 
         super.addInterceptors(registry);

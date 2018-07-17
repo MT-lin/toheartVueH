@@ -11,10 +11,9 @@ package xin.toheart.door.common.constant;
 public class CommonsConstant {
 
 	public static class UserConstant{
-		//session中存储的用户信息的key
+		//session中存储的用户信息的key 用于
 		public final static String CURRENT_BUYER ="current_user";
-		//cookie中存储的购物车信息
-		public final static String  BUYERCART = "buyerCart";
+
 	}
 
 	

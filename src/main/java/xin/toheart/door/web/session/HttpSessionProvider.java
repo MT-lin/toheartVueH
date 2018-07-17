@@ -1,8 +1,4 @@
 package xin.toheart.door.web.session;
-
-import org.springframework.stereotype.Component;
-import org.springframework.stereotype.Service;
-
 import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -14,7 +10,7 @@ import javax.servlet.http.HttpSession;
  * @author xieqixiu
  *
  */
-//@Component
+
 public class HttpSessionProvider implements SessionProvider {
 
 	//设置session属性

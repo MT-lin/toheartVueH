@@ -36,6 +36,7 @@ public class HomeController {
 
     @RequestMapping(method = RequestMethod.GET)
     public String home(ModelMap map){
+        LOGGER.info("sessionProvider:--",sessionProvider);
         List<Confession> confessionList = homeService.findFiveConfession();
         List<Story> storyNewFiveList = homeService.findNewFiveStory();
         List<Story> storyLikeEightList = homeService.findLikeEightStory();

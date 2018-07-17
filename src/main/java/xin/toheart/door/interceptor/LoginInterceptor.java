@@ -22,8 +22,8 @@ import javax.servlet.http.HttpServletResponse;
 public class LoginInterceptor implements HandlerInterceptor{
 
      //session 的相关工具类
-     @Autowired
-     private SessionProvider sessionProvider;
+//     @Autowired
+//      SessionProvider sessionProvider;
     /**
      * 进入controller之前
      * @param request

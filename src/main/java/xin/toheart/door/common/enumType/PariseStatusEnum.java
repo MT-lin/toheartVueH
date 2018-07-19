@@ -6,34 +6,34 @@ package xin.toheart.door.common.enumType;
  * desc 点赞状态
  */
 public enum PariseStatusEnum {
-    PRAISE("0", "未点赞"),
-    NOPRAISE("1", "已点赞");
+    PRAISE(0, "未点赞"),
+    NOPRAISE(1, "已点赞");
 
     //数据库存储的key
-    private String code;
+    private int code;
     //数据库的描述
     private String name;
 
-    private PariseStatusEnum(String code, String name) {
+    private PariseStatusEnum(int code, String name) {
         this.code = code;
         this.name = name;
     }
 
     //根据code 返回指定的枚举对象
-    public static PariseStatusEnum value(String code) {
+    public static PariseStatusEnum value(int code) {
         for (PariseStatusEnum articleType : PariseStatusEnum.values()) {
-            if (code.equals(articleType.getCode())) {
+            if (code == articleType.getCode()) {
                 return articleType;
             }
         }
         return null;
     }
 
-    public String getCode() {
+    public int getCode() {
         return code;
     }
 
-    public void setCode(String code) {
+    public void setCode(int code) {
         this.code = code;
     }
 

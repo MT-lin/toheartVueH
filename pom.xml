@@ -88,6 +88,14 @@
 			<version>${fastjson}</version>
 		</dependency>
 
+
+		<!-- 添加springBoot的aop支持 -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-aop</artifactId>
+		</dependency>
+
+
 	</dependencies>
 
 	<build>

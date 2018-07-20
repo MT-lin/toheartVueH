@@ -9,6 +9,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import xin.toheart.door.annonation.TimeCostAnnotation;
 import xin.toheart.door.common.constant.CommonsConstant;
 import xin.toheart.door.common.util.DateUtil;
 import xin.toheart.door.common.util.HttpUtil;
@@ -34,6 +35,7 @@ public class HomeController {
     private SessionProvider sessionProvider;
 
 
+    //@TimeCostAnnotation("进入首页花费时间")
     @RequestMapping(method = RequestMethod.GET)
     public String home(ModelMap map){
         LOGGER.info("sessionProvider:--",sessionProvider);

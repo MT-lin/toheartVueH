@@ -5,7 +5,7 @@ package xin.toheart.door.common.enumType;
  * createTime  2018/7/19
  * desc 点赞状态
  */
-public enum PariseStatusEnum {
+public enum PraiseStatusEnum {
     PRAISE(0, "未点赞"),
     NOPRAISE(1, "已点赞");
 
@@ -14,14 +14,14 @@ public enum PariseStatusEnum {
     //数据库的描述
     private String name;
 
-    private PariseStatusEnum(int code, String name) {
+    private PraiseStatusEnum(int code, String name) {
         this.code = code;
         this.name = name;
     }
 
     //根据code 返回指定的枚举对象
-    public static PariseStatusEnum value(int code) {
-        for (PariseStatusEnum articleType : PariseStatusEnum.values()) {
+    public static PraiseStatusEnum value(int code) {
+        for (PraiseStatusEnum articleType : PraiseStatusEnum.values()) {
             if (code == articleType.getCode()) {
                 return articleType;
             }

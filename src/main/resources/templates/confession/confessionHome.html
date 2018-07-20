@@ -13,10 +13,16 @@
 		<script type="text/javascript" th:src="@{/js/jquery-3.2.1.min.js}"></script>
 		<script  th:inline="javascript">
 			function  loveZan(confessorId,index){
-                $.post("/confession/increaseZan",{"confessorId":confessorId},function(res){
-                    document.getElementById("confessionLike"+index).innerText=res;
-                    document.getElementById("confessionLike"+index).style.color='#D20596'
-                    document.getElementById("favImg"+index).src="/img/favorites1.png";
+                $.post("/common/increaseZan",{"confessorId":confessorId},function(res){
+                    if(res.status==1){
+                        document.getElementById("confessionLike"+index).style.color='#CCCCCC'
+                        document.getElementById("favImg"+index).src="/img/favorites.png";
+					}else{
+                        document.getElementById("confessionLike"+index).style.color='#D20596'
+                        document.getElementById("favImg"+index).src="/img/favorites1.png";
+					}
+                    document.getElementById("confessionLike"+index).innerText=res.praiseNum;
+
                 });
 			}
 		</script>
@@ -68,8 +74,10 @@
 									 <div style="float: left;font-size: 12px;" th:text="${confession.confessionTime}">2018-6-21</div>
 									<div class="love-every-bottom">
 										<div class="love-zan" th:onclick="'javascript:loveZan(\''+${confession.confessorId}+'\',\''+${status.index}+'\')'">
-											<img th:src="@{/img/favorites.png}" th:id="favImg+${status.index}"/>
-											<em th:text="${confession.confessionLike}" th:id="confessionLike+${status.index}">20</em>
+											<img th:src="@{/img/favorites.png}"  th:if="${confession.status==0 || confession.status==null}"  th:id="favImg+${status.index}"/>
+											<em th:text="${confession.confessionLike}" th:if="${confession.status==0 || confession.status==null}"  th:id="confessionLike+${status.index}">20</em>
+											<img th:src="@{/img/favorites1.png}"  th:if="${confession.status==1 && confession.userId==session.current_user.userId}" th:id="favImg+${status.index}"/>
+											<em th:text="${confession.confessionLike}" style="color: #d20596" th:if="${confession.status==1 && confession.userId==session.current_user.userId}" th:id="confessionLike+${status.index}">20</em>
 										</div>
 									<a href="#">详情</a>
 									</div>

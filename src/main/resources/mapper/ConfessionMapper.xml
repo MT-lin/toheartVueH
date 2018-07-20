@@ -4,13 +4,14 @@
     <insert id="addConfession" parameterType="xin.toheart.door.pojo.Confession">
         INSERT INTO confession(confessor,confessionContent,confessionTime) VALUES(#{confession.confessor},#{confession.confessionContent},SYSDATE())
     </insert>
-    <select id="findAllConfession" resultType="xin.toheart.door.pojo.Confession">
-        SELECT * FROM confession ORDER BY confessorId DESC
-    </select>
     <select id="findZanById" resultType="int">
         SELECT confessionLike  FROM confession WHERE confessorId=#{confessorId}
     </select>
-    <update id="updateConfessionZan">
-        UPDATE confession SET confessionLike=confessionLike+1 WHERE confessorId=#{confessorId}
+    <select id="getConfessionHomeInfo" resultType="xin.toheart.door.pojo.ConfessionHomeDTO">
+        SELECT confessorId,confessor,confessionContent,confessionLike,confessionTime,articleType,userId,STATUS
+        FROM confession c LEFT JOIN praise p ON(c.confessorId=p.articleId) ORDER BY confessorId ASC
+    </select>
+    <update id="updateConssesion">
+        UPDATE confession SET confessionLike=#{praiseNum} WHERE confessorId=#{confessorId}
     </update>
 </mapper>

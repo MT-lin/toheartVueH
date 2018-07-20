@@ -7,6 +7,9 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.*;
 import xin.toheart.door.pojo.Confession;
+import xin.toheart.door.pojo.ConfessionHomeDTO;
+import xin.toheart.door.pojo.Praise;
+import xin.toheart.door.service.CommonService;
 import xin.toheart.door.service.ConfessionService;
 
 import java.util.List;
@@ -18,10 +21,12 @@ public class ConfessionController {
     Logger LOGGER = LoggerFactory.getLogger(ConfessionController.class);
     @Autowired
     ConfessionService confessionService;
+    @Autowired
+    CommonService commonService;
 
     @RequestMapping(method = RequestMethod.GET )
     public String home(ModelMap map){
-       List<Confession> list = confessionService.findAllConfession();
+       List<ConfessionHomeDTO> list = confessionService.getConfessionHomeInfo();//获取表白内容
        map.addAttribute("confessionList",list);
        return "confession/confessionHome";
     }
@@ -30,14 +35,4 @@ public class ConfessionController {
         int temp=confessionService.addConfession(confession);
         return "redirect:/confession";
     }
-    @RequestMapping("/increaseZan")
-    @ResponseBody
-    public  String increaseZan(int confessorId){
-        int temp=confessionService.updateConfessionZan(confessorId);
-        int zan = confessionService.findZanById(confessorId);
-        return zan+"";
-
-    }
-
-
 }

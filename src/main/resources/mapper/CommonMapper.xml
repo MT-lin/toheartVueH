@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="xin.toheart.door.mapper.CommonMapper">
+    <select id="getPraiseStatus" resultType="int">
+       SELECT STATUS FROM praise WHERE articleId=#{confessorId} AND userId = #{userId} AND articleType=#{articleType}
+    </select>
+    <insert id="setUserPraise" parameterType="xin.toheart.door.pojo.Praise">
+        INSERT INTO praise(articleId,articleType,userId,praiseTime)
+        VALUES(#{praise.articleId},#{praise.articleType},#{praise.userId},#{praise.praiseTime})
+    </insert>
+    <update id="updatePraise">
+        UPDATE praise SET status=#{praise.status} WHERE articleId=#{praise.articleId}
+        AND userId =#{praise.userId} AND articleType=#{praise.articleType}
+    </update>
+    <select id="getPraiseNumByPId" resultType="int">
+        SELECT COUNT(*) FROM praise where articleId=#{confessorId} and status=1
+    </select>
+</mapper>

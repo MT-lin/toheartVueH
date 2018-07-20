@@ -11,7 +11,7 @@ import xin.toheart.door.interceptor.LoginInterceptor;
  * author   xieqx
  * createTime  2018/7/15
  */
-@Configuration
+//@Configuration
 public class LoginConfig extends WebMvcConfigurationSupport {
 
     /**

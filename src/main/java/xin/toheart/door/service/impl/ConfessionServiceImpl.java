@@ -4,6 +4,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import xin.toheart.door.mapper.ConfessionMapper;
 import xin.toheart.door.pojo.Confession;
+import xin.toheart.door.pojo.ConfessionHomeDTO;
 import xin.toheart.door.service.ConfessionService;
 
 import java.util.List;
@@ -19,17 +20,17 @@ public class ConfessionServiceImpl implements ConfessionService {
     }
 
     @Override
-    public List<Confession> findAllConfession() {
-        return confessionMapper.findAllConfession();
-    }
-
-    @Override
-    public int updateConfessionZan(int confessorId) {
-        return confessionMapper.updateConfessionZan(confessorId);
-    }
-
-    @Override
     public int findZanById(int confessorId) {
         return confessionMapper.findZanById(confessorId);
+    }
+
+    @Override
+    public int updateConssesion(int confessorId, int praiseNum) {
+        return confessionMapper.updateConssesion(confessorId,praiseNum);
+    }
+
+    @Override
+    public List<ConfessionHomeDTO> getConfessionHomeInfo() {
+        return confessionMapper.getConfessionHomeInfo();
     }
 }

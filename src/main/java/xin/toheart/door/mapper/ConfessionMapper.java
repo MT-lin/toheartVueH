@@ -15,5 +15,9 @@ public interface ConfessionMapper {
 
     int updateConssesion(int confessorId, int praiseNum);
 
-    List<ConfessionHomeDTO> getConfessionHomeInfo();
+    Confession findFarConfession();
+
+    int totalCount();
+
+    List<Confession> getConfessionList(@Param("start") int start,@Param("size") int size);
 }

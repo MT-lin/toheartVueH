@@ -7,6 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.multipart.MultipartFile;
 import xin.toheart.door.common.util.FtpUplodUtil;
@@ -38,7 +39,7 @@ public class PicUplodController {
      */
     @RequestMapping("/upload")
     @ResponseBody
-    public String upload(MultipartFile img){
+    public String upload(@RequestParam(value="file",required=false) MultipartFile img){
         Map<String,Object> result = new HashMap<>();
         try {
             //1.初始化文件上传工具类
@@ -46,10 +47,11 @@ public class PicUplodController {
             //2.上传文件
             String imageUrl = ftpUplodUtil.upload(path, img.getOriginalFilename(),
                     img.getInputStream());
-            result.put("error",0);
-            result.put("url", imageUrl);
+            result.put("ok",true);
+            result.put("data", imageUrl);
         } catch (Exception e) {
-            result.put("error",1);
+            result.put("ok",false);
+            result.put("msg","上传图片出现异常");
         }
         return new Gson().toJson(result);
     }

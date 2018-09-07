@@ -15,4 +15,5 @@ public interface StoryMapper {
     List<Story> findStoryByLike();
 
     int findTotalCount();
+    List<Story> findLikeEightStory();
 }

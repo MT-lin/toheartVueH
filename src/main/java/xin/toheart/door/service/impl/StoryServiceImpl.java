@@ -27,15 +27,18 @@ public class StoryServiceImpl implements StoryService{
     @Override
     public List<Story> findAllStory(PageUtil pageBean) {
         int start = pageBean.getStartRow();
-        System.out.println("--------------"+start);
         int size = pageBean.getSize();
-        System.out.println("--------------"+size);
         return storyMapper.findAllStory(start,size);
     }
 
     @Override
     public List<Story> findStoryByLike() {
         return storyMapper.findStoryByLike();
+    }
+
+    @Override
+    public List<Story> findLikeEightStory() {
+        return storyMapper.findLikeEightStory();
     }
 
     @Override

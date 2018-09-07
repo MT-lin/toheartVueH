@@ -14,27 +14,6 @@ import java.util.List;
 public class HomeServiceImpl implements HomeService {
     @Autowired
     HomeMapper homeMapper;
-
-    @Override
-    public List<Confession> findFiveConfession() {
-        return homeMapper.findFiveConfession();
-    }
-
-    @Override
-    public List<Story> findNewFiveStory() {
-        return homeMapper.findNewFiveStory();
-    }
-
-    @Override
-    public List<Story> findLikeEightStory() {
-        return homeMapper.findLikeEightStory();
-    }
-
-    @Override
-    public Confession findFarConfession() {
-        return homeMapper.findFarConfession();
-    }
-
     @Override
     public User findUserByOpenid(String openid) {
         return homeMapper.selectUserByOpenId(openid);

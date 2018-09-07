@@ -18,7 +18,7 @@ import javax.servlet.http.HttpServletResponse;
  * createTime  2018/7/15
  * 用户登录的拦截器
  */
-@Component
+//@Component
 public class LoginInterceptor implements HandlerInterceptor{
 
      //session 的相关工具类

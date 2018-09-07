@@ -35,21 +35,6 @@ public class HomeController {
     private SessionProvider sessionProvider;
 
 
-    //@TimeCostAnnotation("进入首页花费时间")
-    @RequestMapping(method = RequestMethod.GET)
-    public String home(ModelMap map){
-        LOGGER.info("sessionProvider:--",sessionProvider);
-        List<Confession> confessionList = homeService.findFiveConfession();
-        List<Story> storyNewFiveList = homeService.findNewFiveStory();
-        List<Story> storyLikeEightList = homeService.findLikeEightStory();
-        Confession farConfession = homeService.findFarConfession();
-        map.addAttribute("farConfession",farConfession);
-        map.addAttribute("storyLikeEightList",storyLikeEightList);
-        map.addAttribute("confessionList",confessionList);
-        map.addAttribute("storyNewFiveList",storyNewFiveList);
-        return "home";
-    }
-
     /**
      * 退出登录
      * @param session

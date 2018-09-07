@@ -14,5 +14,7 @@ public interface StoryService {
 
     List<Story> findStoryByLike();
 
+    List<Story> findLikeEightStory();
+
     int totalCount();
 }

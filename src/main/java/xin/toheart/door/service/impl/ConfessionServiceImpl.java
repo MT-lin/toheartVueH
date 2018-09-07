@@ -2,6 +2,7 @@ package xin.toheart.door.service.impl;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import xin.toheart.door.common.util.PageUtil;
 import xin.toheart.door.mapper.ConfessionMapper;
 import xin.toheart.door.pojo.Confession;
 import xin.toheart.door.pojo.ConfessionHomeDTO;
@@ -30,7 +31,21 @@ public class ConfessionServiceImpl implements ConfessionService {
     }
 
     @Override
-    public List<ConfessionHomeDTO> getConfessionHomeInfo() {
-        return confessionMapper.getConfessionHomeInfo();
+    public Confession findFarConfession() {
+        return confessionMapper.findFarConfession();
     }
+
+    @Override
+    public int totalCount() {
+        return confessionMapper.totalCount();
+    }
+
+    @Override
+    public List<Confession> getConfessionList(PageUtil<Confession> pageBean) {
+        int start = pageBean.getStartRow();
+        int size = pageBean.getSize();
+        return confessionMapper.getConfessionList(start,size);
+    }
+
+
 }

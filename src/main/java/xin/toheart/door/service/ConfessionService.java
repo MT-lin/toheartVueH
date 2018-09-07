@@ -1,5 +1,6 @@
 package xin.toheart.door.service;
 
+import xin.toheart.door.common.util.PageUtil;
 import xin.toheart.door.pojo.Confession;
 import xin.toheart.door.pojo.ConfessionHomeDTO;
 
@@ -13,5 +14,9 @@ public interface ConfessionService {
 
     int updateConssesion(int confessorId, int praiseNum);
 
-    List<ConfessionHomeDTO> getConfessionHomeInfo();
+    Confession findFarConfession();
+
+    int totalCount();
+
+    List<Confession> getConfessionList(PageUtil<Confession> pageBean);
 }

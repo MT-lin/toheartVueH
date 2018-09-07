@@ -1,0 +1,20 @@
+guid 采用数据库底层的guid算法机制，对应MySQL的uuid()函数，SQL Server的newid()函数，ORCALE的rawtohex(sys_guid())函数等 
+例：@GeneratedValue(generator = "paymentableGenerator") 
+@GenericGenerator(name = "paymentableGenerator", strategy = "guid") 
+
+
+今日完成：（1）修改之前任务的一些不合理的地方  （2）实现setting前后端对接  （3）完成判断民族能否接待  （4）解决请求不到支付宝二维码的问题
+明日计划：
+
+
+问题：支付同步需要入住之后才可以进行，应该写个预订单的同步
+
+DELETE FROM `h_orderinfo` WHERE (`ID`>'185')
+
+RestController的作用
+
+
+关于无押金入住
+（1）如果按以前的逻辑  需要走类似预定的流程，但是不能让其预定成功。
+（2）无押金入住应该不能再走以前的逻辑了。
+（3）图片现在不够，图片是谁做的？现在是我去做吗？

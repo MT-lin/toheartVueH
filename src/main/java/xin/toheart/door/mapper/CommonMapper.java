@@ -12,5 +12,5 @@ public interface CommonMapper {
 
     int updatePraise(@Param("praise") Praise praise);
 
-    int getPraiseNumByPId(int confessorId);
+    int getPraiseNumByPId(@Param("confessorId") int confessorId,@Param("type") int type);
 }

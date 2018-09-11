@@ -29,8 +29,8 @@ public class CommonServiceImpl implements CommonService {
     }
 
     @Override
-    public int getPraiseNumByPId(int confessorId) {
-        return commonMapper.getPraiseNumByPId(confessorId);
+    public int getPraiseNumByPId(int confessorId,int type) {
+        return commonMapper.getPraiseNumByPId(confessorId,type);
     }
 
 }

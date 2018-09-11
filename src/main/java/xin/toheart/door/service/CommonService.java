@@ -11,5 +11,5 @@ public interface CommonService {
 
     int updatePraise(Praise praise);
 
-    int getPraiseNumByPId(int confessorId);
+    int getPraiseNumByPId(int confessorId,int type);
 }

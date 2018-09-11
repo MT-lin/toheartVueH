@@ -13,7 +13,7 @@ public interface ConfessionMapper {
 
     int findZanById(int confessorId);
 
-    int updateConssesion(int confessorId, int praiseNum);
+    int updateConssesion(@Param("confessorId") int confessorId,@Param("praiseNum") int praiseNum);
 
     Confession findFarConfession();
 

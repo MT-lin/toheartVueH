@@ -5,14 +5,14 @@
        SELECT STATUS FROM praise WHERE articleId=#{confessorId} AND userId = #{userId} AND articleType=#{articleType}
     </select>
     <insert id="setUserPraise" parameterType="xin.toheart.door.pojo.Praise">
-        INSERT INTO praise(articleId,articleType,userId,praiseTime)
-        VALUES(#{praise.articleId},#{praise.articleType},#{praise.userId},#{praise.praiseTime})
+        INSERT INTO praise(articleId,articleType,userId,praiseTime,status)
+        VALUES(#{praise.articleId},#{praise.articleType},#{praise.userId},#{praise.praiseTime},#{praise.status})
     </insert>
     <update id="updatePraise">
         UPDATE praise SET status=#{praise.status} WHERE articleId=#{praise.articleId}
         AND userId =#{praise.userId} AND articleType=#{praise.articleType}
     </update>
     <select id="getPraiseNumByPId" resultType="int">
-        SELECT COUNT(*) FROM praise where articleId=#{confessorId} and status=1
+        SELECT COUNT(*) FROM praise where articleId=#{confessorId} and articleType=#{type} and status=1
     </select>
 </mapper>

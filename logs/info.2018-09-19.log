@@ -1,0 +1,2227 @@
+[2018-09-19 10:24:51] [INFO ] [xin.toheart.door.DoorApplication:50]-- Starting DoorApplication on PC-2018HWL with PID 9756 (D:\toheartH\toheart\target\classes started by Administrator in D:\toheartH\toheart)
+[2018-09-19 10:24:51] [INFO ] [xin.toheart.door.DoorApplication:659]-- No active profile set, falling back to default profiles: default
+[2018-09-19 10:24:52] [INFO ] [org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext:590]-- Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@64b0598: startup date [Wed Sep 19 10:24:52 CST 2018]; root of context hierarchy
+[2018-09-19 10:24:53] [INFO ] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:91]-- Tomcat initialized with port(s): 5201 (http)
+[2018-09-19 10:24:54] [INFO ] [org.apache.coyote.http11.Http11NioProtocol:180]-- Initializing ProtocolHandler ["http-nio-5201"]
+[2018-09-19 10:24:54] [INFO ] [org.apache.catalina.core.StandardService:180]-- Starting service [Tomcat]
+[2018-09-19 10:24:54] [INFO ] [org.apache.catalina.core.StandardEngine:180]-- Starting Servlet Engine: Apache Tomcat/8.5.31
+[2018-09-19 10:24:54] [INFO ] [org.apache.catalina.core.AprLifecycleListener:180]-- The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [D:\Program Files\Java\jdk1.8.0_161\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;D:\Program Files\Java\jdk1.8.0_161\bin;D:\Program Files\Git\cmd;D:\work\apache-maven-3.5.3\bin;D:\Program Files\nodejs\;C:\Program Files (x86)\Windows Kits\8.1\Windows Performance Toolkit\;D:\Program Files\PuTTY\;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;C:\Users\Administrator\AppData\Roaming\npm;.]
+[2018-09-19 10:24:54] [INFO ] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:180]-- Initializing Spring embedded WebApplicationContext
+[2018-09-19 10:24:54] [INFO ] [org.springframework.web.context.ContextLoader:285]-- Root WebApplicationContext: initialization completed in 2186 ms
+[2018-09-19 10:24:54] [INFO ] [org.springframework.boot.web.servlet.ServletRegistrationBean:186]-- Servlet dispatcherServlet mapped to [/]
+[2018-09-19 10:24:54] [INFO ] [org.springframework.boot.web.servlet.FilterRegistrationBean:245]-- Mapping filter: 'characterEncodingFilter' to: [/*]
+[2018-09-19 10:24:54] [INFO ] [org.springframework.boot.web.servlet.FilterRegistrationBean:245]-- Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+[2018-09-19 10:24:54] [INFO ] [org.springframework.boot.web.servlet.FilterRegistrationBean:245]-- Mapping filter: 'httpPutFormContentFilter' to: [/*]
+[2018-09-19 10:24:54] [INFO ] [org.springframework.boot.web.servlet.FilterRegistrationBean:245]-- Mapping filter: 'requestContextFilter' to: [/*]
+[2018-09-19 10:24:54] [INFO ] [org.springframework.boot.web.servlet.FilterRegistrationBean:258]-- Mapping filter: 'loginAuthFilter' to urls: [/*]
+[2018-09-19 10:24:54] [INFO ] [org.springframework.web.servlet.handler.SimpleUrlHandlerMapping:373]-- Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[2018-09-19 10:24:55] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter:574]-- Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@64b0598: startup date [Wed Sep 19 10:24:52 CST 2018]; root of context hierarchy
+[2018-09-19 10:24:55] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/common/findComment]}" onto public xin.toheart.door.dto.ResponseDto xin.toheart.door.controller.CommonController.findComment(int,int)
+[2018-09-19 10:24:55] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/common/increaseZan]}" onto public xin.toheart.door.dto.ResponseDto xin.toheart.door.controller.CommonController.increaseZan(int,int,javax.servlet.http.HttpSession)
+[2018-09-19 10:24:55] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/common/increaseComment]}" onto public xin.toheart.door.dto.ResponseDto xin.toheart.door.controller.CommonController.increaseComment(int,int,java.lang.String,javax.servlet.http.HttpSession)
+[2018-09-19 10:24:55] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/confession/addConfession]}" onto public xin.toheart.door.dto.ResponseDto xin.toheart.door.controller.ConfessionController.addConfession(xin.toheart.door.pojo.Confession)
+[2018-09-19 10:24:55] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/confession/confessionList/{index}/{size}]}" onto public xin.toheart.door.dto.ResponseDto xin.toheart.door.controller.ConfessionController.confessionList(java.lang.String,java.lang.String)
+[2018-09-19 10:24:55] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/confession/splendidConfession/inHome]}" onto public xin.toheart.door.dto.ResponseDto xin.toheart.door.controller.ConfessionController.splendidConfession()
+[2018-09-19 10:24:55] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/confession/getConfession/{id}]}" onto public xin.toheart.door.dto.ResponseDto xin.toheart.door.controller.ConfessionController.getConfessionById(java.lang.String)
+[2018-09-19 10:24:55] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/game/2048]}" onto public java.lang.String xin.toheart.door.controller.GameController.game2048()
+[2018-09-19 10:24:55] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/game/gameHome]}" onto public java.lang.String xin.toheart.door.controller.GameController.gameHome()
+[2018-09-19 10:24:55] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/logout]}" onto public java.lang.String xin.toheart.door.controller.HomeController.logout(javax.servlet.http.HttpSession)
+[2018-09-19 10:24:55] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/login]}" onto public java.lang.String xin.toheart.door.controller.HomeController.login()
+[2018-09-19 10:24:55] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/QQLogin]}" onto public java.lang.String xin.toheart.door.controller.HomeController.QQLogin(java.lang.String,javax.servlet.http.HttpSession) throws java.text.ParseException
+[2018-09-19 10:24:55] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/pic/upload]}" onto public java.lang.String xin.toheart.door.controller.PicUplodController.upload(org.springframework.web.multipart.MultipartFile)
+[2018-09-19 10:24:55] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/story/saveStory],methods=[POST]}" onto public xin.toheart.door.dto.ResponseDto xin.toheart.door.controller.StoryController.saveStory(xin.toheart.door.pojo.Story)
+[2018-09-19 10:24:55] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/story/showStory/{id}],methods=[GET]}" onto public xin.toheart.door.dto.ResponseDto xin.toheart.door.controller.StoryController.showStory(int)
+[2018-09-19 10:24:55] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/story/storyList/{index}/{size}],methods=[GET]}" onto public xin.toheart.door.dto.ResponseDto xin.toheart.door.controller.StoryController.storyList(java.lang.String,java.lang.String)
+[2018-09-19 10:24:55] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/story/splendidStory/inHome]}" onto public xin.toheart.door.dto.ResponseDto xin.toheart.door.controller.StoryController.splendidStoryInHome()
+[2018-09-19 10:24:55] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+[2018-09-19 10:24:55] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+[2018-09-19 10:24:55] [INFO ] [org.springframework.web.servlet.handler.SimpleUrlHandlerMapping:373]-- Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[2018-09-19 10:24:55] [INFO ] [org.springframework.web.servlet.handler.SimpleUrlHandlerMapping:373]-- Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[2018-09-19 10:24:55] [INFO ] [org.springframework.jmx.export.annotation.AnnotationMBeanExporter:433]-- Registering beans for JMX exposure on startup
+[2018-09-19 10:24:55] [INFO ] [org.springframework.jmx.export.annotation.AnnotationMBeanExporter:895]-- Bean with name 'dataSource' has been autodetected for JMX exposure
+[2018-09-19 10:24:55] [INFO ] [org.springframework.jmx.export.annotation.AnnotationMBeanExporter:668]-- Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+[2018-09-19 10:24:55] [INFO ] [org.apache.coyote.http11.Http11NioProtocol:180]-- Starting ProtocolHandler ["http-nio-5201"]
+[2018-09-19 10:24:55] [INFO ] [org.apache.tomcat.util.net.NioSelectorPool:180]-- Using a shared selector for servlet write/read
+[2018-09-19 10:24:56] [INFO ] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:206]-- Tomcat started on port(s): 5201 (http) with context path ''
+[2018-09-19 10:24:56] [INFO ] [xin.toheart.door.DoorApplication:59]-- Started DoorApplication in 4.764 seconds (JVM running for 5.344)
+[2018-09-19 11:36:51] [INFO ] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:180]-- Initializing Spring FrameworkServlet 'dispatcherServlet'
+[2018-09-19 11:36:51] [INFO ] [org.springframework.web.servlet.DispatcherServlet:494]-- FrameworkServlet 'dispatcherServlet': initialization started
+[2018-09-19 11:36:51] [INFO ] [org.springframework.web.servlet.DispatcherServlet:509]-- FrameworkServlet 'dispatcherServlet': initialization completed in 105 ms
+[2018-09-19 11:36:51] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:21]-- HandleInterceptor1 ...... preHandle
+[2018-09-19 11:36:51] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:33]-- 
+-------------------------------------
+Controller: xin.toheart.door.controller.StoryController$$EnhancerBySpringCGLIB$$37470a1b
+Method    : storyList
+Params    : 
+URI       : /story/storyList/1/5
+-------------------------------------
+
+[2018-09-19 11:36:51] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:21]-- HandleInterceptor1 ...... preHandle
+[2018-09-19 11:36:51] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:33]-- 
+-------------------------------------
+Controller: xin.toheart.door.controller.ConfessionController$$EnhancerBySpringCGLIB$$8ecd4975
+Method    : confessionList
+Params    : 
+URI       : /confession/confessionList/1/5
+-------------------------------------
+
+[2018-09-19 11:36:51] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:21]-- HandleInterceptor1 ...... preHandle
+[2018-09-19 11:36:51] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:33]-- 
+-------------------------------------
+Controller: xin.toheart.door.controller.ConfessionController$$EnhancerBySpringCGLIB$$8ecd4975
+Method    : splendidConfession
+Params    : 
+URI       : /confession/splendidConfession/inHome
+-------------------------------------
+
+[2018-09-19 11:36:51] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:21]-- HandleInterceptor1 ...... preHandle
+[2018-09-19 11:36:51] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:33]-- 
+-------------------------------------
+Controller: xin.toheart.door.controller.StoryController$$EnhancerBySpringCGLIB$$37470a1b
+Method    : splendidStoryInHome
+Params    : 
+URI       : /story/splendidStory/inHome
+-------------------------------------
+
+[2018-09-19 11:36:51] [INFO ] [com.zaxxer.hikari.HikariDataSource:110]-- HikariPool-1 - Starting...
+[2018-09-19 11:36:52] [INFO ] [com.zaxxer.hikari.HikariDataSource:123]-- HikariPool-1 - Start completed.
+[2018-09-19 11:36:52] [INFO ] [xin.toheart.door.aspect.TimeCostAspect:60]-- [time cost] 689 ms [path is xin.toheart.door.controller.StoryController.splendidStoryInHome]
+[2018-09-19 11:36:52] [INFO ] [xin.toheart.door.aspect.TimeCostAspect:60]-- [time cost] 700 ms [path is xin.toheart.door.controller.ConfessionController.splendidConfession]
+[2018-09-19 11:36:52] [INFO ] [xin.toheart.door.aspect.TimeCostAspect:60]-- [time cost] 705 ms [path is xin.toheart.door.controller.StoryController.storyList]
+[2018-09-19 11:36:52] [INFO ] [xin.toheart.door.aspect.TimeCostAspect:60]-- [time cost] 713 ms [path is xin.toheart.door.controller.ConfessionController.confessionList]
+[2018-09-19 11:36:52] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:45]-- 
+========处理请求后，渲染页面前======
+[2018-09-19 11:36:52] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:55]-- 
+========视图渲染结束了，请求处理完毕====
+[2018-09-19 11:36:52] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:45]-- 
+========处理请求后，渲染页面前======
+[2018-09-19 11:36:52] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:55]-- 
+========视图渲染结束了，请求处理完毕====
+[2018-09-19 11:36:52] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:45]-- 
+========处理请求后，渲染页面前======
+[2018-09-19 11:36:52] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:55]-- 
+========视图渲染结束了，请求处理完毕====
+[2018-09-19 11:36:52] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:45]-- 
+========处理请求后，渲染页面前======
+[2018-09-19 11:36:52] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:55]-- 
+========视图渲染结束了，请求处理完毕====
+[2018-09-19 11:36:55] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:21]-- HandleInterceptor1 ...... preHandle
+[2018-09-19 11:36:55] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:33]-- 
+-------------------------------------
+Controller: xin.toheart.door.controller.ConfessionController$$EnhancerBySpringCGLIB$$8ecd4975
+Method    : confessionList
+Params    : 
+URI       : /confession/confessionList/1/5
+-------------------------------------
+
+[2018-09-19 11:36:55] [INFO ] [xin.toheart.door.aspect.TimeCostAspect:60]-- [time cost] 42 ms [path is xin.toheart.door.controller.ConfessionController.confessionList]
+[2018-09-19 11:36:55] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:45]-- 
+========处理请求后，渲染页面前======
+[2018-09-19 11:36:55] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:55]-- 
+========视图渲染结束了，请求处理完毕====
+[2018-09-19 11:36:57] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:21]-- HandleInterceptor1 ...... preHandle
+[2018-09-19 11:36:57] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:21]-- HandleInterceptor1 ...... preHandle
+[2018-09-19 11:36:57] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:33]-- 
+-------------------------------------
+Controller: xin.toheart.door.controller.ConfessionController$$EnhancerBySpringCGLIB$$8ecd4975
+Method    : getConfessionById
+Params    : 
+URI       : /confession/getConfession/18
+-------------------------------------
+
+[2018-09-19 11:36:57] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:33]-- 
+-------------------------------------
+Controller: xin.toheart.door.controller.CommonController$$EnhancerBySpringCGLIB$$cc359e21
+Method    : findComment
+Params    : id=18	type=2	
+URI       : /common/findComment
+-------------------------------------
+
+[2018-09-19 11:36:57] [INFO ] [xin.toheart.door.aspect.TimeCostAspect:60]-- [time cost] 19 ms [path is xin.toheart.door.controller.ConfessionController.getConfessionById]
+[2018-09-19 11:36:57] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:45]-- 
+========处理请求后，渲染页面前======
+[2018-09-19 11:36:57] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:55]-- 
+========视图渲染结束了，请求处理完毕====
+[2018-09-19 11:36:57] [INFO ] [xin.toheart.door.aspect.TimeCostAspect:60]-- [time cost] 154 ms [path is xin.toheart.door.controller.CommonController.findComment]
+[2018-09-19 11:36:57] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:45]-- 
+========处理请求后，渲染页面前======
+[2018-09-19 11:36:57] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:55]-- 
+========视图渲染结束了，请求处理完毕====
+[2018-09-19 11:37:44] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:21]-- HandleInterceptor1 ...... preHandle
+[2018-09-19 11:37:44] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:21]-- HandleInterceptor1 ...... preHandle
+[2018-09-19 11:37:44] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:33]-- 
+-------------------------------------
+Controller: xin.toheart.door.controller.ConfessionController$$EnhancerBySpringCGLIB$$8ecd4975
+Method    : getConfessionById
+Params    : 
+URI       : /confession/getConfession/18
+-------------------------------------
+
+[2018-09-19 11:37:44] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:33]-- 
+-------------------------------------
+Controller: xin.toheart.door.controller.CommonController$$EnhancerBySpringCGLIB$$cc359e21
+Method    : findComment
+Params    : id=18	type=2	
+URI       : /common/findComment
+-------------------------------------
+
+[2018-09-19 11:37:44] [INFO ] [xin.toheart.door.aspect.TimeCostAspect:60]-- [time cost] 22 ms [path is xin.toheart.door.controller.ConfessionController.getConfessionById]
+[2018-09-19 11:37:44] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:45]-- 
+========处理请求后，渲染页面前======
+[2018-09-19 11:37:44] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:55]-- 
+========视图渲染结束了，请求处理完毕====
+[2018-09-19 11:37:44] [INFO ] [xin.toheart.door.aspect.TimeCostAspect:60]-- [time cost] 106 ms [path is xin.toheart.door.controller.CommonController.findComment]
+[2018-09-19 11:37:44] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:45]-- 
+========处理请求后，渲染页面前======
+[2018-09-19 11:37:44] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:55]-- 
+========视图渲染结束了，请求处理完毕====
+[2018-09-19 11:41:45] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:21]-- HandleInterceptor1 ...... preHandle
+[2018-09-19 11:41:45] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:21]-- HandleInterceptor1 ...... preHandle
+[2018-09-19 11:41:45] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:33]-- 
+-------------------------------------
+Controller: xin.toheart.door.controller.CommonController$$EnhancerBySpringCGLIB$$cc359e21
+Method    : findComment
+Params    : id=18	type=2	
+URI       : /common/findComment
+-------------------------------------
+
+[2018-09-19 11:41:45] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:33]-- 
+-------------------------------------
+Controller: xin.toheart.door.controller.ConfessionController$$EnhancerBySpringCGLIB$$8ecd4975
+Method    : getConfessionById
+Params    : 
+URI       : /confession/getConfession/18
+-------------------------------------
+
+[2018-09-19 11:41:45] [INFO ] [xin.toheart.door.aspect.TimeCostAspect:60]-- [time cost] 23 ms [path is xin.toheart.door.controller.ConfessionController.getConfessionById]
+[2018-09-19 11:41:45] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:45]-- 
+========处理请求后，渲染页面前======
+[2018-09-19 11:41:45] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:55]-- 
+========视图渲染结束了，请求处理完毕====
+[2018-09-19 11:41:45] [INFO ] [xin.toheart.door.aspect.TimeCostAspect:60]-- [time cost] 121 ms [path is xin.toheart.door.controller.CommonController.findComment]
+[2018-09-19 11:41:45] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:45]-- 
+========处理请求后，渲染页面前======
+[2018-09-19 11:41:45] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:55]-- 
+========视图渲染结束了，请求处理完毕====
+[2018-09-19 11:42:01] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:21]-- HandleInterceptor1 ...... preHandle
+[2018-09-19 11:42:01] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:33]-- 
+-------------------------------------
+Controller: xin.toheart.door.controller.CommonController$$EnhancerBySpringCGLIB$$cc359e21
+Method    : findComment
+Params    : id=18	type=2	
+URI       : /common/findComment
+-------------------------------------
+
+[2018-09-19 11:42:01] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:21]-- HandleInterceptor1 ...... preHandle
+[2018-09-19 11:42:01] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:33]-- 
+-------------------------------------
+Controller: xin.toheart.door.controller.ConfessionController$$EnhancerBySpringCGLIB$$8ecd4975
+Method    : getConfessionById
+Params    : 
+URI       : /confession/getConfession/18
+-------------------------------------
+
+[2018-09-19 11:42:01] [INFO ] [xin.toheart.door.aspect.TimeCostAspect:60]-- [time cost] 23 ms [path is xin.toheart.door.controller.ConfessionController.getConfessionById]
+[2018-09-19 11:42:01] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:45]-- 
+========处理请求后，渲染页面前======
+[2018-09-19 11:42:01] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:55]-- 
+========视图渲染结束了，请求处理完毕====
+[2018-09-19 11:42:01] [INFO ] [xin.toheart.door.aspect.TimeCostAspect:60]-- [time cost] 99 ms [path is xin.toheart.door.controller.CommonController.findComment]
+[2018-09-19 11:42:01] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:45]-- 
+========处理请求后，渲染页面前======
+[2018-09-19 11:42:01] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:55]-- 
+========视图渲染结束了，请求处理完毕====
+[2018-09-19 11:56:09] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:21]-- HandleInterceptor1 ...... preHandle
+[2018-09-19 11:56:09] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:21]-- HandleInterceptor1 ...... preHandle
+[2018-09-19 11:56:09] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:33]-- 
+-------------------------------------
+Controller: xin.toheart.door.controller.ConfessionController$$EnhancerBySpringCGLIB$$8ecd4975
+Method    : getConfessionById
+Params    : 
+URI       : /confession/getConfession/18
+-------------------------------------
+
+[2018-09-19 11:56:09] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:33]-- 
+-------------------------------------
+Controller: xin.toheart.door.controller.CommonController$$EnhancerBySpringCGLIB$$cc359e21
+Method    : findComment
+Params    : id=18	type=2	
+URI       : /common/findComment
+-------------------------------------
+
+[2018-09-19 11:56:15] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:21]-- HandleInterceptor1 ...... preHandle
+[2018-09-19 11:56:15] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:33]-- 
+-------------------------------------
+Controller: xin.toheart.door.controller.ConfessionController$$EnhancerBySpringCGLIB$$8ecd4975
+Method    : getConfessionById
+Params    : 
+URI       : /confession/getConfession/18
+-------------------------------------
+
+[2018-09-19 11:56:15] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:21]-- HandleInterceptor1 ...... preHandle
+[2018-09-19 11:56:15] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:33]-- 
+-------------------------------------
+Controller: xin.toheart.door.controller.CommonController$$EnhancerBySpringCGLIB$$cc359e21
+Method    : findComment
+Params    : id=18	type=2	
+URI       : /common/findComment
+-------------------------------------
+
+[2018-09-19 11:56:24] [INFO ] [xin.toheart.door.aspect.TimeCostAspect:60]-- [time cost] 15137 ms [path is xin.toheart.door.controller.ConfessionController.getConfessionById]
+[2018-09-19 11:56:24] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:45]-- 
+========处理请求后，渲染页面前======
+[2018-09-19 11:56:24] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:55]-- 
+========视图渲染结束了，请求处理完毕====
+[2018-09-19 11:56:24] [INFO ] [xin.toheart.door.aspect.TimeCostAspect:60]-- [time cost] 15222 ms [path is xin.toheart.door.controller.CommonController.findComment]
+[2018-09-19 11:56:24] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:45]-- 
+========处理请求后，渲染页面前======
+[2018-09-19 11:56:24] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:55]-- 
+========视图渲染结束了，请求处理完毕====
+[2018-09-19 11:56:25] [INFO ] [xin.toheart.door.aspect.TimeCostAspect:60]-- [time cost] 10048 ms [path is xin.toheart.door.controller.ConfessionController.getConfessionById]
+[2018-09-19 11:56:25] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:45]-- 
+========处理请求后，渲染页面前======
+[2018-09-19 11:56:25] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:55]-- 
+========视图渲染结束了，请求处理完毕====
+[2018-09-19 11:56:25] [INFO ] [xin.toheart.door.aspect.TimeCostAspect:60]-- [time cost] 10105 ms [path is xin.toheart.door.controller.CommonController.findComment]
+[2018-09-19 11:56:25] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:45]-- 
+========处理请求后，渲染页面前======
+[2018-09-19 11:56:25] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:55]-- 
+========视图渲染结束了，请求处理完毕====
+[2018-09-19 11:56:32] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:21]-- HandleInterceptor1 ...... preHandle
+[2018-09-19 11:56:32] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:21]-- HandleInterceptor1 ...... preHandle
+[2018-09-19 11:56:32] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:33]-- 
+-------------------------------------
+Controller: xin.toheart.door.controller.ConfessionController$$EnhancerBySpringCGLIB$$8ecd4975
+Method    : getConfessionById
+Params    : 
+URI       : /confession/getConfession/18
+-------------------------------------
+
+[2018-09-19 11:56:32] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:33]-- 
+-------------------------------------
+Controller: xin.toheart.door.controller.CommonController$$EnhancerBySpringCGLIB$$cc359e21
+Method    : findComment
+Params    : id=18	type=2	
+URI       : /common/findComment
+-------------------------------------
+
+[2018-09-19 11:56:32] [INFO ] [xin.toheart.door.aspect.TimeCostAspect:60]-- [time cost] 21 ms [path is xin.toheart.door.controller.ConfessionController.getConfessionById]
+[2018-09-19 11:56:32] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:45]-- 
+========处理请求后，渲染页面前======
+[2018-09-19 11:56:32] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:55]-- 
+========视图渲染结束了，请求处理完毕====
+[2018-09-19 11:56:32] [INFO ] [xin.toheart.door.aspect.TimeCostAspect:60]-- [time cost] 121 ms [path is xin.toheart.door.controller.CommonController.findComment]
+[2018-09-19 11:56:32] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:45]-- 
+========处理请求后，渲染页面前======
+[2018-09-19 11:56:32] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:55]-- 
+========视图渲染结束了，请求处理完毕====
+[2018-09-19 12:00:27] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:21]-- HandleInterceptor1 ...... preHandle
+[2018-09-19 12:00:27] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:33]-- 
+-------------------------------------
+Controller: xin.toheart.door.controller.CommonController$$EnhancerBySpringCGLIB$$cc359e21
+Method    : findComment
+Params    : id=18	type=2	
+URI       : /common/findComment
+-------------------------------------
+
+[2018-09-19 12:00:27] [INFO ] [xin.toheart.door.aspect.TimeCostAspect:60]-- [time cost] 126 ms [path is xin.toheart.door.controller.CommonController.findComment]
+[2018-09-19 12:00:27] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:45]-- 
+========处理请求后，渲染页面前======
+[2018-09-19 12:00:27] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:55]-- 
+========视图渲染结束了，请求处理完毕====
+[2018-09-19 12:02:00] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:21]-- HandleInterceptor1 ...... preHandle
+[2018-09-19 12:02:00] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:21]-- HandleInterceptor1 ...... preHandle
+[2018-09-19 12:02:00] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:33]-- 
+-------------------------------------
+Controller: xin.toheart.door.controller.CommonController$$EnhancerBySpringCGLIB$$cc359e21
+Method    : findComment
+Params    : id=18	type=2	
+URI       : /common/findComment
+-------------------------------------
+
+[2018-09-19 12:02:00] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:33]-- 
+-------------------------------------
+Controller: xin.toheart.door.controller.ConfessionController$$EnhancerBySpringCGLIB$$8ecd4975
+Method    : getConfessionById
+Params    : 
+URI       : /confession/getConfession/18
+-------------------------------------
+
+[2018-09-19 12:02:00] [INFO ] [xin.toheart.door.aspect.TimeCostAspect:60]-- [time cost] 22 ms [path is xin.toheart.door.controller.ConfessionController.getConfessionById]
+[2018-09-19 12:02:00] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:45]-- 
+========处理请求后，渲染页面前======
+[2018-09-19 12:02:00] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:55]-- 
+========视图渲染结束了，请求处理完毕====
+[2018-09-19 12:02:00] [INFO ] [xin.toheart.door.aspect.TimeCostAspect:60]-- [time cost] 108 ms [path is xin.toheart.door.controller.CommonController.findComment]
+[2018-09-19 12:02:00] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:45]-- 
+========处理请求后，渲染页面前======
+[2018-09-19 12:02:00] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:55]-- 
+========视图渲染结束了，请求处理完毕====
+[2018-09-19 12:02:03] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:21]-- HandleInterceptor1 ...... preHandle
+[2018-09-19 12:02:03] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:21]-- HandleInterceptor1 ...... preHandle
+[2018-09-19 12:02:03] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:33]-- 
+-------------------------------------
+Controller: xin.toheart.door.controller.ConfessionController$$EnhancerBySpringCGLIB$$8ecd4975
+Method    : getConfessionById
+Params    : 
+URI       : /confession/getConfession/18
+-------------------------------------
+
+[2018-09-19 12:02:03] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:33]-- 
+-------------------------------------
+Controller: xin.toheart.door.controller.CommonController$$EnhancerBySpringCGLIB$$cc359e21
+Method    : findComment
+Params    : id=18	type=2	
+URI       : /common/findComment
+-------------------------------------
+
+[2018-09-19 12:02:03] [INFO ] [xin.toheart.door.aspect.TimeCostAspect:60]-- [time cost] 32 ms [path is xin.toheart.door.controller.ConfessionController.getConfessionById]
+[2018-09-19 12:02:03] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:45]-- 
+========处理请求后，渲染页面前======
+[2018-09-19 12:02:03] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:55]-- 
+========视图渲染结束了，请求处理完毕====
+[2018-09-19 12:02:03] [INFO ] [xin.toheart.door.aspect.TimeCostAspect:60]-- [time cost] 131 ms [path is xin.toheart.door.controller.CommonController.findComment]
+[2018-09-19 12:02:03] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:45]-- 
+========处理请求后，渲染页面前======
+[2018-09-19 12:02:03] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:55]-- 
+========视图渲染结束了，请求处理完毕====
+[2018-09-19 12:02:41] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:21]-- HandleInterceptor1 ...... preHandle
+[2018-09-19 12:02:41] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:21]-- HandleInterceptor1 ...... preHandle
+[2018-09-19 12:02:41] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:33]-- 
+-------------------------------------
+Controller: xin.toheart.door.controller.ConfessionController$$EnhancerBySpringCGLIB$$8ecd4975
+Method    : getConfessionById
+Params    : 
+URI       : /confession/getConfession/18
+-------------------------------------
+
+[2018-09-19 12:02:41] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:33]-- 
+-------------------------------------
+Controller: xin.toheart.door.controller.CommonController$$EnhancerBySpringCGLIB$$cc359e21
+Method    : findComment
+Params    : id=18	type=2	
+URI       : /common/findComment
+-------------------------------------
+
+[2018-09-19 12:02:41] [INFO ] [xin.toheart.door.aspect.TimeCostAspect:60]-- [time cost] 21 ms [path is xin.toheart.door.controller.ConfessionController.getConfessionById]
+[2018-09-19 12:02:41] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:45]-- 
+========处理请求后，渲染页面前======
+[2018-09-19 12:02:41] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:55]-- 
+========视图渲染结束了，请求处理完毕====
+[2018-09-19 12:02:41] [INFO ] [xin.toheart.door.aspect.TimeCostAspect:60]-- [time cost] 112 ms [path is xin.toheart.door.controller.CommonController.findComment]
+[2018-09-19 12:02:41] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:45]-- 
+========处理请求后，渲染页面前======
+[2018-09-19 12:02:41] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:55]-- 
+========视图渲染结束了，请求处理完毕====
+[2018-09-19 12:04:08] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:21]-- HandleInterceptor1 ...... preHandle
+[2018-09-19 12:04:08] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:21]-- HandleInterceptor1 ...... preHandle
+[2018-09-19 12:04:08] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:33]-- 
+-------------------------------------
+Controller: xin.toheart.door.controller.CommonController$$EnhancerBySpringCGLIB$$cc359e21
+Method    : findComment
+Params    : id=18	type=2	
+URI       : /common/findComment
+-------------------------------------
+
+[2018-09-19 12:04:08] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:33]-- 
+-------------------------------------
+Controller: xin.toheart.door.controller.ConfessionController$$EnhancerBySpringCGLIB$$8ecd4975
+Method    : getConfessionById
+Params    : 
+URI       : /confession/getConfession/18
+-------------------------------------
+
+[2018-09-19 12:04:08] [INFO ] [xin.toheart.door.aspect.TimeCostAspect:60]-- [time cost] 14 ms [path is xin.toheart.door.controller.ConfessionController.getConfessionById]
+[2018-09-19 12:04:08] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:45]-- 
+========处理请求后，渲染页面前======
+[2018-09-19 12:04:08] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:55]-- 
+========视图渲染结束了，请求处理完毕====
+[2018-09-19 12:04:08] [INFO ] [xin.toheart.door.aspect.TimeCostAspect:60]-- [time cost] 124 ms [path is xin.toheart.door.controller.CommonController.findComment]
+[2018-09-19 12:04:08] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:45]-- 
+========处理请求后，渲染页面前======
+[2018-09-19 12:04:08] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:55]-- 
+========视图渲染结束了，请求处理完毕====
+[2018-09-19 12:04:13] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:21]-- HandleInterceptor1 ...... preHandle
+[2018-09-19 12:04:13] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:21]-- HandleInterceptor1 ...... preHandle
+[2018-09-19 12:04:13] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:33]-- 
+-------------------------------------
+Controller: xin.toheart.door.controller.CommonController$$EnhancerBySpringCGLIB$$cc359e21
+Method    : findComment
+Params    : id=18	type=2	
+URI       : /common/findComment
+-------------------------------------
+
+[2018-09-19 12:04:13] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:33]-- 
+-------------------------------------
+Controller: xin.toheart.door.controller.ConfessionController$$EnhancerBySpringCGLIB$$8ecd4975
+Method    : getConfessionById
+Params    : 
+URI       : /confession/getConfession/18
+-------------------------------------
+
+[2018-09-19 12:04:13] [INFO ] [xin.toheart.door.aspect.TimeCostAspect:60]-- [time cost] 39 ms [path is xin.toheart.door.controller.ConfessionController.getConfessionById]
+[2018-09-19 12:04:13] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:45]-- 
+========处理请求后，渲染页面前======
+[2018-09-19 12:04:13] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:55]-- 
+========视图渲染结束了，请求处理完毕====
+[2018-09-19 12:04:13] [INFO ] [xin.toheart.door.aspect.TimeCostAspect:60]-- [time cost] 226 ms [path is xin.toheart.door.controller.CommonController.findComment]
+[2018-09-19 12:04:13] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:45]-- 
+========处理请求后，渲染页面前======
+[2018-09-19 12:04:13] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:55]-- 
+========视图渲染结束了，请求处理完毕====
+[2018-09-19 12:05:50] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:21]-- HandleInterceptor1 ...... preHandle
+[2018-09-19 12:05:50] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:33]-- 
+-------------------------------------
+Controller: xin.toheart.door.controller.ConfessionController$$EnhancerBySpringCGLIB$$8ecd4975
+Method    : getConfessionById
+Params    : 
+URI       : /confession/getConfession/18
+-------------------------------------
+
+[2018-09-19 12:05:50] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:21]-- HandleInterceptor1 ...... preHandle
+[2018-09-19 12:05:50] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:33]-- 
+-------------------------------------
+Controller: xin.toheart.door.controller.CommonController$$EnhancerBySpringCGLIB$$cc359e21
+Method    : findComment
+Params    : id=18	type=2	
+URI       : /common/findComment
+-------------------------------------
+
+[2018-09-19 12:05:50] [INFO ] [xin.toheart.door.aspect.TimeCostAspect:60]-- [time cost] 18 ms [path is xin.toheart.door.controller.ConfessionController.getConfessionById]
+[2018-09-19 12:05:50] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:45]-- 
+========处理请求后，渲染页面前======
+[2018-09-19 12:05:50] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:55]-- 
+========视图渲染结束了，请求处理完毕====
+[2018-09-19 12:05:50] [INFO ] [xin.toheart.door.aspect.TimeCostAspect:60]-- [time cost] 91 ms [path is xin.toheart.door.controller.CommonController.findComment]
+[2018-09-19 12:05:50] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:45]-- 
+========处理请求后，渲染页面前======
+[2018-09-19 12:05:50] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:55]-- 
+========视图渲染结束了，请求处理完毕====
+[2018-09-19 12:05:54] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:21]-- HandleInterceptor1 ...... preHandle
+[2018-09-19 12:05:54] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:21]-- HandleInterceptor1 ...... preHandle
+[2018-09-19 12:05:54] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:33]-- 
+-------------------------------------
+Controller: xin.toheart.door.controller.CommonController$$EnhancerBySpringCGLIB$$cc359e21
+Method    : findComment
+Params    : id=18	type=2	
+URI       : /common/findComment
+-------------------------------------
+
+[2018-09-19 12:05:54] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:33]-- 
+-------------------------------------
+Controller: xin.toheart.door.controller.ConfessionController$$EnhancerBySpringCGLIB$$8ecd4975
+Method    : getConfessionById
+Params    : 
+URI       : /confession/getConfession/18
+-------------------------------------
+
+[2018-09-19 12:05:54] [INFO ] [xin.toheart.door.aspect.TimeCostAspect:60]-- [time cost] 55 ms [path is xin.toheart.door.controller.ConfessionController.getConfessionById]
+[2018-09-19 12:05:54] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:45]-- 
+========处理请求后，渲染页面前======
+[2018-09-19 12:05:54] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:55]-- 
+========视图渲染结束了，请求处理完毕====
+[2018-09-19 12:05:55] [INFO ] [xin.toheart.door.aspect.TimeCostAspect:60]-- [time cost] 306 ms [path is xin.toheart.door.controller.CommonController.findComment]
+[2018-09-19 12:05:55] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:45]-- 
+========处理请求后，渲染页面前======
+[2018-09-19 12:05:55] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:55]-- 
+========视图渲染结束了，请求处理完毕====
+[2018-09-19 12:06:47] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:21]-- HandleInterceptor1 ...... preHandle
+[2018-09-19 12:06:47] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:21]-- HandleInterceptor1 ...... preHandle
+[2018-09-19 12:06:47] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:33]-- 
+-------------------------------------
+Controller: xin.toheart.door.controller.CommonController$$EnhancerBySpringCGLIB$$cc359e21
+Method    : findComment
+Params    : id=18	type=2	
+URI       : /common/findComment
+-------------------------------------
+
+[2018-09-19 12:06:47] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:33]-- 
+-------------------------------------
+Controller: xin.toheart.door.controller.ConfessionController$$EnhancerBySpringCGLIB$$8ecd4975
+Method    : getConfessionById
+Params    : 
+URI       : /confession/getConfession/18
+-------------------------------------
+
+[2018-09-19 12:06:48] [INFO ] [xin.toheart.door.aspect.TimeCostAspect:60]-- [time cost] 30 ms [path is xin.toheart.door.controller.ConfessionController.getConfessionById]
+[2018-09-19 12:06:48] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:45]-- 
+========处理请求后，渲染页面前======
+[2018-09-19 12:06:48] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:55]-- 
+========视图渲染结束了，请求处理完毕====
+[2018-09-19 12:06:48] [INFO ] [xin.toheart.door.aspect.TimeCostAspect:60]-- [time cost] 135 ms [path is xin.toheart.door.controller.CommonController.findComment]
+[2018-09-19 12:06:48] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:45]-- 
+========处理请求后，渲染页面前======
+[2018-09-19 12:06:48] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:55]-- 
+========视图渲染结束了，请求处理完毕====
+[2018-09-19 12:07:27] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:21]-- HandleInterceptor1 ...... preHandle
+[2018-09-19 12:07:27] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:21]-- HandleInterceptor1 ...... preHandle
+[2018-09-19 12:07:27] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:33]-- 
+-------------------------------------
+Controller: xin.toheart.door.controller.ConfessionController$$EnhancerBySpringCGLIB$$8ecd4975
+Method    : getConfessionById
+Params    : 
+URI       : /confession/getConfession/18
+-------------------------------------
+
+[2018-09-19 12:07:27] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:33]-- 
+-------------------------------------
+Controller: xin.toheart.door.controller.CommonController$$EnhancerBySpringCGLIB$$cc359e21
+Method    : findComment
+Params    : id=18	type=2	
+URI       : /common/findComment
+-------------------------------------
+
+[2018-09-19 12:07:27] [INFO ] [xin.toheart.door.aspect.TimeCostAspect:60]-- [time cost] 29 ms [path is xin.toheart.door.controller.ConfessionController.getConfessionById]
+[2018-09-19 12:07:27] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:45]-- 
+========处理请求后，渲染页面前======
+[2018-09-19 12:07:27] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:55]-- 
+========视图渲染结束了，请求处理完毕====
+[2018-09-19 12:07:27] [INFO ] [xin.toheart.door.aspect.TimeCostAspect:60]-- [time cost] 139 ms [path is xin.toheart.door.controller.CommonController.findComment]
+[2018-09-19 12:07:27] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:45]-- 
+========处理请求后，渲染页面前======
+[2018-09-19 12:07:27] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:55]-- 
+========视图渲染结束了，请求处理完毕====
+[2018-09-19 12:07:34] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:21]-- HandleInterceptor1 ...... preHandle
+[2018-09-19 12:07:34] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:33]-- 
+-------------------------------------
+Controller: xin.toheart.door.controller.CommonController$$EnhancerBySpringCGLIB$$cc359e21
+Method    : findComment
+Params    : id=18	type=2	
+URI       : /common/findComment
+-------------------------------------
+
+[2018-09-19 12:07:34] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:21]-- HandleInterceptor1 ...... preHandle
+[2018-09-19 12:07:34] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:33]-- 
+-------------------------------------
+Controller: xin.toheart.door.controller.ConfessionController$$EnhancerBySpringCGLIB$$8ecd4975
+Method    : getConfessionById
+Params    : 
+URI       : /confession/getConfession/18
+-------------------------------------
+
+[2018-09-19 12:07:34] [INFO ] [xin.toheart.door.aspect.TimeCostAspect:60]-- [time cost] 21 ms [path is xin.toheart.door.controller.ConfessionController.getConfessionById]
+[2018-09-19 12:07:34] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:45]-- 
+========处理请求后，渲染页面前======
+[2018-09-19 12:07:34] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:55]-- 
+========视图渲染结束了，请求处理完毕====
+[2018-09-19 12:07:34] [INFO ] [xin.toheart.door.aspect.TimeCostAspect:60]-- [time cost] 110 ms [path is xin.toheart.door.controller.CommonController.findComment]
+[2018-09-19 12:07:34] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:45]-- 
+========处理请求后，渲染页面前======
+[2018-09-19 12:07:34] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:55]-- 
+========视图渲染结束了，请求处理完毕====
+[2018-09-19 13:59:25] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:21]-- HandleInterceptor1 ...... preHandle
+[2018-09-19 13:59:25] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:21]-- HandleInterceptor1 ...... preHandle
+[2018-09-19 13:59:25] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:33]-- 
+-------------------------------------
+Controller: xin.toheart.door.controller.CommonController$$EnhancerBySpringCGLIB$$cc359e21
+Method    : findComment
+Params    : id=18	type=2	
+URI       : /common/findComment
+-------------------------------------
+
+[2018-09-19 13:59:25] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:33]-- 
+-------------------------------------
+Controller: xin.toheart.door.controller.ConfessionController$$EnhancerBySpringCGLIB$$8ecd4975
+Method    : getConfessionById
+Params    : 
+URI       : /confession/getConfession/18
+-------------------------------------
+
+[2018-09-19 13:59:25] [INFO ] [xin.toheart.door.aspect.TimeCostAspect:60]-- [time cost] 32 ms [path is xin.toheart.door.controller.ConfessionController.getConfessionById]
+[2018-09-19 13:59:25] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:45]-- 
+========处理请求后，渲染页面前======
+[2018-09-19 13:59:25] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:55]-- 
+========视图渲染结束了，请求处理完毕====
+[2018-09-19 13:59:25] [INFO ] [xin.toheart.door.aspect.TimeCostAspect:60]-- [time cost] 119 ms [path is xin.toheart.door.controller.CommonController.findComment]
+[2018-09-19 13:59:25] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:45]-- 
+========处理请求后，渲染页面前======
+[2018-09-19 13:59:25] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:55]-- 
+========视图渲染结束了，请求处理完毕====
+[2018-09-19 13:59:34] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:21]-- HandleInterceptor1 ...... preHandle
+[2018-09-19 13:59:34] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:33]-- 
+-------------------------------------
+Controller: xin.toheart.door.controller.CommonController$$EnhancerBySpringCGLIB$$cc359e21
+Method    : findComment
+Params    : id=18	type=2	
+URI       : /common/findComment
+-------------------------------------
+
+[2018-09-19 13:59:34] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:21]-- HandleInterceptor1 ...... preHandle
+[2018-09-19 13:59:34] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:33]-- 
+-------------------------------------
+Controller: xin.toheart.door.controller.ConfessionController$$EnhancerBySpringCGLIB$$8ecd4975
+Method    : getConfessionById
+Params    : 
+URI       : /confession/getConfession/18
+-------------------------------------
+
+[2018-09-19 13:59:34] [INFO ] [xin.toheart.door.aspect.TimeCostAspect:60]-- [time cost] 67 ms [path is xin.toheart.door.controller.ConfessionController.getConfessionById]
+[2018-09-19 13:59:34] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:45]-- 
+========处理请求后，渲染页面前======
+[2018-09-19 13:59:34] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:55]-- 
+========视图渲染结束了，请求处理完毕====
+[2018-09-19 13:59:34] [INFO ] [xin.toheart.door.aspect.TimeCostAspect:60]-- [time cost] 364 ms [path is xin.toheart.door.controller.CommonController.findComment]
+[2018-09-19 13:59:34] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:45]-- 
+========处理请求后，渲染页面前======
+[2018-09-19 13:59:34] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:55]-- 
+========视图渲染结束了，请求处理完毕====
+[2018-09-19 14:08:51] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:21]-- HandleInterceptor1 ...... preHandle
+[2018-09-19 14:08:51] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:21]-- HandleInterceptor1 ...... preHandle
+[2018-09-19 14:08:51] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:33]-- 
+-------------------------------------
+Controller: xin.toheart.door.controller.ConfessionController$$EnhancerBySpringCGLIB$$8ecd4975
+Method    : getConfessionById
+Params    : 
+URI       : /confession/getConfession/18
+-------------------------------------
+
+[2018-09-19 14:08:51] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:33]-- 
+-------------------------------------
+Controller: xin.toheart.door.controller.CommonController$$EnhancerBySpringCGLIB$$cc359e21
+Method    : findComment
+Params    : id=18	type=2	
+URI       : /common/findComment
+-------------------------------------
+
+[2018-09-19 14:08:52] [INFO ] [xin.toheart.door.aspect.TimeCostAspect:60]-- [time cost] 22 ms [path is xin.toheart.door.controller.ConfessionController.getConfessionById]
+[2018-09-19 14:08:52] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:45]-- 
+========处理请求后，渲染页面前======
+[2018-09-19 14:08:52] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:55]-- 
+========视图渲染结束了，请求处理完毕====
+[2018-09-19 14:08:52] [INFO ] [xin.toheart.door.aspect.TimeCostAspect:60]-- [time cost] 135 ms [path is xin.toheart.door.controller.CommonController.findComment]
+[2018-09-19 14:08:52] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:45]-- 
+========处理请求后，渲染页面前======
+[2018-09-19 14:08:52] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:55]-- 
+========视图渲染结束了，请求处理完毕====
+[2018-09-19 14:09:10] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:21]-- HandleInterceptor1 ...... preHandle
+[2018-09-19 14:09:10] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:33]-- 
+-------------------------------------
+Controller: xin.toheart.door.controller.ConfessionController$$EnhancerBySpringCGLIB$$8ecd4975
+Method    : getConfessionById
+Params    : 
+URI       : /confession/getConfession/18
+-------------------------------------
+
+[2018-09-19 14:09:10] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:21]-- HandleInterceptor1 ...... preHandle
+[2018-09-19 14:09:10] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:33]-- 
+-------------------------------------
+Controller: xin.toheart.door.controller.CommonController$$EnhancerBySpringCGLIB$$cc359e21
+Method    : findComment
+Params    : id=18	type=2	
+URI       : /common/findComment
+-------------------------------------
+
+[2018-09-19 14:09:10] [INFO ] [xin.toheart.door.aspect.TimeCostAspect:60]-- [time cost] 27 ms [path is xin.toheart.door.controller.ConfessionController.getConfessionById]
+[2018-09-19 14:09:10] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:45]-- 
+========处理请求后，渲染页面前======
+[2018-09-19 14:09:10] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:55]-- 
+========视图渲染结束了，请求处理完毕====
+[2018-09-19 14:09:10] [INFO ] [xin.toheart.door.aspect.TimeCostAspect:60]-- [time cost] 101 ms [path is xin.toheart.door.controller.CommonController.findComment]
+[2018-09-19 14:09:10] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:45]-- 
+========处理请求后，渲染页面前======
+[2018-09-19 14:09:10] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:55]-- 
+========视图渲染结束了，请求处理完毕====
+[2018-09-19 14:11:31] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:21]-- HandleInterceptor1 ...... preHandle
+[2018-09-19 14:11:31] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:33]-- 
+-------------------------------------
+Controller: xin.toheart.door.controller.CommonController$$EnhancerBySpringCGLIB$$cc359e21
+Method    : findComment
+Params    : id=18	type=2	
+URI       : /common/findComment
+-------------------------------------
+
+[2018-09-19 14:11:31] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:21]-- HandleInterceptor1 ...... preHandle
+[2018-09-19 14:11:31] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:33]-- 
+-------------------------------------
+Controller: xin.toheart.door.controller.ConfessionController$$EnhancerBySpringCGLIB$$8ecd4975
+Method    : getConfessionById
+Params    : 
+URI       : /confession/getConfession/18
+-------------------------------------
+
+[2018-09-19 14:11:31] [INFO ] [xin.toheart.door.aspect.TimeCostAspect:60]-- [time cost] 21 ms [path is xin.toheart.door.controller.ConfessionController.getConfessionById]
+[2018-09-19 14:11:31] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:45]-- 
+========处理请求后，渲染页面前======
+[2018-09-19 14:11:31] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:55]-- 
+========视图渲染结束了，请求处理完毕====
+[2018-09-19 14:11:32] [INFO ] [xin.toheart.door.aspect.TimeCostAspect:60]-- [time cost] 109 ms [path is xin.toheart.door.controller.CommonController.findComment]
+[2018-09-19 14:11:32] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:45]-- 
+========处理请求后，渲染页面前======
+[2018-09-19 14:11:32] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:55]-- 
+========视图渲染结束了，请求处理完毕====
+[2018-09-19 14:13:16] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:21]-- HandleInterceptor1 ...... preHandle
+[2018-09-19 14:13:16] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:33]-- 
+-------------------------------------
+Controller: xin.toheart.door.controller.ConfessionController$$EnhancerBySpringCGLIB$$8ecd4975
+Method    : getConfessionById
+Params    : 
+URI       : /confession/getConfession/18
+-------------------------------------
+
+[2018-09-19 14:13:16] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:21]-- HandleInterceptor1 ...... preHandle
+[2018-09-19 14:13:16] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:33]-- 
+-------------------------------------
+Controller: xin.toheart.door.controller.CommonController$$EnhancerBySpringCGLIB$$cc359e21
+Method    : findComment
+Params    : id=18	type=2	
+URI       : /common/findComment
+-------------------------------------
+
+[2018-09-19 14:13:16] [INFO ] [xin.toheart.door.aspect.TimeCostAspect:60]-- [time cost] 28 ms [path is xin.toheart.door.controller.ConfessionController.getConfessionById]
+[2018-09-19 14:13:16] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:45]-- 
+========处理请求后，渲染页面前======
+[2018-09-19 14:13:16] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:55]-- 
+========视图渲染结束了，请求处理完毕====
+[2018-09-19 14:13:16] [INFO ] [xin.toheart.door.aspect.TimeCostAspect:60]-- [time cost] 133 ms [path is xin.toheart.door.controller.CommonController.findComment]
+[2018-09-19 14:13:16] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:45]-- 
+========处理请求后，渲染页面前======
+[2018-09-19 14:13:16] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:55]-- 
+========视图渲染结束了，请求处理完毕====
+[2018-09-19 14:13:53] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:21]-- HandleInterceptor1 ...... preHandle
+[2018-09-19 14:13:53] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:21]-- HandleInterceptor1 ...... preHandle
+[2018-09-19 14:13:53] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:33]-- 
+-------------------------------------
+Controller: xin.toheart.door.controller.CommonController$$EnhancerBySpringCGLIB$$cc359e21
+Method    : findComment
+Params    : id=18	type=2	
+URI       : /common/findComment
+-------------------------------------
+
+[2018-09-19 14:13:53] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:33]-- 
+-------------------------------------
+Controller: xin.toheart.door.controller.ConfessionController$$EnhancerBySpringCGLIB$$8ecd4975
+Method    : getConfessionById
+Params    : 
+URI       : /confession/getConfession/18
+-------------------------------------
+
+[2018-09-19 14:13:53] [INFO ] [xin.toheart.door.aspect.TimeCostAspect:60]-- [time cost] 21 ms [path is xin.toheart.door.controller.ConfessionController.getConfessionById]
+[2018-09-19 14:13:53] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:45]-- 
+========处理请求后，渲染页面前======
+[2018-09-19 14:13:53] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:55]-- 
+========视图渲染结束了，请求处理完毕====
+[2018-09-19 14:13:53] [INFO ] [xin.toheart.door.aspect.TimeCostAspect:60]-- [time cost] 132 ms [path is xin.toheart.door.controller.CommonController.findComment]
+[2018-09-19 14:13:53] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:45]-- 
+========处理请求后，渲染页面前======
+[2018-09-19 14:13:53] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:55]-- 
+========视图渲染结束了，请求处理完毕====
+[2018-09-19 14:18:31] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:21]-- HandleInterceptor1 ...... preHandle
+[2018-09-19 14:18:31] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:33]-- 
+-------------------------------------
+Controller: xin.toheart.door.controller.ConfessionController$$EnhancerBySpringCGLIB$$8ecd4975
+Method    : getConfessionById
+Params    : 
+URI       : /confession/getConfession/18
+-------------------------------------
+
+[2018-09-19 14:18:31] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:21]-- HandleInterceptor1 ...... preHandle
+[2018-09-19 14:18:31] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:33]-- 
+-------------------------------------
+Controller: xin.toheart.door.controller.CommonController$$EnhancerBySpringCGLIB$$cc359e21
+Method    : findComment
+Params    : id=18	type=2	
+URI       : /common/findComment
+-------------------------------------
+
+[2018-09-19 14:18:31] [INFO ] [xin.toheart.door.aspect.TimeCostAspect:60]-- [time cost] 22 ms [path is xin.toheart.door.controller.ConfessionController.getConfessionById]
+[2018-09-19 14:18:31] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:45]-- 
+========处理请求后，渲染页面前======
+[2018-09-19 14:18:31] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:55]-- 
+========视图渲染结束了，请求处理完毕====
+[2018-09-19 14:18:31] [INFO ] [xin.toheart.door.aspect.TimeCostAspect:60]-- [time cost] 106 ms [path is xin.toheart.door.controller.CommonController.findComment]
+[2018-09-19 14:18:31] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:45]-- 
+========处理请求后，渲染页面前======
+[2018-09-19 14:18:31] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:55]-- 
+========视图渲染结束了，请求处理完毕====
+[2018-09-19 14:32:05] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:21]-- HandleInterceptor1 ...... preHandle
+[2018-09-19 14:32:05] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:21]-- HandleInterceptor1 ...... preHandle
+[2018-09-19 14:32:05] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:33]-- 
+-------------------------------------
+Controller: xin.toheart.door.controller.ConfessionController$$EnhancerBySpringCGLIB$$8ecd4975
+Method    : getConfessionById
+Params    : 
+URI       : /confession/getConfession/18
+-------------------------------------
+
+[2018-09-19 14:32:05] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:33]-- 
+-------------------------------------
+Controller: xin.toheart.door.controller.CommonController$$EnhancerBySpringCGLIB$$cc359e21
+Method    : findComment
+Params    : id=18	type=2	
+URI       : /common/findComment
+-------------------------------------
+
+[2018-09-19 14:32:05] [INFO ] [xin.toheart.door.aspect.TimeCostAspect:60]-- [time cost] 13 ms [path is xin.toheart.door.controller.ConfessionController.getConfessionById]
+[2018-09-19 14:32:05] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:45]-- 
+========处理请求后，渲染页面前======
+[2018-09-19 14:32:05] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:55]-- 
+========视图渲染结束了，请求处理完毕====
+[2018-09-19 14:32:05] [INFO ] [xin.toheart.door.aspect.TimeCostAspect:60]-- [time cost] 94 ms [path is xin.toheart.door.controller.CommonController.findComment]
+[2018-09-19 14:32:05] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:45]-- 
+========处理请求后，渲染页面前======
+[2018-09-19 14:32:05] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:55]-- 
+========视图渲染结束了，请求处理完毕====
+[2018-09-19 14:35:59] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:21]-- HandleInterceptor1 ...... preHandle
+[2018-09-19 14:35:59] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:21]-- HandleInterceptor1 ...... preHandle
+[2018-09-19 14:35:59] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:33]-- 
+-------------------------------------
+Controller: xin.toheart.door.controller.ConfessionController$$EnhancerBySpringCGLIB$$8ecd4975
+Method    : getConfessionById
+Params    : 
+URI       : /confession/getConfession/18
+-------------------------------------
+
+[2018-09-19 14:35:59] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:33]-- 
+-------------------------------------
+Controller: xin.toheart.door.controller.CommonController$$EnhancerBySpringCGLIB$$cc359e21
+Method    : findComment
+Params    : id=18	type=2	
+URI       : /common/findComment
+-------------------------------------
+
+[2018-09-19 14:35:59] [INFO ] [xin.toheart.door.aspect.TimeCostAspect:60]-- [time cost] 25 ms [path is xin.toheart.door.controller.ConfessionController.getConfessionById]
+[2018-09-19 14:35:59] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:45]-- 
+========处理请求后，渲染页面前======
+[2018-09-19 14:35:59] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:55]-- 
+========视图渲染结束了，请求处理完毕====
+[2018-09-19 14:35:59] [INFO ] [xin.toheart.door.aspect.TimeCostAspect:60]-- [time cost] 213 ms [path is xin.toheart.door.controller.CommonController.findComment]
+[2018-09-19 14:35:59] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:45]-- 
+========处理请求后，渲染页面前======
+[2018-09-19 14:35:59] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:55]-- 
+========视图渲染结束了，请求处理完毕====
+[2018-09-19 14:38:11] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:21]-- HandleInterceptor1 ...... preHandle
+[2018-09-19 14:38:11] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:21]-- HandleInterceptor1 ...... preHandle
+[2018-09-19 14:38:11] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:33]-- 
+-------------------------------------
+Controller: xin.toheart.door.controller.ConfessionController$$EnhancerBySpringCGLIB$$8ecd4975
+Method    : getConfessionById
+Params    : 
+URI       : /confession/getConfession/18
+-------------------------------------
+
+[2018-09-19 14:38:11] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:33]-- 
+-------------------------------------
+Controller: xin.toheart.door.controller.CommonController$$EnhancerBySpringCGLIB$$cc359e21
+Method    : findComment
+Params    : id=18	type=2	
+URI       : /common/findComment
+-------------------------------------
+
+[2018-09-19 14:38:11] [INFO ] [xin.toheart.door.aspect.TimeCostAspect:60]-- [time cost] 13 ms [path is xin.toheart.door.controller.ConfessionController.getConfessionById]
+[2018-09-19 14:38:11] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:45]-- 
+========处理请求后，渲染页面前======
+[2018-09-19 14:38:11] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:55]-- 
+========视图渲染结束了，请求处理完毕====
+[2018-09-19 14:38:12] [INFO ] [xin.toheart.door.aspect.TimeCostAspect:60]-- [time cost] 83 ms [path is xin.toheart.door.controller.CommonController.findComment]
+[2018-09-19 14:38:12] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:45]-- 
+========处理请求后，渲染页面前======
+[2018-09-19 14:38:12] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:55]-- 
+========视图渲染结束了，请求处理完毕====
+[2018-09-19 14:43:19] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:21]-- HandleInterceptor1 ...... preHandle
+[2018-09-19 14:43:19] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:33]-- 
+-------------------------------------
+Controller: xin.toheart.door.controller.ConfessionController$$EnhancerBySpringCGLIB$$8ecd4975
+Method    : getConfessionById
+Params    : 
+URI       : /confession/getConfession/18
+-------------------------------------
+
+[2018-09-19 14:43:19] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:21]-- HandleInterceptor1 ...... preHandle
+[2018-09-19 14:43:19] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:33]-- 
+-------------------------------------
+Controller: xin.toheart.door.controller.CommonController$$EnhancerBySpringCGLIB$$cc359e21
+Method    : findComment
+Params    : id=18	type=2	
+URI       : /common/findComment
+-------------------------------------
+
+[2018-09-19 14:43:19] [INFO ] [xin.toheart.door.aspect.TimeCostAspect:60]-- [time cost] 32 ms [path is xin.toheart.door.controller.ConfessionController.getConfessionById]
+[2018-09-19 14:43:19] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:45]-- 
+========处理请求后，渲染页面前======
+[2018-09-19 14:43:19] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:55]-- 
+========视图渲染结束了，请求处理完毕====
+[2018-09-19 14:43:19] [INFO ] [xin.toheart.door.aspect.TimeCostAspect:60]-- [time cost] 115 ms [path is xin.toheart.door.controller.CommonController.findComment]
+[2018-09-19 14:43:19] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:45]-- 
+========处理请求后，渲染页面前======
+[2018-09-19 14:43:19] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:55]-- 
+========视图渲染结束了，请求处理完毕====
+[2018-09-19 14:45:20] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:21]-- HandleInterceptor1 ...... preHandle
+[2018-09-19 14:45:20] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:33]-- 
+-------------------------------------
+Controller: xin.toheart.door.controller.ConfessionController$$EnhancerBySpringCGLIB$$8ecd4975
+Method    : getConfessionById
+Params    : 
+URI       : /confession/getConfession/18
+-------------------------------------
+
+[2018-09-19 14:45:20] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:21]-- HandleInterceptor1 ...... preHandle
+[2018-09-19 14:45:20] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:33]-- 
+-------------------------------------
+Controller: xin.toheart.door.controller.CommonController$$EnhancerBySpringCGLIB$$cc359e21
+Method    : findComment
+Params    : id=18	type=2	
+URI       : /common/findComment
+-------------------------------------
+
+[2018-09-19 14:45:20] [INFO ] [xin.toheart.door.aspect.TimeCostAspect:60]-- [time cost] 18 ms [path is xin.toheart.door.controller.ConfessionController.getConfessionById]
+[2018-09-19 14:45:20] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:45]-- 
+========处理请求后，渲染页面前======
+[2018-09-19 14:45:20] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:55]-- 
+========视图渲染结束了，请求处理完毕====
+[2018-09-19 14:45:20] [INFO ] [xin.toheart.door.aspect.TimeCostAspect:60]-- [time cost] 98 ms [path is xin.toheart.door.controller.CommonController.findComment]
+[2018-09-19 14:45:20] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:45]-- 
+========处理请求后，渲染页面前======
+[2018-09-19 14:45:20] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:55]-- 
+========视图渲染结束了，请求处理完毕====
+[2018-09-19 14:45:43] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:21]-- HandleInterceptor1 ...... preHandle
+[2018-09-19 14:45:43] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:33]-- 
+-------------------------------------
+Controller: xin.toheart.door.controller.CommonController$$EnhancerBySpringCGLIB$$cc359e21
+Method    : findComment
+Params    : id=18	type=2	
+URI       : /common/findComment
+-------------------------------------
+
+[2018-09-19 14:45:43] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:21]-- HandleInterceptor1 ...... preHandle
+[2018-09-19 14:45:43] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:33]-- 
+-------------------------------------
+Controller: xin.toheart.door.controller.ConfessionController$$EnhancerBySpringCGLIB$$8ecd4975
+Method    : getConfessionById
+Params    : 
+URI       : /confession/getConfession/18
+-------------------------------------
+
+[2018-09-19 14:45:43] [INFO ] [xin.toheart.door.aspect.TimeCostAspect:60]-- [time cost] 15 ms [path is xin.toheart.door.controller.ConfessionController.getConfessionById]
+[2018-09-19 14:45:43] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:45]-- 
+========处理请求后，渲染页面前======
+[2018-09-19 14:45:43] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:55]-- 
+========视图渲染结束了，请求处理完毕====
+[2018-09-19 14:45:43] [INFO ] [xin.toheart.door.aspect.TimeCostAspect:60]-- [time cost] 91 ms [path is xin.toheart.door.controller.CommonController.findComment]
+[2018-09-19 14:45:43] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:45]-- 
+========处理请求后，渲染页面前======
+[2018-09-19 14:45:43] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:55]-- 
+========视图渲染结束了，请求处理完毕====
+[2018-09-19 14:46:17] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:21]-- HandleInterceptor1 ...... preHandle
+[2018-09-19 14:46:17] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:21]-- HandleInterceptor1 ...... preHandle
+[2018-09-19 14:46:17] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:33]-- 
+-------------------------------------
+Controller: xin.toheart.door.controller.ConfessionController$$EnhancerBySpringCGLIB$$8ecd4975
+Method    : getConfessionById
+Params    : 
+URI       : /confession/getConfession/18
+-------------------------------------
+
+[2018-09-19 14:46:17] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:33]-- 
+-------------------------------------
+Controller: xin.toheart.door.controller.CommonController$$EnhancerBySpringCGLIB$$cc359e21
+Method    : findComment
+Params    : id=18	type=2	
+URI       : /common/findComment
+-------------------------------------
+
+[2018-09-19 14:46:17] [INFO ] [xin.toheart.door.aspect.TimeCostAspect:60]-- [time cost] 14 ms [path is xin.toheart.door.controller.ConfessionController.getConfessionById]
+[2018-09-19 14:46:17] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:45]-- 
+========处理请求后，渲染页面前======
+[2018-09-19 14:46:17] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:55]-- 
+========视图渲染结束了，请求处理完毕====
+[2018-09-19 14:46:17] [INFO ] [xin.toheart.door.aspect.TimeCostAspect:60]-- [time cost] 78 ms [path is xin.toheart.door.controller.CommonController.findComment]
+[2018-09-19 14:46:17] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:45]-- 
+========处理请求后，渲染页面前======
+[2018-09-19 14:46:17] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:55]-- 
+========视图渲染结束了，请求处理完毕====
+[2018-09-19 14:46:24] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:21]-- HandleInterceptor1 ...... preHandle
+[2018-09-19 14:46:24] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:21]-- HandleInterceptor1 ...... preHandle
+[2018-09-19 14:46:24] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:33]-- 
+-------------------------------------
+Controller: xin.toheart.door.controller.CommonController$$EnhancerBySpringCGLIB$$cc359e21
+Method    : findComment
+Params    : id=18	type=2	
+URI       : /common/findComment
+-------------------------------------
+
+[2018-09-19 14:46:24] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:33]-- 
+-------------------------------------
+Controller: xin.toheart.door.controller.ConfessionController$$EnhancerBySpringCGLIB$$8ecd4975
+Method    : getConfessionById
+Params    : 
+URI       : /confession/getConfession/18
+-------------------------------------
+
+[2018-09-19 14:46:24] [INFO ] [xin.toheart.door.aspect.TimeCostAspect:60]-- [time cost] 15 ms [path is xin.toheart.door.controller.ConfessionController.getConfessionById]
+[2018-09-19 14:46:24] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:45]-- 
+========处理请求后，渲染页面前======
+[2018-09-19 14:46:24] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:55]-- 
+========视图渲染结束了，请求处理完毕====
+[2018-09-19 14:46:24] [INFO ] [xin.toheart.door.aspect.TimeCostAspect:60]-- [time cost] 91 ms [path is xin.toheart.door.controller.CommonController.findComment]
+[2018-09-19 14:46:24] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:45]-- 
+========处理请求后，渲染页面前======
+[2018-09-19 14:46:24] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:55]-- 
+========视图渲染结束了，请求处理完毕====
+[2018-09-19 14:54:00] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:21]-- HandleInterceptor1 ...... preHandle
+[2018-09-19 14:54:00] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:33]-- 
+-------------------------------------
+Controller: xin.toheart.door.controller.ConfessionController$$EnhancerBySpringCGLIB$$8ecd4975
+Method    : getConfessionById
+Params    : 
+URI       : /confession/getConfession/18
+-------------------------------------
+
+[2018-09-19 14:54:00] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:21]-- HandleInterceptor1 ...... preHandle
+[2018-09-19 14:54:00] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:33]-- 
+-------------------------------------
+Controller: xin.toheart.door.controller.CommonController$$EnhancerBySpringCGLIB$$cc359e21
+Method    : findComment
+Params    : id=18	type=2	
+URI       : /common/findComment
+-------------------------------------
+
+[2018-09-19 14:54:05] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:21]-- HandleInterceptor1 ...... preHandle
+[2018-09-19 14:54:05] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:33]-- 
+-------------------------------------
+Controller: xin.toheart.door.controller.ConfessionController$$EnhancerBySpringCGLIB$$8ecd4975
+Method    : getConfessionById
+Params    : 
+URI       : /confession/getConfession/18
+-------------------------------------
+
+[2018-09-19 14:54:05] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:21]-- HandleInterceptor1 ...... preHandle
+[2018-09-19 14:54:05] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:33]-- 
+-------------------------------------
+Controller: xin.toheart.door.controller.CommonController$$EnhancerBySpringCGLIB$$cc359e21
+Method    : findComment
+Params    : id=18	type=2	
+URI       : /common/findComment
+-------------------------------------
+
+[2018-09-19 14:54:05] [INFO ] [xin.toheart.door.aspect.TimeCostAspect:60]-- [time cost] 5127 ms [path is xin.toheart.door.controller.CommonController.findComment]
+[2018-09-19 14:54:05] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:45]-- 
+========处理请求后，渲染页面前======
+[2018-09-19 14:54:05] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:55]-- 
+========视图渲染结束了，请求处理完毕====
+[2018-09-19 14:54:10] [INFO ] [xin.toheart.door.aspect.TimeCostAspect:60]-- [time cost] 5032 ms [path is xin.toheart.door.controller.ConfessionController.getConfessionById]
+[2018-09-19 14:54:10] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:45]-- 
+========处理请求后，渲染页面前======
+[2018-09-19 14:54:10] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:55]-- 
+========视图渲染结束了，请求处理完毕====
+[2018-09-19 14:54:10] [INFO ] [xin.toheart.door.aspect.TimeCostAspect:60]-- [time cost] 10038 ms [path is xin.toheart.door.controller.ConfessionController.getConfessionById]
+[2018-09-19 14:54:10] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:45]-- 
+========处理请求后，渲染页面前======
+[2018-09-19 14:54:10] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:55]-- 
+========视图渲染结束了，请求处理完毕====
+[2018-09-19 14:54:10] [INFO ] [xin.toheart.door.aspect.TimeCostAspect:60]-- [time cost] 5103 ms [path is xin.toheart.door.controller.CommonController.findComment]
+[2018-09-19 14:54:10] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:45]-- 
+========处理请求后，渲染页面前======
+[2018-09-19 14:54:10] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:55]-- 
+========视图渲染结束了，请求处理完毕====
+[2018-09-19 19:02:58] [INFO ] [xin.toheart.door.DoorApplication:50]-- Starting DoorApplication on PC-2018HWL with PID 6900 (D:\toheartH\toheart\target\classes started by Administrator in D:\toheartH\toheart)
+[2018-09-19 19:02:58] [INFO ] [xin.toheart.door.DoorApplication:659]-- No active profile set, falling back to default profiles: default
+[2018-09-19 19:02:58] [INFO ] [org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext:590]-- Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@78b66d36: startup date [Wed Sep 19 19:02:58 CST 2018]; root of context hierarchy
+[2018-09-19 19:03:01] [INFO ] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:91]-- Tomcat initialized with port(s): 5201 (http)
+[2018-09-19 19:03:01] [INFO ] [org.apache.coyote.http11.Http11NioProtocol:180]-- Initializing ProtocolHandler ["http-nio-5201"]
+[2018-09-19 19:03:01] [INFO ] [org.apache.catalina.core.StandardService:180]-- Starting service [Tomcat]
+[2018-09-19 19:03:01] [INFO ] [org.apache.catalina.core.StandardEngine:180]-- Starting Servlet Engine: Apache Tomcat/8.5.31
+[2018-09-19 19:03:01] [INFO ] [org.apache.catalina.core.AprLifecycleListener:180]-- The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [D:\Program Files\Java\jdk1.8.0_161\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;D:\Program Files\Java\jdk1.8.0_161\bin;D:\Program Files\Git\cmd;D:\work\apache-maven-3.5.3\bin;D:\Program Files\nodejs\;C:\Program Files (x86)\Windows Kits\8.1\Windows Performance Toolkit\;D:\Program Files\PuTTY\;D:\Program Files\TortoiseSVN\bin;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;C:\Users\Administrator\AppData\Roaming\npm;.]
+[2018-09-19 19:03:01] [INFO ] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:180]-- Initializing Spring embedded WebApplicationContext
+[2018-09-19 19:03:01] [INFO ] [org.springframework.web.context.ContextLoader:285]-- Root WebApplicationContext: initialization completed in 3182 ms
+[2018-09-19 19:03:01] [INFO ] [org.springframework.boot.web.servlet.ServletRegistrationBean:186]-- Servlet dispatcherServlet mapped to [/]
+[2018-09-19 19:03:01] [INFO ] [org.springframework.boot.web.servlet.FilterRegistrationBean:245]-- Mapping filter: 'characterEncodingFilter' to: [/*]
+[2018-09-19 19:03:01] [INFO ] [org.springframework.boot.web.servlet.FilterRegistrationBean:245]-- Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+[2018-09-19 19:03:01] [INFO ] [org.springframework.boot.web.servlet.FilterRegistrationBean:245]-- Mapping filter: 'httpPutFormContentFilter' to: [/*]
+[2018-09-19 19:03:01] [INFO ] [org.springframework.boot.web.servlet.FilterRegistrationBean:245]-- Mapping filter: 'requestContextFilter' to: [/*]
+[2018-09-19 19:03:01] [INFO ] [org.springframework.boot.web.servlet.FilterRegistrationBean:258]-- Mapping filter: 'loginAuthFilter' to urls: [/*]
+[2018-09-19 19:03:02] [INFO ] [org.springframework.web.servlet.handler.SimpleUrlHandlerMapping:373]-- Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[2018-09-19 19:03:03] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter:574]-- Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@78b66d36: startup date [Wed Sep 19 19:02:58 CST 2018]; root of context hierarchy
+[2018-09-19 19:03:03] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/common/increaseZan]}" onto public xin.toheart.door.dto.ResponseDto xin.toheart.door.controller.CommonController.increaseZan(int,int,javax.servlet.http.HttpSession)
+[2018-09-19 19:03:03] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/common/increaseComment]}" onto public xin.toheart.door.dto.ResponseDto xin.toheart.door.controller.CommonController.increaseComment(int,int,java.lang.String,javax.servlet.http.HttpSession)
+[2018-09-19 19:03:03] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/common/findComment]}" onto public xin.toheart.door.dto.ResponseDto xin.toheart.door.controller.CommonController.findComment(int,int)
+[2018-09-19 19:03:03] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/confession/splendidConfession/inHome]}" onto public xin.toheart.door.dto.ResponseDto xin.toheart.door.controller.ConfessionController.splendidConfession()
+[2018-09-19 19:03:03] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/confession/getConfession/{id}]}" onto public xin.toheart.door.dto.ResponseDto xin.toheart.door.controller.ConfessionController.getConfessionById(java.lang.String)
+[2018-09-19 19:03:03] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/confession/addConfession]}" onto public xin.toheart.door.dto.ResponseDto xin.toheart.door.controller.ConfessionController.addConfession(xin.toheart.door.pojo.Confession)
+[2018-09-19 19:03:03] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/confession/confessionList/{index}/{size}]}" onto public xin.toheart.door.dto.ResponseDto xin.toheart.door.controller.ConfessionController.confessionList(java.lang.String,java.lang.String)
+[2018-09-19 19:03:03] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/game/gameHome]}" onto public java.lang.String xin.toheart.door.controller.GameController.gameHome()
+[2018-09-19 19:03:03] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/game/2048]}" onto public java.lang.String xin.toheart.door.controller.GameController.game2048()
+[2018-09-19 19:03:03] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/logout]}" onto public java.lang.String xin.toheart.door.controller.HomeController.logout(javax.servlet.http.HttpSession)
+[2018-09-19 19:03:03] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/login]}" onto public java.lang.String xin.toheart.door.controller.HomeController.login()
+[2018-09-19 19:03:03] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/QQLogin]}" onto public java.lang.String xin.toheart.door.controller.HomeController.QQLogin(java.lang.String,javax.servlet.http.HttpSession) throws java.text.ParseException
+[2018-09-19 19:03:03] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/pic/upload]}" onto public java.lang.String xin.toheart.door.controller.PicUplodController.upload(org.springframework.web.multipart.MultipartFile)
+[2018-09-19 19:03:03] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/story/splendidStory/inHome]}" onto public xin.toheart.door.dto.ResponseDto xin.toheart.door.controller.StoryController.splendidStoryInHome()
+[2018-09-19 19:03:03] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/story/storyList/{index}/{size}],methods=[GET]}" onto public xin.toheart.door.dto.ResponseDto xin.toheart.door.controller.StoryController.storyList(java.lang.String,java.lang.String)
+[2018-09-19 19:03:03] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/story/saveStory],methods=[POST]}" onto public xin.toheart.door.dto.ResponseDto xin.toheart.door.controller.StoryController.saveStory(xin.toheart.door.pojo.Story)
+[2018-09-19 19:03:03] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/story/showStory/{id}],methods=[GET]}" onto public xin.toheart.door.dto.ResponseDto xin.toheart.door.controller.StoryController.showStory(int)
+[2018-09-19 19:03:03] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+[2018-09-19 19:03:03] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+[2018-09-19 19:03:03] [INFO ] [org.springframework.web.servlet.handler.SimpleUrlHandlerMapping:373]-- Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[2018-09-19 19:03:03] [INFO ] [org.springframework.web.servlet.handler.SimpleUrlHandlerMapping:373]-- Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[2018-09-19 19:03:04] [INFO ] [org.springframework.jmx.export.annotation.AnnotationMBeanExporter:433]-- Registering beans for JMX exposure on startup
+[2018-09-19 19:03:04] [INFO ] [org.springframework.jmx.export.annotation.AnnotationMBeanExporter:895]-- Bean with name 'dataSource' has been autodetected for JMX exposure
+[2018-09-19 19:03:04] [INFO ] [org.springframework.jmx.export.annotation.AnnotationMBeanExporter:668]-- Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+[2018-09-19 19:03:04] [INFO ] [org.apache.coyote.http11.Http11NioProtocol:180]-- Starting ProtocolHandler ["http-nio-5201"]
+[2018-09-19 19:03:04] [INFO ] [org.apache.tomcat.util.net.NioSelectorPool:180]-- Using a shared selector for servlet write/read
+[2018-09-19 19:03:04] [INFO ] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:206]-- Tomcat started on port(s): 5201 (http) with context path ''
+[2018-09-19 19:03:04] [INFO ] [xin.toheart.door.DoorApplication:59]-- Started DoorApplication in 7.651 seconds (JVM running for 8.837)
+[2018-09-19 19:03:19] [INFO ] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:180]-- Initializing Spring FrameworkServlet 'dispatcherServlet'
+[2018-09-19 19:03:19] [INFO ] [org.springframework.web.servlet.DispatcherServlet:494]-- FrameworkServlet 'dispatcherServlet': initialization started
+[2018-09-19 19:03:19] [INFO ] [org.springframework.web.servlet.DispatcherServlet:509]-- FrameworkServlet 'dispatcherServlet': initialization completed in 39 ms
+[2018-09-19 19:03:19] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:21]-- HandleInterceptor1 ...... preHandle
+[2018-09-19 19:03:19] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:21]-- HandleInterceptor1 ...... preHandle
+[2018-09-19 19:03:19] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:33]-- 
+-------------------------------------
+Controller: xin.toheart.door.controller.StoryController$$EnhancerBySpringCGLIB$$f32ee294
+Method    : storyList
+Params    : 
+URI       : /story/storyList/1/5
+-------------------------------------
+
+[2018-09-19 19:03:19] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:21]-- HandleInterceptor1 ...... preHandle
+[2018-09-19 19:03:19] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:33]-- 
+-------------------------------------
+Controller: xin.toheart.door.controller.ConfessionController$$EnhancerBySpringCGLIB$$4ab521ee
+Method    : splendidConfession
+Params    : 
+URI       : /confession/splendidConfession/inHome
+-------------------------------------
+
+[2018-09-19 19:03:19] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:33]-- 
+-------------------------------------
+Controller: xin.toheart.door.controller.ConfessionController$$EnhancerBySpringCGLIB$$4ab521ee
+Method    : confessionList
+Params    : 
+URI       : /confession/confessionList/1/5
+-------------------------------------
+
+[2018-09-19 19:03:19] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:21]-- HandleInterceptor1 ...... preHandle
+[2018-09-19 19:03:19] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:33]-- 
+-------------------------------------
+Controller: xin.toheart.door.controller.StoryController$$EnhancerBySpringCGLIB$$f32ee294
+Method    : splendidStoryInHome
+Params    : 
+URI       : /story/splendidStory/inHome
+-------------------------------------
+
+[2018-09-19 19:03:20] [INFO ] [com.zaxxer.hikari.HikariDataSource:110]-- HikariPool-1 - Starting...
+[2018-09-19 19:03:20] [INFO ] [com.zaxxer.hikari.HikariDataSource:123]-- HikariPool-1 - Start completed.
+[2018-09-19 19:03:20] [INFO ] [xin.toheart.door.aspect.TimeCostAspect:60]-- [time cost] 444 ms [path is xin.toheart.door.controller.ConfessionController.splendidConfession]
+[2018-09-19 19:03:20] [INFO ] [xin.toheart.door.aspect.TimeCostAspect:60]-- [time cost] 475 ms [path is xin.toheart.door.controller.StoryController.splendidStoryInHome]
+[2018-09-19 19:03:20] [INFO ] [xin.toheart.door.aspect.TimeCostAspect:60]-- [time cost] 484 ms [path is xin.toheart.door.controller.StoryController.storyList]
+[2018-09-19 19:03:20] [INFO ] [xin.toheart.door.aspect.TimeCostAspect:60]-- [time cost] 499 ms [path is xin.toheart.door.controller.ConfessionController.confessionList]
+[2018-09-19 19:03:20] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:45]-- 
+========处理请求后，渲染页面前======
+[2018-09-19 19:03:20] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:45]-- 
+========处理请求后，渲染页面前======
+[2018-09-19 19:03:20] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:55]-- 
+========视图渲染结束了，请求处理完毕====
+[2018-09-19 19:03:20] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:55]-- 
+========视图渲染结束了，请求处理完毕====
+[2018-09-19 19:03:20] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:45]-- 
+========处理请求后，渲染页面前======
+[2018-09-19 19:03:20] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:55]-- 
+========视图渲染结束了，请求处理完毕====
+[2018-09-19 19:03:20] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:45]-- 
+========处理请求后，渲染页面前======
+[2018-09-19 19:03:20] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:55]-- 
+========视图渲染结束了，请求处理完毕====
+[2018-09-19 19:09:47] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:21]-- HandleInterceptor1 ...... preHandle
+[2018-09-19 19:09:47] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:33]-- 
+-------------------------------------
+Controller: xin.toheart.door.controller.ConfessionController$$EnhancerBySpringCGLIB$$4ab521ee
+Method    : confessionList
+Params    : 
+URI       : /confession/confessionList/1/5
+-------------------------------------
+
+[2018-09-19 19:09:47] [INFO ] [xin.toheart.door.aspect.TimeCostAspect:60]-- [time cost] 41 ms [path is xin.toheart.door.controller.ConfessionController.confessionList]
+[2018-09-19 19:09:47] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:45]-- 
+========处理请求后，渲染页面前======
+[2018-09-19 19:09:47] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:55]-- 
+========视图渲染结束了，请求处理完毕====
+[2018-09-19 19:09:50] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:21]-- HandleInterceptor1 ...... preHandle
+[2018-09-19 19:09:50] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:33]-- 
+-------------------------------------
+Controller: xin.toheart.door.controller.ConfessionController$$EnhancerBySpringCGLIB$$4ab521ee
+Method    : getConfessionById
+Params    : 
+URI       : /confession/getConfession/18
+-------------------------------------
+
+[2018-09-19 19:09:50] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:21]-- HandleInterceptor1 ...... preHandle
+[2018-09-19 19:09:50] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:33]-- 
+-------------------------------------
+Controller: xin.toheart.door.controller.CommonController$$EnhancerBySpringCGLIB$$881d769a
+Method    : findComment
+Params    : id=18	type=2	
+URI       : /common/findComment
+-------------------------------------
+
+[2018-09-19 19:09:50] [INFO ] [xin.toheart.door.aspect.TimeCostAspect:60]-- [time cost] 23 ms [path is xin.toheart.door.controller.ConfessionController.getConfessionById]
+[2018-09-19 19:09:50] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:45]-- 
+========处理请求后，渲染页面前======
+[2018-09-19 19:09:50] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:55]-- 
+========视图渲染结束了，请求处理完毕====
+[2018-09-19 19:09:50] [INFO ] [xin.toheart.door.aspect.TimeCostAspect:60]-- [time cost] 101 ms [path is xin.toheart.door.controller.CommonController.findComment]
+[2018-09-19 19:09:50] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:45]-- 
+========处理请求后，渲染页面前======
+[2018-09-19 19:09:50] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:55]-- 
+========视图渲染结束了，请求处理完毕====
+[2018-09-19 19:10:40] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:21]-- HandleInterceptor1 ...... preHandle
+[2018-09-19 19:10:40] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:33]-- 
+-------------------------------------
+Controller: xin.toheart.door.controller.CommonController$$EnhancerBySpringCGLIB$$881d769a
+Method    : findComment
+Params    : id=18	type=2	
+URI       : /common/findComment
+-------------------------------------
+
+[2018-09-19 19:10:40] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:21]-- HandleInterceptor1 ...... preHandle
+[2018-09-19 19:10:40] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:33]-- 
+-------------------------------------
+Controller: xin.toheart.door.controller.ConfessionController$$EnhancerBySpringCGLIB$$4ab521ee
+Method    : getConfessionById
+Params    : 
+URI       : /confession/getConfession/18
+-------------------------------------
+
+[2018-09-19 19:10:40] [INFO ] [xin.toheart.door.aspect.TimeCostAspect:60]-- [time cost] 22 ms [path is xin.toheart.door.controller.ConfessionController.getConfessionById]
+[2018-09-19 19:10:40] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:45]-- 
+========处理请求后，渲染页面前======
+[2018-09-19 19:10:40] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:55]-- 
+========视图渲染结束了，请求处理完毕====
+[2018-09-19 19:10:40] [INFO ] [xin.toheart.door.aspect.TimeCostAspect:60]-- [time cost] 98 ms [path is xin.toheart.door.controller.CommonController.findComment]
+[2018-09-19 19:10:40] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:45]-- 
+========处理请求后，渲染页面前======
+[2018-09-19 19:10:40] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:55]-- 
+========视图渲染结束了，请求处理完毕====
+[2018-09-19 19:19:10] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:21]-- HandleInterceptor1 ...... preHandle
+[2018-09-19 19:19:10] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:33]-- 
+-------------------------------------
+Controller: xin.toheart.door.controller.ConfessionController$$EnhancerBySpringCGLIB$$4ab521ee
+Method    : getConfessionById
+Params    : 
+URI       : /confession/getConfession/18
+-------------------------------------
+
+[2018-09-19 19:19:10] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:21]-- HandleInterceptor1 ...... preHandle
+[2018-09-19 19:19:10] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:33]-- 
+-------------------------------------
+Controller: xin.toheart.door.controller.CommonController$$EnhancerBySpringCGLIB$$881d769a
+Method    : findComment
+Params    : id=18	type=2	
+URI       : /common/findComment
+-------------------------------------
+
+[2018-09-19 19:19:10] [INFO ] [xin.toheart.door.aspect.TimeCostAspect:60]-- [time cost] 20 ms [path is xin.toheart.door.controller.ConfessionController.getConfessionById]
+[2018-09-19 19:19:10] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:45]-- 
+========处理请求后，渲染页面前======
+[2018-09-19 19:19:10] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:55]-- 
+========视图渲染结束了，请求处理完毕====
+[2018-09-19 19:19:10] [INFO ] [xin.toheart.door.aspect.TimeCostAspect:60]-- [time cost] 96 ms [path is xin.toheart.door.controller.CommonController.findComment]
+[2018-09-19 19:19:10] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:45]-- 
+========处理请求后，渲染页面前======
+[2018-09-19 19:19:10] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:55]-- 
+========视图渲染结束了，请求处理完毕====
+[2018-09-19 19:19:47] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:21]-- HandleInterceptor1 ...... preHandle
+[2018-09-19 19:19:47] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:33]-- 
+-------------------------------------
+Controller: xin.toheart.door.controller.CommonController$$EnhancerBySpringCGLIB$$881d769a
+Method    : findComment
+Params    : id=18	type=2	
+URI       : /common/findComment
+-------------------------------------
+
+[2018-09-19 19:19:47] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:21]-- HandleInterceptor1 ...... preHandle
+[2018-09-19 19:19:47] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:33]-- 
+-------------------------------------
+Controller: xin.toheart.door.controller.ConfessionController$$EnhancerBySpringCGLIB$$4ab521ee
+Method    : getConfessionById
+Params    : 
+URI       : /confession/getConfession/18
+-------------------------------------
+
+[2018-09-19 19:19:47] [INFO ] [xin.toheart.door.aspect.TimeCostAspect:60]-- [time cost] 23 ms [path is xin.toheart.door.controller.ConfessionController.getConfessionById]
+[2018-09-19 19:19:47] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:45]-- 
+========处理请求后，渲染页面前======
+[2018-09-19 19:19:47] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:55]-- 
+========视图渲染结束了，请求处理完毕====
+[2018-09-19 19:19:47] [INFO ] [xin.toheart.door.aspect.TimeCostAspect:60]-- [time cost] 102 ms [path is xin.toheart.door.controller.CommonController.findComment]
+[2018-09-19 19:19:47] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:45]-- 
+========处理请求后，渲染页面前======
+[2018-09-19 19:19:47] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:55]-- 
+========视图渲染结束了，请求处理完毕====
+[2018-09-19 19:22:32] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:21]-- HandleInterceptor1 ...... preHandle
+[2018-09-19 19:22:32] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:33]-- 
+-------------------------------------
+Controller: xin.toheart.door.controller.ConfessionController$$EnhancerBySpringCGLIB$$4ab521ee
+Method    : getConfessionById
+Params    : 
+URI       : /confession/getConfession/18
+-------------------------------------
+
+[2018-09-19 19:22:32] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:21]-- HandleInterceptor1 ...... preHandle
+[2018-09-19 19:22:32] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:33]-- 
+-------------------------------------
+Controller: xin.toheart.door.controller.CommonController$$EnhancerBySpringCGLIB$$881d769a
+Method    : findComment
+Params    : id=18	type=2	
+URI       : /common/findComment
+-------------------------------------
+
+[2018-09-19 19:22:32] [INFO ] [xin.toheart.door.aspect.TimeCostAspect:60]-- [time cost] 28 ms [path is xin.toheart.door.controller.ConfessionController.getConfessionById]
+[2018-09-19 19:22:32] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:45]-- 
+========处理请求后，渲染页面前======
+[2018-09-19 19:22:32] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:55]-- 
+========视图渲染结束了，请求处理完毕====
+[2018-09-19 19:22:32] [INFO ] [xin.toheart.door.aspect.TimeCostAspect:60]-- [time cost] 124 ms [path is xin.toheart.door.controller.CommonController.findComment]
+[2018-09-19 19:22:32] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:45]-- 
+========处理请求后，渲染页面前======
+[2018-09-19 19:22:32] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:55]-- 
+========视图渲染结束了，请求处理完毕====
+[2018-09-19 19:22:47] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:21]-- HandleInterceptor1 ...... preHandle
+[2018-09-19 19:22:47] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:33]-- 
+-------------------------------------
+Controller: xin.toheart.door.controller.ConfessionController$$EnhancerBySpringCGLIB$$4ab521ee
+Method    : getConfessionById
+Params    : 
+URI       : /confession/getConfession/18
+-------------------------------------
+
+[2018-09-19 19:22:47] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:21]-- HandleInterceptor1 ...... preHandle
+[2018-09-19 19:22:47] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:33]-- 
+-------------------------------------
+Controller: xin.toheart.door.controller.CommonController$$EnhancerBySpringCGLIB$$881d769a
+Method    : findComment
+Params    : id=18	type=2	
+URI       : /common/findComment
+-------------------------------------
+
+[2018-09-19 19:22:47] [INFO ] [xin.toheart.door.aspect.TimeCostAspect:60]-- [time cost] 21 ms [path is xin.toheart.door.controller.ConfessionController.getConfessionById]
+[2018-09-19 19:22:47] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:45]-- 
+========处理请求后，渲染页面前======
+[2018-09-19 19:22:47] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:55]-- 
+========视图渲染结束了，请求处理完毕====
+[2018-09-19 19:22:47] [INFO ] [xin.toheart.door.aspect.TimeCostAspect:60]-- [time cost] 96 ms [path is xin.toheart.door.controller.CommonController.findComment]
+[2018-09-19 19:22:47] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:45]-- 
+========处理请求后，渲染页面前======
+[2018-09-19 19:22:47] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:55]-- 
+========视图渲染结束了，请求处理完毕====
+[2018-09-19 19:23:10] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:21]-- HandleInterceptor1 ...... preHandle
+[2018-09-19 19:23:10] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:33]-- 
+-------------------------------------
+Controller: xin.toheart.door.controller.CommonController$$EnhancerBySpringCGLIB$$881d769a
+Method    : findComment
+Params    : id=18	type=2	
+URI       : /common/findComment
+-------------------------------------
+
+[2018-09-19 19:23:10] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:21]-- HandleInterceptor1 ...... preHandle
+[2018-09-19 19:23:10] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:33]-- 
+-------------------------------------
+Controller: xin.toheart.door.controller.ConfessionController$$EnhancerBySpringCGLIB$$4ab521ee
+Method    : getConfessionById
+Params    : 
+URI       : /confession/getConfession/18
+-------------------------------------
+
+[2018-09-19 19:23:10] [INFO ] [xin.toheart.door.aspect.TimeCostAspect:60]-- [time cost] 18 ms [path is xin.toheart.door.controller.ConfessionController.getConfessionById]
+[2018-09-19 19:23:10] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:45]-- 
+========处理请求后，渲染页面前======
+[2018-09-19 19:23:10] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:55]-- 
+========视图渲染结束了，请求处理完毕====
+[2018-09-19 19:23:10] [INFO ] [xin.toheart.door.aspect.TimeCostAspect:60]-- [time cost] 99 ms [path is xin.toheart.door.controller.CommonController.findComment]
+[2018-09-19 19:23:10] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:45]-- 
+========处理请求后，渲染页面前======
+[2018-09-19 19:23:10] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:55]-- 
+========视图渲染结束了，请求处理完毕====
+[2018-09-19 19:24:40] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:21]-- HandleInterceptor1 ...... preHandle
+[2018-09-19 19:24:40] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:33]-- 
+-------------------------------------
+Controller: xin.toheart.door.controller.ConfessionController$$EnhancerBySpringCGLIB$$4ab521ee
+Method    : getConfessionById
+Params    : 
+URI       : /confession/getConfession/18
+-------------------------------------
+
+[2018-09-19 19:24:40] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:21]-- HandleInterceptor1 ...... preHandle
+[2018-09-19 19:24:40] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:33]-- 
+-------------------------------------
+Controller: xin.toheart.door.controller.CommonController$$EnhancerBySpringCGLIB$$881d769a
+Method    : findComment
+Params    : id=18	type=2	
+URI       : /common/findComment
+-------------------------------------
+
+[2018-09-19 19:24:40] [INFO ] [xin.toheart.door.aspect.TimeCostAspect:60]-- [time cost] 19 ms [path is xin.toheart.door.controller.ConfessionController.getConfessionById]
+[2018-09-19 19:24:40] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:45]-- 
+========处理请求后，渲染页面前======
+[2018-09-19 19:24:40] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:55]-- 
+========视图渲染结束了，请求处理完毕====
+[2018-09-19 19:24:41] [INFO ] [xin.toheart.door.aspect.TimeCostAspect:60]-- [time cost] 112 ms [path is xin.toheart.door.controller.CommonController.findComment]
+[2018-09-19 19:24:41] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:45]-- 
+========处理请求后，渲染页面前======
+[2018-09-19 19:24:41] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:55]-- 
+========视图渲染结束了，请求处理完毕====
+[2018-09-19 19:36:04] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:21]-- HandleInterceptor1 ...... preHandle
+[2018-09-19 19:36:04] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:21]-- HandleInterceptor1 ...... preHandle
+[2018-09-19 19:36:04] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:33]-- 
+-------------------------------------
+Controller: xin.toheart.door.controller.CommonController$$EnhancerBySpringCGLIB$$881d769a
+Method    : findComment
+Params    : id=18	type=2	
+URI       : /common/findComment
+-------------------------------------
+
+[2018-09-19 19:36:04] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:33]-- 
+-------------------------------------
+Controller: xin.toheart.door.controller.ConfessionController$$EnhancerBySpringCGLIB$$4ab521ee
+Method    : getConfessionById
+Params    : 
+URI       : /confession/getConfession/18
+-------------------------------------
+
+[2018-09-19 19:36:04] [INFO ] [xin.toheart.door.aspect.TimeCostAspect:60]-- [time cost] 27 ms [path is xin.toheart.door.controller.ConfessionController.getConfessionById]
+[2018-09-19 19:36:04] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:45]-- 
+========处理请求后，渲染页面前======
+[2018-09-19 19:36:04] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:55]-- 
+========视图渲染结束了，请求处理完毕====
+[2018-09-19 19:36:04] [INFO ] [xin.toheart.door.aspect.TimeCostAspect:60]-- [time cost] 95 ms [path is xin.toheart.door.controller.CommonController.findComment]
+[2018-09-19 19:36:04] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:45]-- 
+========处理请求后，渲染页面前======
+[2018-09-19 19:36:04] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:55]-- 
+========视图渲染结束了，请求处理完毕====
+[2018-09-19 19:41:03] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:21]-- HandleInterceptor1 ...... preHandle
+[2018-09-19 19:41:03] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:21]-- HandleInterceptor1 ...... preHandle
+[2018-09-19 19:41:03] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:33]-- 
+-------------------------------------
+Controller: xin.toheart.door.controller.ConfessionController$$EnhancerBySpringCGLIB$$4ab521ee
+Method    : getConfessionById
+Params    : 
+URI       : /confession/getConfession/18
+-------------------------------------
+
+[2018-09-19 19:41:03] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:33]-- 
+-------------------------------------
+Controller: xin.toheart.door.controller.CommonController$$EnhancerBySpringCGLIB$$881d769a
+Method    : findComment
+Params    : id=18	type=2	
+URI       : /common/findComment
+-------------------------------------
+
+[2018-09-19 19:41:03] [INFO ] [xin.toheart.door.aspect.TimeCostAspect:60]-- [time cost] 22 ms [path is xin.toheart.door.controller.ConfessionController.getConfessionById]
+[2018-09-19 19:41:03] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:45]-- 
+========处理请求后，渲染页面前======
+[2018-09-19 19:41:03] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:55]-- 
+========视图渲染结束了，请求处理完毕====
+[2018-09-19 19:41:04] [INFO ] [xin.toheart.door.aspect.TimeCostAspect:60]-- [time cost] 85 ms [path is xin.toheart.door.controller.CommonController.findComment]
+[2018-09-19 19:41:04] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:45]-- 
+========处理请求后，渲染页面前======
+[2018-09-19 19:41:04] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:55]-- 
+========视图渲染结束了，请求处理完毕====
+[2018-09-19 19:42:39] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:21]-- HandleInterceptor1 ...... preHandle
+[2018-09-19 19:42:39] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:33]-- 
+-------------------------------------
+Controller: xin.toheart.door.controller.ConfessionController$$EnhancerBySpringCGLIB$$4ab521ee
+Method    : getConfessionById
+Params    : 
+URI       : /confession/getConfession/18
+-------------------------------------
+
+[2018-09-19 19:42:39] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:21]-- HandleInterceptor1 ...... preHandle
+[2018-09-19 19:42:39] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:33]-- 
+-------------------------------------
+Controller: xin.toheart.door.controller.CommonController$$EnhancerBySpringCGLIB$$881d769a
+Method    : findComment
+Params    : id=18	type=2	
+URI       : /common/findComment
+-------------------------------------
+
+[2018-09-19 19:42:39] [INFO ] [xin.toheart.door.aspect.TimeCostAspect:60]-- [time cost] 22 ms [path is xin.toheart.door.controller.ConfessionController.getConfessionById]
+[2018-09-19 19:42:39] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:45]-- 
+========处理请求后，渲染页面前======
+[2018-09-19 19:42:39] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:55]-- 
+========视图渲染结束了，请求处理完毕====
+[2018-09-19 19:42:39] [INFO ] [xin.toheart.door.aspect.TimeCostAspect:60]-- [time cost] 104 ms [path is xin.toheart.door.controller.CommonController.findComment]
+[2018-09-19 19:42:39] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:45]-- 
+========处理请求后，渲染页面前======
+[2018-09-19 19:42:39] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:55]-- 
+========视图渲染结束了，请求处理完毕====
+[2018-09-19 19:45:37] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:21]-- HandleInterceptor1 ...... preHandle
+[2018-09-19 19:45:37] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:33]-- 
+-------------------------------------
+Controller: xin.toheart.door.controller.CommonController$$EnhancerBySpringCGLIB$$881d769a
+Method    : findComment
+Params    : id=18	type=2	
+URI       : /common/findComment
+-------------------------------------
+
+[2018-09-19 19:45:37] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:21]-- HandleInterceptor1 ...... preHandle
+[2018-09-19 19:45:37] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:33]-- 
+-------------------------------------
+Controller: xin.toheart.door.controller.ConfessionController$$EnhancerBySpringCGLIB$$4ab521ee
+Method    : getConfessionById
+Params    : 
+URI       : /confession/getConfession/18
+-------------------------------------
+
+[2018-09-19 19:45:37] [INFO ] [xin.toheart.door.aspect.TimeCostAspect:60]-- [time cost] 20 ms [path is xin.toheart.door.controller.ConfessionController.getConfessionById]
+[2018-09-19 19:45:37] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:45]-- 
+========处理请求后，渲染页面前======
+[2018-09-19 19:45:37] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:55]-- 
+========视图渲染结束了，请求处理完毕====
+[2018-09-19 19:45:37] [INFO ] [xin.toheart.door.aspect.TimeCostAspect:60]-- [time cost] 123 ms [path is xin.toheart.door.controller.CommonController.findComment]
+[2018-09-19 19:45:37] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:45]-- 
+========处理请求后，渲染页面前======
+[2018-09-19 19:45:37] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:55]-- 
+========视图渲染结束了，请求处理完毕====
+[2018-09-19 19:47:33] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:21]-- HandleInterceptor1 ...... preHandle
+[2018-09-19 19:47:33] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:33]-- 
+-------------------------------------
+Controller: xin.toheart.door.controller.CommonController$$EnhancerBySpringCGLIB$$881d769a
+Method    : increaseComment
+Params    : id=18	type=2	fatherId=0	content=缘去时随缘，只有失去才懂得珍惜，所以珍惜眼下吧	
+URI       : /common/increaseComment
+-------------------------------------
+
+[2018-09-19 19:47:33] [INFO ] [xin.toheart.door.controller.ConfessionController:87]-- userId:---3
+[2018-09-19 19:47:33] [INFO ] [xin.toheart.door.aspect.TimeCostAspect:60]-- [time cost] 56 ms [path is xin.toheart.door.controller.CommonController.increaseComment]
+[2018-09-19 19:47:33] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:45]-- 
+========处理请求后，渲染页面前======
+[2018-09-19 19:47:33] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:55]-- 
+========视图渲染结束了，请求处理完毕====
+[2018-09-19 19:47:33] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:21]-- HandleInterceptor1 ...... preHandle
+[2018-09-19 19:47:33] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:33]-- 
+-------------------------------------
+Controller: xin.toheart.door.controller.CommonController$$EnhancerBySpringCGLIB$$881d769a
+Method    : findComment
+Params    : id=18	type=2	
+URI       : /common/findComment
+-------------------------------------
+
+[2018-09-19 19:47:33] [INFO ] [xin.toheart.door.aspect.TimeCostAspect:60]-- [time cost] 70 ms [path is xin.toheart.door.controller.CommonController.findComment]
+[2018-09-19 19:47:33] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:45]-- 
+========处理请求后，渲染页面前======
+[2018-09-19 19:47:33] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:55]-- 
+========视图渲染结束了，请求处理完毕====
+[2018-09-19 19:51:52] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:21]-- HandleInterceptor1 ...... preHandle
+[2018-09-19 19:51:52] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:33]-- 
+-------------------------------------
+Controller: xin.toheart.door.controller.CommonController$$EnhancerBySpringCGLIB$$881d769a
+Method    : increaseComment
+Params    : id=18	type=2	fatherId=1	content=或许呢	
+URI       : /common/increaseComment
+-------------------------------------
+
+[2018-09-19 19:51:52] [INFO ] [xin.toheart.door.controller.ConfessionController:87]-- userId:---3
+[2018-09-19 19:51:52] [INFO ] [xin.toheart.door.aspect.TimeCostAspect:60]-- [time cost] 33 ms [path is xin.toheart.door.controller.CommonController.increaseComment]
+[2018-09-19 19:51:52] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:45]-- 
+========处理请求后，渲染页面前======
+[2018-09-19 19:51:52] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:55]-- 
+========视图渲染结束了，请求处理完毕====
+[2018-09-19 19:52:11] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:21]-- HandleInterceptor1 ...... preHandle
+[2018-09-19 19:52:11] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:33]-- 
+-------------------------------------
+Controller: xin.toheart.door.controller.ConfessionController$$EnhancerBySpringCGLIB$$4ab521ee
+Method    : getConfessionById
+Params    : 
+URI       : /confession/getConfession/18
+-------------------------------------
+
+[2018-09-19 19:52:11] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:21]-- HandleInterceptor1 ...... preHandle
+[2018-09-19 19:52:11] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:33]-- 
+-------------------------------------
+Controller: xin.toheart.door.controller.CommonController$$EnhancerBySpringCGLIB$$881d769a
+Method    : findComment
+Params    : id=18	type=2	
+URI       : /common/findComment
+-------------------------------------
+
+[2018-09-19 19:52:11] [INFO ] [xin.toheart.door.aspect.TimeCostAspect:60]-- [time cost] 20 ms [path is xin.toheart.door.controller.ConfessionController.getConfessionById]
+[2018-09-19 19:52:11] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:45]-- 
+========处理请求后，渲染页面前======
+[2018-09-19 19:52:11] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:55]-- 
+========视图渲染结束了，请求处理完毕====
+[2018-09-19 19:52:12] [INFO ] [xin.toheart.door.aspect.TimeCostAspect:60]-- [time cost] 124 ms [path is xin.toheart.door.controller.CommonController.findComment]
+[2018-09-19 19:52:12] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:45]-- 
+========处理请求后，渲染页面前======
+[2018-09-19 19:52:12] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:55]-- 
+========视图渲染结束了，请求处理完毕====
+[2018-09-19 19:54:08] [INFO ] [xin.toheart.door.DoorApplication:50]-- Starting DoorApplication on PC-2018HWL with PID 3892 (D:\toheartH\toheart\target\classes started by Administrator in D:\toheartH\toheart)
+[2018-09-19 19:54:08] [INFO ] [xin.toheart.door.DoorApplication:659]-- No active profile set, falling back to default profiles: default
+[2018-09-19 19:54:08] [INFO ] [org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext:590]-- Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@7068e664: startup date [Wed Sep 19 19:54:08 CST 2018]; root of context hierarchy
+[2018-09-19 19:54:10] [INFO ] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:91]-- Tomcat initialized with port(s): 5201 (http)
+[2018-09-19 19:54:10] [INFO ] [org.apache.coyote.http11.Http11NioProtocol:180]-- Initializing ProtocolHandler ["http-nio-5201"]
+[2018-09-19 19:54:10] [INFO ] [org.apache.catalina.core.StandardService:180]-- Starting service [Tomcat]
+[2018-09-19 19:54:10] [INFO ] [org.apache.catalina.core.StandardEngine:180]-- Starting Servlet Engine: Apache Tomcat/8.5.31
+[2018-09-19 19:54:10] [INFO ] [org.apache.catalina.core.AprLifecycleListener:180]-- The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [D:\Program Files\Java\jdk1.8.0_161\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;D:\Program Files\Java\jdk1.8.0_161\bin;D:\Program Files\Git\cmd;D:\work\apache-maven-3.5.3\bin;D:\Program Files\nodejs\;C:\Program Files (x86)\Windows Kits\8.1\Windows Performance Toolkit\;D:\Program Files\PuTTY\;D:\Program Files\TortoiseSVN\bin;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;C:\Users\Administrator\AppData\Roaming\npm;.]
+[2018-09-19 19:54:10] [INFO ] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:180]-- Initializing Spring embedded WebApplicationContext
+[2018-09-19 19:54:10] [INFO ] [org.springframework.web.context.ContextLoader:285]-- Root WebApplicationContext: initialization completed in 2037 ms
+[2018-09-19 19:54:10] [INFO ] [org.springframework.boot.web.servlet.ServletRegistrationBean:186]-- Servlet dispatcherServlet mapped to [/]
+[2018-09-19 19:54:10] [INFO ] [org.springframework.boot.web.servlet.FilterRegistrationBean:245]-- Mapping filter: 'characterEncodingFilter' to: [/*]
+[2018-09-19 19:54:10] [INFO ] [org.springframework.boot.web.servlet.FilterRegistrationBean:245]-- Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+[2018-09-19 19:54:10] [INFO ] [org.springframework.boot.web.servlet.FilterRegistrationBean:245]-- Mapping filter: 'httpPutFormContentFilter' to: [/*]
+[2018-09-19 19:54:10] [INFO ] [org.springframework.boot.web.servlet.FilterRegistrationBean:245]-- Mapping filter: 'requestContextFilter' to: [/*]
+[2018-09-19 19:54:10] [INFO ] [org.springframework.boot.web.servlet.FilterRegistrationBean:258]-- Mapping filter: 'loginAuthFilter' to urls: [/*]
+[2018-09-19 19:54:11] [INFO ] [org.springframework.web.servlet.handler.SimpleUrlHandlerMapping:373]-- Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[2018-09-19 19:54:11] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter:574]-- Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@7068e664: startup date [Wed Sep 19 19:54:08 CST 2018]; root of context hierarchy
+[2018-09-19 19:54:11] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/common/findComment]}" onto public xin.toheart.door.dto.ResponseDto xin.toheart.door.controller.CommonController.findComment(int,int)
+[2018-09-19 19:54:12] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/common/increaseComment]}" onto public xin.toheart.door.dto.ResponseDto xin.toheart.door.controller.CommonController.increaseComment(int,int,int,java.lang.String,javax.servlet.http.HttpSession)
+[2018-09-19 19:54:12] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/common/increaseZan]}" onto public xin.toheart.door.dto.ResponseDto xin.toheart.door.controller.CommonController.increaseZan(int,int,javax.servlet.http.HttpSession)
+[2018-09-19 19:54:12] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/confession/getConfession/{id}]}" onto public xin.toheart.door.dto.ResponseDto xin.toheart.door.controller.ConfessionController.getConfessionById(java.lang.String)
+[2018-09-19 19:54:12] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/confession/splendidConfession/inHome]}" onto public xin.toheart.door.dto.ResponseDto xin.toheart.door.controller.ConfessionController.splendidConfession()
+[2018-09-19 19:54:12] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/confession/addConfession]}" onto public xin.toheart.door.dto.ResponseDto xin.toheart.door.controller.ConfessionController.addConfession(xin.toheart.door.pojo.Confession)
+[2018-09-19 19:54:12] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/confession/confessionList/{index}/{size}]}" onto public xin.toheart.door.dto.ResponseDto xin.toheart.door.controller.ConfessionController.confessionList(java.lang.String,java.lang.String)
+[2018-09-19 19:54:12] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/game/2048]}" onto public java.lang.String xin.toheart.door.controller.GameController.game2048()
+[2018-09-19 19:54:12] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/game/gameHome]}" onto public java.lang.String xin.toheart.door.controller.GameController.gameHome()
+[2018-09-19 19:54:12] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/logout]}" onto public java.lang.String xin.toheart.door.controller.HomeController.logout(javax.servlet.http.HttpSession)
+[2018-09-19 19:54:12] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/login]}" onto public java.lang.String xin.toheart.door.controller.HomeController.login()
+[2018-09-19 19:54:12] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/QQLogin]}" onto public java.lang.String xin.toheart.door.controller.HomeController.QQLogin(java.lang.String,javax.servlet.http.HttpSession) throws java.text.ParseException
+[2018-09-19 19:54:12] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/pic/upload]}" onto public java.lang.String xin.toheart.door.controller.PicUplodController.upload(org.springframework.web.multipart.MultipartFile)
+[2018-09-19 19:54:12] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/story/splendidStory/inHome]}" onto public xin.toheart.door.dto.ResponseDto xin.toheart.door.controller.StoryController.splendidStoryInHome()
+[2018-09-19 19:54:12] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/story/storyList/{index}/{size}],methods=[GET]}" onto public xin.toheart.door.dto.ResponseDto xin.toheart.door.controller.StoryController.storyList(java.lang.String,java.lang.String)
+[2018-09-19 19:54:12] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/story/saveStory],methods=[POST]}" onto public xin.toheart.door.dto.ResponseDto xin.toheart.door.controller.StoryController.saveStory(xin.toheart.door.pojo.Story)
+[2018-09-19 19:54:12] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/story/showStory/{id}],methods=[GET]}" onto public xin.toheart.door.dto.ResponseDto xin.toheart.door.controller.StoryController.showStory(int)
+[2018-09-19 19:54:12] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+[2018-09-19 19:54:12] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+[2018-09-19 19:54:12] [INFO ] [org.springframework.web.servlet.handler.SimpleUrlHandlerMapping:373]-- Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[2018-09-19 19:54:12] [INFO ] [org.springframework.web.servlet.handler.SimpleUrlHandlerMapping:373]-- Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[2018-09-19 19:54:12] [INFO ] [org.springframework.jmx.export.annotation.AnnotationMBeanExporter:433]-- Registering beans for JMX exposure on startup
+[2018-09-19 19:54:12] [INFO ] [org.springframework.jmx.export.annotation.AnnotationMBeanExporter:895]-- Bean with name 'dataSource' has been autodetected for JMX exposure
+[2018-09-19 19:54:12] [INFO ] [org.springframework.jmx.export.annotation.AnnotationMBeanExporter:668]-- Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+[2018-09-19 19:54:12] [INFO ] [org.apache.coyote.http11.Http11NioProtocol:180]-- Starting ProtocolHandler ["http-nio-5201"]
+[2018-09-19 19:54:12] [INFO ] [org.apache.tomcat.util.net.NioSelectorPool:180]-- Using a shared selector for servlet write/read
+[2018-09-19 19:54:12] [INFO ] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:206]-- Tomcat started on port(s): 5201 (http) with context path ''
+[2018-09-19 19:54:12] [INFO ] [xin.toheart.door.DoorApplication:59]-- Started DoorApplication in 4.956 seconds (JVM running for 5.756)
+[2018-09-19 19:54:39] [INFO ] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:180]-- Initializing Spring FrameworkServlet 'dispatcherServlet'
+[2018-09-19 19:54:39] [INFO ] [org.springframework.web.servlet.DispatcherServlet:494]-- FrameworkServlet 'dispatcherServlet': initialization started
+[2018-09-19 19:54:39] [INFO ] [org.springframework.web.servlet.DispatcherServlet:509]-- FrameworkServlet 'dispatcherServlet': initialization completed in 26 ms
+[2018-09-19 19:54:39] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:21]-- HandleInterceptor1 ...... preHandle
+[2018-09-19 19:54:39] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:33]-- 
+-------------------------------------
+Controller: xin.toheart.door.controller.CommonController$$EnhancerBySpringCGLIB$$a2fe448d
+Method    : increaseComment
+Params    : id=18	type=2	fatherId=1	content=或许是想多了	
+URI       : /common/increaseComment
+-------------------------------------
+
+[2018-09-19 19:54:39] [INFO ] [xin.toheart.door.controller.ConfessionController:87]-- userId:---3
+[2018-09-19 19:54:39] [INFO ] [com.zaxxer.hikari.HikariDataSource:110]-- HikariPool-1 - Starting...
+[2018-09-19 19:54:39] [INFO ] [com.zaxxer.hikari.HikariDataSource:123]-- HikariPool-1 - Start completed.
+[2018-09-19 19:54:39] [INFO ] [xin.toheart.door.aspect.TimeCostAspect:60]-- [time cost] 457 ms [path is xin.toheart.door.controller.CommonController.increaseComment]
+[2018-09-19 19:54:39] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:45]-- 
+========处理请求后，渲染页面前======
+[2018-09-19 19:54:39] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:55]-- 
+========视图渲染结束了，请求处理完毕====
+[2018-09-19 19:54:39] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:21]-- HandleInterceptor1 ...... preHandle
+[2018-09-19 19:54:39] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:33]-- 
+-------------------------------------
+Controller: xin.toheart.door.controller.CommonController$$EnhancerBySpringCGLIB$$a2fe448d
+Method    : findComment
+Params    : id=18	type=2	
+URI       : /common/findComment
+-------------------------------------
+
+[2018-09-19 19:54:40] [INFO ] [xin.toheart.door.aspect.TimeCostAspect:60]-- [time cost] 130 ms [path is xin.toheart.door.controller.CommonController.findComment]
+[2018-09-19 19:54:40] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:45]-- 
+========处理请求后，渲染页面前======
+[2018-09-19 19:54:40] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:55]-- 
+========视图渲染结束了，请求处理完毕====
+[2018-09-19 19:56:00] [INFO ] [xin.toheart.door.DoorApplication:50]-- Starting DoorApplication on PC-2018HWL with PID 4012 (D:\toheartH\toheart\target\classes started by Administrator in D:\toheartH\toheart)
+[2018-09-19 19:56:00] [INFO ] [xin.toheart.door.DoorApplication:659]-- No active profile set, falling back to default profiles: default
+[2018-09-19 19:56:00] [INFO ] [org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext:590]-- Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@7098b907: startup date [Wed Sep 19 19:56:00 CST 2018]; root of context hierarchy
+[2018-09-19 19:56:03] [INFO ] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:91]-- Tomcat initialized with port(s): 5201 (http)
+[2018-09-19 19:56:03] [INFO ] [org.apache.coyote.http11.Http11NioProtocol:180]-- Initializing ProtocolHandler ["http-nio-5201"]
+[2018-09-19 19:56:03] [INFO ] [org.apache.catalina.core.StandardService:180]-- Starting service [Tomcat]
+[2018-09-19 19:56:03] [INFO ] [org.apache.catalina.core.StandardEngine:180]-- Starting Servlet Engine: Apache Tomcat/8.5.31
+[2018-09-19 19:56:03] [INFO ] [org.apache.catalina.core.AprLifecycleListener:180]-- The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [D:\Program Files\Java\jdk1.8.0_161\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;D:\Program Files\Java\jdk1.8.0_161\bin;D:\Program Files\Git\cmd;D:\work\apache-maven-3.5.3\bin;D:\Program Files\nodejs\;C:\Program Files (x86)\Windows Kits\8.1\Windows Performance Toolkit\;D:\Program Files\PuTTY\;D:\Program Files\TortoiseSVN\bin;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;C:\Users\Administrator\AppData\Roaming\npm;.]
+[2018-09-19 19:56:03] [INFO ] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:180]-- Initializing Spring embedded WebApplicationContext
+[2018-09-19 19:56:03] [INFO ] [org.springframework.web.context.ContextLoader:285]-- Root WebApplicationContext: initialization completed in 2494 ms
+[2018-09-19 19:56:03] [INFO ] [org.springframework.boot.web.servlet.ServletRegistrationBean:186]-- Servlet dispatcherServlet mapped to [/]
+[2018-09-19 19:56:03] [INFO ] [org.springframework.boot.web.servlet.FilterRegistrationBean:245]-- Mapping filter: 'characterEncodingFilter' to: [/*]
+[2018-09-19 19:56:03] [INFO ] [org.springframework.boot.web.servlet.FilterRegistrationBean:245]-- Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+[2018-09-19 19:56:03] [INFO ] [org.springframework.boot.web.servlet.FilterRegistrationBean:245]-- Mapping filter: 'httpPutFormContentFilter' to: [/*]
+[2018-09-19 19:56:03] [INFO ] [org.springframework.boot.web.servlet.FilterRegistrationBean:245]-- Mapping filter: 'requestContextFilter' to: [/*]
+[2018-09-19 19:56:03] [INFO ] [org.springframework.boot.web.servlet.FilterRegistrationBean:258]-- Mapping filter: 'loginAuthFilter' to urls: [/*]
+[2018-09-19 19:56:04] [INFO ] [org.springframework.web.servlet.handler.SimpleUrlHandlerMapping:373]-- Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[2018-09-19 19:56:04] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter:574]-- Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@7098b907: startup date [Wed Sep 19 19:56:00 CST 2018]; root of context hierarchy
+[2018-09-19 19:56:04] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/common/increaseZan]}" onto public xin.toheart.door.dto.ResponseDto xin.toheart.door.controller.CommonController.increaseZan(int,int,javax.servlet.http.HttpSession)
+[2018-09-19 19:56:04] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/common/increaseComment]}" onto public xin.toheart.door.dto.ResponseDto xin.toheart.door.controller.CommonController.increaseComment(int,int,int,java.lang.String,javax.servlet.http.HttpSession)
+[2018-09-19 19:56:04] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/common/findComment]}" onto public xin.toheart.door.dto.ResponseDto xin.toheart.door.controller.CommonController.findComment(int,int)
+[2018-09-19 19:56:04] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/confession/addConfession]}" onto public xin.toheart.door.dto.ResponseDto xin.toheart.door.controller.ConfessionController.addConfession(xin.toheart.door.pojo.Confession)
+[2018-09-19 19:56:04] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/confession/confessionList/{index}/{size}]}" onto public xin.toheart.door.dto.ResponseDto xin.toheart.door.controller.ConfessionController.confessionList(java.lang.String,java.lang.String)
+[2018-09-19 19:56:04] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/confession/splendidConfession/inHome]}" onto public xin.toheart.door.dto.ResponseDto xin.toheart.door.controller.ConfessionController.splendidConfession()
+[2018-09-19 19:56:04] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/confession/getConfession/{id}]}" onto public xin.toheart.door.dto.ResponseDto xin.toheart.door.controller.ConfessionController.getConfessionById(java.lang.String)
+[2018-09-19 19:56:04] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/game/2048]}" onto public java.lang.String xin.toheart.door.controller.GameController.game2048()
+[2018-09-19 19:56:04] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/game/gameHome]}" onto public java.lang.String xin.toheart.door.controller.GameController.gameHome()
+[2018-09-19 19:56:04] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/logout]}" onto public java.lang.String xin.toheart.door.controller.HomeController.logout(javax.servlet.http.HttpSession)
+[2018-09-19 19:56:04] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/login]}" onto public java.lang.String xin.toheart.door.controller.HomeController.login()
+[2018-09-19 19:56:04] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/QQLogin]}" onto public java.lang.String xin.toheart.door.controller.HomeController.QQLogin(java.lang.String,javax.servlet.http.HttpSession) throws java.text.ParseException
+[2018-09-19 19:56:04] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/pic/upload]}" onto public java.lang.String xin.toheart.door.controller.PicUplodController.upload(org.springframework.web.multipart.MultipartFile)
+[2018-09-19 19:56:04] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/story/saveStory],methods=[POST]}" onto public xin.toheart.door.dto.ResponseDto xin.toheart.door.controller.StoryController.saveStory(xin.toheart.door.pojo.Story)
+[2018-09-19 19:56:04] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/story/storyList/{index}/{size}],methods=[GET]}" onto public xin.toheart.door.dto.ResponseDto xin.toheart.door.controller.StoryController.storyList(java.lang.String,java.lang.String)
+[2018-09-19 19:56:04] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/story/showStory/{id}],methods=[GET]}" onto public xin.toheart.door.dto.ResponseDto xin.toheart.door.controller.StoryController.showStory(int)
+[2018-09-19 19:56:04] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/story/splendidStory/inHome]}" onto public xin.toheart.door.dto.ResponseDto xin.toheart.door.controller.StoryController.splendidStoryInHome()
+[2018-09-19 19:56:04] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+[2018-09-19 19:56:04] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+[2018-09-19 19:56:04] [INFO ] [org.springframework.web.servlet.handler.SimpleUrlHandlerMapping:373]-- Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[2018-09-19 19:56:04] [INFO ] [org.springframework.web.servlet.handler.SimpleUrlHandlerMapping:373]-- Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[2018-09-19 19:56:05] [INFO ] [org.springframework.jmx.export.annotation.AnnotationMBeanExporter:433]-- Registering beans for JMX exposure on startup
+[2018-09-19 19:56:05] [INFO ] [org.springframework.jmx.export.annotation.AnnotationMBeanExporter:895]-- Bean with name 'dataSource' has been autodetected for JMX exposure
+[2018-09-19 19:56:05] [INFO ] [org.springframework.jmx.export.annotation.AnnotationMBeanExporter:668]-- Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+[2018-09-19 19:56:05] [INFO ] [org.apache.coyote.http11.Http11NioProtocol:180]-- Starting ProtocolHandler ["http-nio-5201"]
+[2018-09-19 19:56:05] [INFO ] [org.apache.coyote.http11.Http11NioProtocol:180]-- Pausing ProtocolHandler ["http-nio-5201"]
+[2018-09-19 19:56:05] [INFO ] [org.apache.catalina.core.StandardService:180]-- Stopping service [Tomcat]
+[2018-09-19 19:56:05] [INFO ] [org.apache.catalina.util.LifecycleBase:180]-- The stop() method was called on component [StandardServer[-1]] after stop() had already been called. The second call will be ignored.
+[2018-09-19 19:56:05] [INFO ] [org.apache.coyote.http11.Http11NioProtocol:180]-- Stopping ProtocolHandler ["http-nio-5201"]
+[2018-09-19 19:56:05] [INFO ] [org.apache.coyote.http11.Http11NioProtocol:180]-- Destroying ProtocolHandler ["http-nio-5201"]
+[2018-09-19 19:56:05] [INFO ] [org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener:101]-- 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+[2018-09-19 19:56:05] [INFO ] [org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext:993]-- Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@7098b907: startup date [Wed Sep 19 19:56:00 CST 2018]; root of context hierarchy
+[2018-09-19 19:56:05] [INFO ] [org.springframework.jmx.export.annotation.AnnotationMBeanExporter:451]-- Unregistering JMX-exposed beans on shutdown
+[2018-09-19 19:56:05] [INFO ] [org.springframework.jmx.export.annotation.AnnotationMBeanExporter:183]-- Unregistering JMX-exposed beans
+[2018-09-19 19:56:09] [INFO ] [xin.toheart.door.DoorApplication:50]-- Starting DoorApplication on PC-2018HWL with PID 7460 (D:\toheartH\toheart\target\classes started by Administrator in D:\toheartH\toheart)
+[2018-09-19 19:56:09] [INFO ] [xin.toheart.door.DoorApplication:659]-- No active profile set, falling back to default profiles: default
+[2018-09-19 19:56:09] [INFO ] [org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext:590]-- Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@479cbee5: startup date [Wed Sep 19 19:56:09 CST 2018]; root of context hierarchy
+[2018-09-19 19:56:11] [INFO ] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:91]-- Tomcat initialized with port(s): 5201 (http)
+[2018-09-19 19:56:11] [INFO ] [org.apache.coyote.http11.Http11NioProtocol:180]-- Initializing ProtocolHandler ["http-nio-5201"]
+[2018-09-19 19:56:11] [INFO ] [org.apache.catalina.core.StandardService:180]-- Starting service [Tomcat]
+[2018-09-19 19:56:11] [INFO ] [org.apache.catalina.core.StandardEngine:180]-- Starting Servlet Engine: Apache Tomcat/8.5.31
+[2018-09-19 19:56:11] [INFO ] [org.apache.catalina.core.AprLifecycleListener:180]-- The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [D:\Program Files\Java\jdk1.8.0_161\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;D:\Program Files\Java\jdk1.8.0_161\bin;D:\Program Files\Git\cmd;D:\work\apache-maven-3.5.3\bin;D:\Program Files\nodejs\;C:\Program Files (x86)\Windows Kits\8.1\Windows Performance Toolkit\;D:\Program Files\PuTTY\;D:\Program Files\TortoiseSVN\bin;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;C:\Users\Administrator\AppData\Roaming\npm;.]
+[2018-09-19 19:56:11] [INFO ] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:180]-- Initializing Spring embedded WebApplicationContext
+[2018-09-19 19:56:11] [INFO ] [org.springframework.web.context.ContextLoader:285]-- Root WebApplicationContext: initialization completed in 2114 ms
+[2018-09-19 19:56:12] [INFO ] [org.springframework.boot.web.servlet.ServletRegistrationBean:186]-- Servlet dispatcherServlet mapped to [/]
+[2018-09-19 19:56:12] [INFO ] [org.springframework.boot.web.servlet.FilterRegistrationBean:245]-- Mapping filter: 'characterEncodingFilter' to: [/*]
+[2018-09-19 19:56:12] [INFO ] [org.springframework.boot.web.servlet.FilterRegistrationBean:245]-- Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+[2018-09-19 19:56:12] [INFO ] [org.springframework.boot.web.servlet.FilterRegistrationBean:245]-- Mapping filter: 'httpPutFormContentFilter' to: [/*]
+[2018-09-19 19:56:12] [INFO ] [org.springframework.boot.web.servlet.FilterRegistrationBean:245]-- Mapping filter: 'requestContextFilter' to: [/*]
+[2018-09-19 19:56:12] [INFO ] [org.springframework.boot.web.servlet.FilterRegistrationBean:258]-- Mapping filter: 'loginAuthFilter' to urls: [/*]
+[2018-09-19 19:56:12] [INFO ] [org.springframework.web.servlet.handler.SimpleUrlHandlerMapping:373]-- Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[2018-09-19 19:56:12] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter:574]-- Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@479cbee5: startup date [Wed Sep 19 19:56:09 CST 2018]; root of context hierarchy
+[2018-09-19 19:56:13] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/common/findComment]}" onto public xin.toheart.door.dto.ResponseDto xin.toheart.door.controller.CommonController.findComment(int,int)
+[2018-09-19 19:56:13] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/common/increaseComment]}" onto public xin.toheart.door.dto.ResponseDto xin.toheart.door.controller.CommonController.increaseComment(int,int,int,java.lang.String,javax.servlet.http.HttpSession)
+[2018-09-19 19:56:13] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/common/increaseZan]}" onto public xin.toheart.door.dto.ResponseDto xin.toheart.door.controller.CommonController.increaseZan(int,int,javax.servlet.http.HttpSession)
+[2018-09-19 19:56:13] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/confession/splendidConfession/inHome]}" onto public xin.toheart.door.dto.ResponseDto xin.toheart.door.controller.ConfessionController.splendidConfession()
+[2018-09-19 19:56:13] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/confession/getConfession/{id}]}" onto public xin.toheart.door.dto.ResponseDto xin.toheart.door.controller.ConfessionController.getConfessionById(java.lang.String)
+[2018-09-19 19:56:13] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/confession/addConfession]}" onto public xin.toheart.door.dto.ResponseDto xin.toheart.door.controller.ConfessionController.addConfession(xin.toheart.door.pojo.Confession)
+[2018-09-19 19:56:13] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/confession/confessionList/{index}/{size}]}" onto public xin.toheart.door.dto.ResponseDto xin.toheart.door.controller.ConfessionController.confessionList(java.lang.String,java.lang.String)
+[2018-09-19 19:56:13] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/game/gameHome]}" onto public java.lang.String xin.toheart.door.controller.GameController.gameHome()
+[2018-09-19 19:56:13] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/game/2048]}" onto public java.lang.String xin.toheart.door.controller.GameController.game2048()
+[2018-09-19 19:56:13] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/login]}" onto public java.lang.String xin.toheart.door.controller.HomeController.login()
+[2018-09-19 19:56:13] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/logout]}" onto public java.lang.String xin.toheart.door.controller.HomeController.logout(javax.servlet.http.HttpSession)
+[2018-09-19 19:56:13] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/QQLogin]}" onto public java.lang.String xin.toheart.door.controller.HomeController.QQLogin(java.lang.String,javax.servlet.http.HttpSession) throws java.text.ParseException
+[2018-09-19 19:56:13] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/pic/upload]}" onto public java.lang.String xin.toheart.door.controller.PicUplodController.upload(org.springframework.web.multipart.MultipartFile)
+[2018-09-19 19:56:13] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/story/splendidStory/inHome]}" onto public xin.toheart.door.dto.ResponseDto xin.toheart.door.controller.StoryController.splendidStoryInHome()
+[2018-09-19 19:56:13] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/story/storyList/{index}/{size}],methods=[GET]}" onto public xin.toheart.door.dto.ResponseDto xin.toheart.door.controller.StoryController.storyList(java.lang.String,java.lang.String)
+[2018-09-19 19:56:13] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/story/saveStory],methods=[POST]}" onto public xin.toheart.door.dto.ResponseDto xin.toheart.door.controller.StoryController.saveStory(xin.toheart.door.pojo.Story)
+[2018-09-19 19:56:13] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/story/showStory/{id}],methods=[GET]}" onto public xin.toheart.door.dto.ResponseDto xin.toheart.door.controller.StoryController.showStory(int)
+[2018-09-19 19:56:13] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+[2018-09-19 19:56:13] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+[2018-09-19 19:56:13] [INFO ] [org.springframework.web.servlet.handler.SimpleUrlHandlerMapping:373]-- Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[2018-09-19 19:56:13] [INFO ] [org.springframework.web.servlet.handler.SimpleUrlHandlerMapping:373]-- Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[2018-09-19 19:56:13] [INFO ] [org.springframework.jmx.export.annotation.AnnotationMBeanExporter:433]-- Registering beans for JMX exposure on startup
+[2018-09-19 19:56:13] [INFO ] [org.springframework.jmx.export.annotation.AnnotationMBeanExporter:895]-- Bean with name 'dataSource' has been autodetected for JMX exposure
+[2018-09-19 19:56:13] [INFO ] [org.springframework.jmx.export.annotation.AnnotationMBeanExporter:668]-- Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+[2018-09-19 19:56:13] [INFO ] [org.apache.coyote.http11.Http11NioProtocol:180]-- Starting ProtocolHandler ["http-nio-5201"]
+[2018-09-19 19:56:13] [INFO ] [org.apache.tomcat.util.net.NioSelectorPool:180]-- Using a shared selector for servlet write/read
+[2018-09-19 19:56:13] [INFO ] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:206]-- Tomcat started on port(s): 5201 (http) with context path ''
+[2018-09-19 19:56:13] [INFO ] [xin.toheart.door.DoorApplication:59]-- Started DoorApplication in 4.834 seconds (JVM running for 5.353)
+[2018-09-19 19:57:17] [INFO ] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:180]-- Initializing Spring FrameworkServlet 'dispatcherServlet'
+[2018-09-19 19:57:17] [INFO ] [org.springframework.web.servlet.DispatcherServlet:494]-- FrameworkServlet 'dispatcherServlet': initialization started
+[2018-09-19 19:57:17] [INFO ] [org.springframework.web.servlet.DispatcherServlet:509]-- FrameworkServlet 'dispatcherServlet': initialization completed in 31 ms
+[2018-09-19 19:57:17] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:21]-- HandleInterceptor1 ...... preHandle
+[2018-09-19 19:57:17] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:21]-- HandleInterceptor1 ...... preHandle
+[2018-09-19 19:57:17] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:33]-- 
+-------------------------------------
+Controller: xin.toheart.door.controller.CommonController$$EnhancerBySpringCGLIB$$8a42ddca
+Method    : findComment
+Params    : id=18	type=2	
+URI       : /common/findComment
+-------------------------------------
+
+[2018-09-19 19:57:17] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:33]-- 
+-------------------------------------
+Controller: xin.toheart.door.controller.ConfessionController$$EnhancerBySpringCGLIB$$4cda891e
+Method    : getConfessionById
+Params    : 
+URI       : /confession/getConfession/18
+-------------------------------------
+
+[2018-09-19 19:57:17] [INFO ] [com.zaxxer.hikari.HikariDataSource:110]-- HikariPool-1 - Starting...
+[2018-09-19 19:57:17] [INFO ] [com.zaxxer.hikari.HikariDataSource:123]-- HikariPool-1 - Start completed.
+[2018-09-19 19:57:18] [INFO ] [xin.toheart.door.aspect.TimeCostAspect:60]-- [time cost] 539 ms [path is xin.toheart.door.controller.ConfessionController.getConfessionById]
+[2018-09-19 19:57:18] [INFO ] [xin.toheart.door.aspect.TimeCostAspect:60]-- [time cost] 591 ms [path is xin.toheart.door.controller.CommonController.findComment]
+[2018-09-19 19:57:18] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:45]-- 
+========处理请求后，渲染页面前======
+[2018-09-19 19:57:18] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:55]-- 
+========视图渲染结束了，请求处理完毕====
+[2018-09-19 19:57:18] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:45]-- 
+========处理请求后，渲染页面前======
+[2018-09-19 19:57:18] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:55]-- 
+========视图渲染结束了，请求处理完毕====
+[2018-09-19 20:02:38] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:21]-- HandleInterceptor1 ...... preHandle
+[2018-09-19 20:02:38] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:21]-- HandleInterceptor1 ...... preHandle
+[2018-09-19 20:02:38] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:33]-- 
+-------------------------------------
+Controller: xin.toheart.door.controller.ConfessionController$$EnhancerBySpringCGLIB$$4cda891e
+Method    : getConfessionById
+Params    : 
+URI       : /confession/getConfession/18
+-------------------------------------
+
+[2018-09-19 20:02:38] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:33]-- 
+-------------------------------------
+Controller: xin.toheart.door.controller.CommonController$$EnhancerBySpringCGLIB$$8a42ddca
+Method    : findComment
+Params    : id=18	type=2	
+URI       : /common/findComment
+-------------------------------------
+
+[2018-09-19 20:02:38] [INFO ] [xin.toheart.door.aspect.TimeCostAspect:60]-- [time cost] 30 ms [path is xin.toheart.door.controller.ConfessionController.getConfessionById]
+[2018-09-19 20:02:38] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:45]-- 
+========处理请求后，渲染页面前======
+[2018-09-19 20:02:38] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:55]-- 
+========视图渲染结束了，请求处理完毕====
+[2018-09-19 20:02:38] [INFO ] [xin.toheart.door.aspect.TimeCostAspect:60]-- [time cost] 188 ms [path is xin.toheart.door.controller.CommonController.findComment]
+[2018-09-19 20:02:38] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:45]-- 
+========处理请求后，渲染页面前======
+[2018-09-19 20:02:38] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:55]-- 
+========视图渲染结束了，请求处理完毕====
+[2018-09-19 20:17:48] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:21]-- HandleInterceptor1 ...... preHandle
+[2018-09-19 20:17:48] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:33]-- 
+-------------------------------------
+Controller: xin.toheart.door.controller.ConfessionController$$EnhancerBySpringCGLIB$$4cda891e
+Method    : getConfessionById
+Params    : 
+URI       : /confession/getConfession/18
+-------------------------------------
+
+[2018-09-19 20:17:48] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:21]-- HandleInterceptor1 ...... preHandle
+[2018-09-19 20:17:48] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:33]-- 
+-------------------------------------
+Controller: xin.toheart.door.controller.CommonController$$EnhancerBySpringCGLIB$$8a42ddca
+Method    : findComment
+Params    : id=18	type=2	
+URI       : /common/findComment
+-------------------------------------
+
+[2018-09-19 20:18:10] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:21]-- HandleInterceptor1 ...... preHandle
+[2018-09-19 20:18:10] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:33]-- 
+-------------------------------------
+Controller: xin.toheart.door.controller.CommonController$$EnhancerBySpringCGLIB$$8a42ddca
+Method    : findComment
+Params    : id=18	type=2	
+URI       : /common/findComment
+-------------------------------------
+
+[2018-09-19 20:18:10] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:21]-- HandleInterceptor1 ...... preHandle
+[2018-09-19 20:18:10] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:33]-- 
+-------------------------------------
+Controller: xin.toheart.door.controller.ConfessionController$$EnhancerBySpringCGLIB$$4cda891e
+Method    : getConfessionById
+Params    : 
+URI       : /confession/getConfession/18
+-------------------------------------
+
+[2018-09-19 20:18:10] [INFO ] [xin.toheart.door.aspect.TimeCostAspect:60]-- [time cost] 23 ms [path is xin.toheart.door.controller.ConfessionController.getConfessionById]
+[2018-09-19 20:18:10] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:45]-- 
+========处理请求后，渲染页面前======
+[2018-09-19 20:18:10] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:55]-- 
+========视图渲染结束了，请求处理完毕====
+[2018-09-19 20:18:10] [INFO ] [xin.toheart.door.aspect.TimeCostAspect:60]-- [time cost] 165 ms [path is xin.toheart.door.controller.CommonController.findComment]
+[2018-09-19 20:18:10] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:45]-- 
+========处理请求后，渲染页面前======
+[2018-09-19 20:18:10] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:55]-- 
+========视图渲染结束了，请求处理完毕====
+[2018-09-19 20:18:13] [INFO ] [xin.toheart.door.aspect.TimeCostAspect:60]-- [time cost] 25079 ms [path is xin.toheart.door.controller.ConfessionController.getConfessionById]
+[2018-09-19 20:18:13] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:45]-- 
+========处理请求后，渲染页面前======
+[2018-09-19 20:18:13] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:55]-- 
+========视图渲染结束了，请求处理完毕====
+[2018-09-19 20:18:13] [INFO ] [xin.toheart.door.aspect.TimeCostAspect:60]-- [time cost] 25185 ms [path is xin.toheart.door.controller.CommonController.findComment]
+[2018-09-19 20:18:13] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:45]-- 
+========处理请求后，渲染页面前======
+[2018-09-19 20:18:13] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:55]-- 
+========视图渲染结束了，请求处理完毕====
+[2018-09-19 20:19:27] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:21]-- HandleInterceptor1 ...... preHandle
+[2018-09-19 20:19:27] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:33]-- 
+-------------------------------------
+Controller: xin.toheart.door.controller.CommonController$$EnhancerBySpringCGLIB$$8a42ddca
+Method    : findComment
+Params    : id=18	type=2	
+URI       : /common/findComment
+-------------------------------------
+
+[2018-09-19 20:19:27] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:21]-- HandleInterceptor1 ...... preHandle
+[2018-09-19 20:19:27] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:33]-- 
+-------------------------------------
+Controller: xin.toheart.door.controller.ConfessionController$$EnhancerBySpringCGLIB$$4cda891e
+Method    : getConfessionById
+Params    : 
+URI       : /confession/getConfession/18
+-------------------------------------
+
+[2018-09-19 20:19:27] [INFO ] [xin.toheart.door.aspect.TimeCostAspect:60]-- [time cost] 56 ms [path is xin.toheart.door.controller.ConfessionController.getConfessionById]
+[2018-09-19 20:19:27] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:45]-- 
+========处理请求后，渲染页面前======
+[2018-09-19 20:19:27] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:55]-- 
+========视图渲染结束了，请求处理完毕====
+[2018-09-19 20:19:27] [INFO ] [xin.toheart.door.aspect.TimeCostAspect:60]-- [time cost] 365 ms [path is xin.toheart.door.controller.CommonController.findComment]
+[2018-09-19 20:19:27] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:45]-- 
+========处理请求后，渲染页面前======
+[2018-09-19 20:19:27] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:55]-- 
+========视图渲染结束了，请求处理完毕====
+[2018-09-19 20:19:57] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:21]-- HandleInterceptor1 ...... preHandle
+[2018-09-19 20:19:57] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:33]-- 
+-------------------------------------
+Controller: xin.toheart.door.controller.CommonController$$EnhancerBySpringCGLIB$$8a42ddca
+Method    : increaseComment
+Params    : id=18	type=2	fatherId=8	content=傻逼吧	
+URI       : /common/increaseComment
+-------------------------------------
+
+[2018-09-19 20:19:57] [INFO ] [xin.toheart.door.controller.ConfessionController:87]-- userId:---3
+[2018-09-19 20:19:57] [INFO ] [xin.toheart.door.aspect.TimeCostAspect:60]-- [time cost] 42 ms [path is xin.toheart.door.controller.CommonController.increaseComment]
+[2018-09-19 20:19:57] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:45]-- 
+========处理请求后，渲染页面前======
+[2018-09-19 20:19:57] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:55]-- 
+========视图渲染结束了，请求处理完毕====
+[2018-09-19 20:19:57] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:21]-- HandleInterceptor1 ...... preHandle
+[2018-09-19 20:19:57] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:33]-- 
+-------------------------------------
+Controller: xin.toheart.door.controller.CommonController$$EnhancerBySpringCGLIB$$8a42ddca
+Method    : findComment
+Params    : id=18	type=2	
+URI       : /common/findComment
+-------------------------------------
+
+[2018-09-19 20:19:57] [INFO ] [xin.toheart.door.aspect.TimeCostAspect:60]-- [time cost] 123 ms [path is xin.toheart.door.controller.CommonController.findComment]
+[2018-09-19 20:19:57] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:45]-- 
+========处理请求后，渲染页面前======
+[2018-09-19 20:19:57] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:55]-- 
+========视图渲染结束了，请求处理完毕====
+[2018-09-19 20:22:01] [INFO ] [xin.toheart.door.DoorApplication:50]-- Starting DoorApplication on PC-2018HWL with PID 9084 (D:\toheartH\toheart\target\classes started by Administrator in D:\toheartH\toheart)
+[2018-09-19 20:22:01] [INFO ] [xin.toheart.door.DoorApplication:659]-- No active profile set, falling back to default profiles: default
+[2018-09-19 20:22:01] [INFO ] [org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext:590]-- Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@7d322cad: startup date [Wed Sep 19 20:22:01 CST 2018]; root of context hierarchy
+[2018-09-19 20:22:03] [INFO ] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:91]-- Tomcat initialized with port(s): 5201 (http)
+[2018-09-19 20:22:03] [INFO ] [org.apache.coyote.http11.Http11NioProtocol:180]-- Initializing ProtocolHandler ["http-nio-5201"]
+[2018-09-19 20:22:03] [INFO ] [org.apache.catalina.core.StandardService:180]-- Starting service [Tomcat]
+[2018-09-19 20:22:04] [INFO ] [org.apache.catalina.core.StandardEngine:180]-- Starting Servlet Engine: Apache Tomcat/8.5.31
+[2018-09-19 20:22:04] [INFO ] [org.apache.catalina.core.AprLifecycleListener:180]-- The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [D:\Program Files\Java\jdk1.8.0_161\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;D:\Program Files\Java\jdk1.8.0_161\bin;D:\Program Files\Git\cmd;D:\work\apache-maven-3.5.3\bin;D:\Program Files\nodejs\;C:\Program Files (x86)\Windows Kits\8.1\Windows Performance Toolkit\;D:\Program Files\PuTTY\;D:\Program Files\TortoiseSVN\bin;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;C:\Users\Administrator\AppData\Roaming\npm;.]
+[2018-09-19 20:22:04] [INFO ] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:180]-- Initializing Spring embedded WebApplicationContext
+[2018-09-19 20:22:04] [INFO ] [org.springframework.web.context.ContextLoader:285]-- Root WebApplicationContext: initialization completed in 2142 ms
+[2018-09-19 20:22:04] [INFO ] [org.springframework.boot.web.servlet.ServletRegistrationBean:186]-- Servlet dispatcherServlet mapped to [/]
+[2018-09-19 20:22:04] [INFO ] [org.springframework.boot.web.servlet.FilterRegistrationBean:245]-- Mapping filter: 'characterEncodingFilter' to: [/*]
+[2018-09-19 20:22:04] [INFO ] [org.springframework.boot.web.servlet.FilterRegistrationBean:245]-- Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+[2018-09-19 20:22:04] [INFO ] [org.springframework.boot.web.servlet.FilterRegistrationBean:245]-- Mapping filter: 'httpPutFormContentFilter' to: [/*]
+[2018-09-19 20:22:04] [INFO ] [org.springframework.boot.web.servlet.FilterRegistrationBean:245]-- Mapping filter: 'requestContextFilter' to: [/*]
+[2018-09-19 20:22:04] [INFO ] [org.springframework.boot.web.servlet.FilterRegistrationBean:258]-- Mapping filter: 'loginAuthFilter' to urls: [/*]
+[2018-09-19 20:22:05] [INFO ] [org.springframework.web.servlet.handler.SimpleUrlHandlerMapping:373]-- Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[2018-09-19 20:22:05] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter:574]-- Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@7d322cad: startup date [Wed Sep 19 20:22:01 CST 2018]; root of context hierarchy
+[2018-09-19 20:22:05] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/common/increaseZan]}" onto public xin.toheart.door.dto.ResponseDto xin.toheart.door.controller.CommonController.increaseZan(int,int,javax.servlet.http.HttpSession)
+[2018-09-19 20:22:05] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/common/findComment]}" onto public xin.toheart.door.dto.ResponseDto xin.toheart.door.controller.CommonController.findComment(int,int)
+[2018-09-19 20:22:05] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/common/increaseComment]}" onto public xin.toheart.door.dto.ResponseDto xin.toheart.door.controller.CommonController.increaseComment(int,int,int,java.lang.String,javax.servlet.http.HttpSession)
+[2018-09-19 20:22:05] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/confession/splendidConfession/inHome]}" onto public xin.toheart.door.dto.ResponseDto xin.toheart.door.controller.ConfessionController.splendidConfession()
+[2018-09-19 20:22:05] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/confession/getConfession/{id}]}" onto public xin.toheart.door.dto.ResponseDto xin.toheart.door.controller.ConfessionController.getConfessionById(java.lang.String)
+[2018-09-19 20:22:05] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/confession/addConfession]}" onto public xin.toheart.door.dto.ResponseDto xin.toheart.door.controller.ConfessionController.addConfession(xin.toheart.door.pojo.Confession)
+[2018-09-19 20:22:05] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/confession/confessionList/{index}/{size}]}" onto public xin.toheart.door.dto.ResponseDto xin.toheart.door.controller.ConfessionController.confessionList(java.lang.String,java.lang.String)
+[2018-09-19 20:22:05] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/game/gameHome]}" onto public java.lang.String xin.toheart.door.controller.GameController.gameHome()
+[2018-09-19 20:22:05] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/game/2048]}" onto public java.lang.String xin.toheart.door.controller.GameController.game2048()
+[2018-09-19 20:22:05] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/login]}" onto public java.lang.String xin.toheart.door.controller.HomeController.login()
+[2018-09-19 20:22:05] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/logout]}" onto public java.lang.String xin.toheart.door.controller.HomeController.logout(javax.servlet.http.HttpSession)
+[2018-09-19 20:22:05] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/QQLogin]}" onto public java.lang.String xin.toheart.door.controller.HomeController.QQLogin(java.lang.String,javax.servlet.http.HttpSession) throws java.text.ParseException
+[2018-09-19 20:22:05] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/pic/upload]}" onto public java.lang.String xin.toheart.door.controller.PicUplodController.upload(org.springframework.web.multipart.MultipartFile)
+[2018-09-19 20:22:05] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/story/splendidStory/inHome]}" onto public xin.toheart.door.dto.ResponseDto xin.toheart.door.controller.StoryController.splendidStoryInHome()
+[2018-09-19 20:22:05] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/story/storyList/{index}/{size}],methods=[GET]}" onto public xin.toheart.door.dto.ResponseDto xin.toheart.door.controller.StoryController.storyList(java.lang.String,java.lang.String)
+[2018-09-19 20:22:05] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/story/saveStory],methods=[POST]}" onto public xin.toheart.door.dto.ResponseDto xin.toheart.door.controller.StoryController.saveStory(xin.toheart.door.pojo.Story)
+[2018-09-19 20:22:05] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/story/showStory/{id}],methods=[GET]}" onto public xin.toheart.door.dto.ResponseDto xin.toheart.door.controller.StoryController.showStory(int)
+[2018-09-19 20:22:05] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+[2018-09-19 20:22:05] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+[2018-09-19 20:22:05] [INFO ] [org.springframework.web.servlet.handler.SimpleUrlHandlerMapping:373]-- Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[2018-09-19 20:22:05] [INFO ] [org.springframework.web.servlet.handler.SimpleUrlHandlerMapping:373]-- Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[2018-09-19 20:22:06] [INFO ] [org.springframework.jmx.export.annotation.AnnotationMBeanExporter:433]-- Registering beans for JMX exposure on startup
+[2018-09-19 20:22:06] [INFO ] [org.springframework.jmx.export.annotation.AnnotationMBeanExporter:895]-- Bean with name 'dataSource' has been autodetected for JMX exposure
+[2018-09-19 20:22:06] [INFO ] [org.springframework.jmx.export.annotation.AnnotationMBeanExporter:668]-- Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+[2018-09-19 20:22:06] [INFO ] [org.apache.coyote.http11.Http11NioProtocol:180]-- Starting ProtocolHandler ["http-nio-5201"]
+[2018-09-19 20:22:06] [INFO ] [org.apache.tomcat.util.net.NioSelectorPool:180]-- Using a shared selector for servlet write/read
+[2018-09-19 20:22:06] [INFO ] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:206]-- Tomcat started on port(s): 5201 (http) with context path ''
+[2018-09-19 20:22:06] [INFO ] [xin.toheart.door.DoorApplication:59]-- Started DoorApplication in 4.834 seconds (JVM running for 5.368)
+[2018-09-19 20:22:19] [INFO ] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:180]-- Initializing Spring FrameworkServlet 'dispatcherServlet'
+[2018-09-19 20:22:19] [INFO ] [org.springframework.web.servlet.DispatcherServlet:494]-- FrameworkServlet 'dispatcherServlet': initialization started
+[2018-09-19 20:22:19] [INFO ] [org.springframework.web.servlet.DispatcherServlet:509]-- FrameworkServlet 'dispatcherServlet': initialization completed in 36 ms
+[2018-09-19 20:22:19] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:21]-- HandleInterceptor1 ...... preHandle
+[2018-09-19 20:22:19] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:21]-- HandleInterceptor1 ...... preHandle
+[2018-09-19 20:22:19] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:33]-- 
+-------------------------------------
+Controller: xin.toheart.door.controller.ConfessionController$$EnhancerBySpringCGLIB$$42d5076f
+Method    : getConfessionById
+Params    : 
+URI       : /confession/getConfession/18
+-------------------------------------
+
+[2018-09-19 20:22:19] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:33]-- 
+-------------------------------------
+Controller: xin.toheart.door.controller.CommonController$$EnhancerBySpringCGLIB$$803d5c1b
+Method    : findComment
+Params    : id=18	type=2	
+URI       : /common/findComment
+-------------------------------------
+
+[2018-09-19 20:22:19] [INFO ] [com.zaxxer.hikari.HikariDataSource:110]-- HikariPool-1 - Starting...
+[2018-09-19 20:22:19] [INFO ] [com.zaxxer.hikari.HikariDataSource:123]-- HikariPool-1 - Start completed.
+[2018-09-19 20:22:19] [INFO ] [xin.toheart.door.aspect.TimeCostAspect:60]-- [time cost] 710 ms [path is xin.toheart.door.controller.ConfessionController.getConfessionById]
+[2018-09-19 20:22:19] [INFO ] [xin.toheart.door.aspect.TimeCostAspect:60]-- [time cost] 784 ms [path is xin.toheart.door.controller.CommonController.findComment]
+[2018-09-19 20:22:19] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:45]-- 
+========处理请求后，渲染页面前======
+[2018-09-19 20:22:19] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:55]-- 
+========视图渲染结束了，请求处理完毕====
+[2018-09-19 20:22:19] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:45]-- 
+========处理请求后，渲染页面前======
+[2018-09-19 20:22:19] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:55]-- 
+========视图渲染结束了，请求处理完毕====
+[2018-09-19 20:23:13] [INFO ] [xin.toheart.door.DoorApplication:50]-- Starting DoorApplication on PC-2018HWL with PID 5000 (D:\toheartH\toheart\target\classes started by Administrator in D:\toheartH\toheart)
+[2018-09-19 20:23:13] [INFO ] [xin.toheart.door.DoorApplication:659]-- No active profile set, falling back to default profiles: default
+[2018-09-19 20:23:13] [INFO ] [org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext:590]-- Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@51c693d: startup date [Wed Sep 19 20:23:13 CST 2018]; root of context hierarchy
+[2018-09-19 20:23:15] [INFO ] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:91]-- Tomcat initialized with port(s): 5201 (http)
+[2018-09-19 20:23:15] [INFO ] [org.apache.coyote.http11.Http11NioProtocol:180]-- Initializing ProtocolHandler ["http-nio-5201"]
+[2018-09-19 20:23:15] [INFO ] [org.apache.catalina.core.StandardService:180]-- Starting service [Tomcat]
+[2018-09-19 20:23:15] [INFO ] [org.apache.catalina.core.StandardEngine:180]-- Starting Servlet Engine: Apache Tomcat/8.5.31
+[2018-09-19 20:23:15] [INFO ] [org.apache.catalina.core.AprLifecycleListener:180]-- The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [D:\Program Files\Java\jdk1.8.0_161\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;D:\Program Files\Java\jdk1.8.0_161\bin;D:\Program Files\Git\cmd;D:\work\apache-maven-3.5.3\bin;D:\Program Files\nodejs\;C:\Program Files (x86)\Windows Kits\8.1\Windows Performance Toolkit\;D:\Program Files\PuTTY\;D:\Program Files\TortoiseSVN\bin;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;C:\Users\Administrator\AppData\Roaming\npm;.]
+[2018-09-19 20:23:15] [INFO ] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:180]-- Initializing Spring embedded WebApplicationContext
+[2018-09-19 20:23:15] [INFO ] [org.springframework.web.context.ContextLoader:285]-- Root WebApplicationContext: initialization completed in 2031 ms
+[2018-09-19 20:23:15] [INFO ] [org.springframework.boot.web.servlet.ServletRegistrationBean:186]-- Servlet dispatcherServlet mapped to [/]
+[2018-09-19 20:23:15] [INFO ] [org.springframework.boot.web.servlet.FilterRegistrationBean:245]-- Mapping filter: 'characterEncodingFilter' to: [/*]
+[2018-09-19 20:23:15] [INFO ] [org.springframework.boot.web.servlet.FilterRegistrationBean:245]-- Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+[2018-09-19 20:23:15] [INFO ] [org.springframework.boot.web.servlet.FilterRegistrationBean:245]-- Mapping filter: 'httpPutFormContentFilter' to: [/*]
+[2018-09-19 20:23:15] [INFO ] [org.springframework.boot.web.servlet.FilterRegistrationBean:245]-- Mapping filter: 'requestContextFilter' to: [/*]
+[2018-09-19 20:23:15] [INFO ] [org.springframework.boot.web.servlet.FilterRegistrationBean:258]-- Mapping filter: 'loginAuthFilter' to urls: [/*]
+[2018-09-19 20:23:16] [INFO ] [org.springframework.web.servlet.handler.SimpleUrlHandlerMapping:373]-- Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[2018-09-19 20:23:16] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter:574]-- Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@51c693d: startup date [Wed Sep 19 20:23:13 CST 2018]; root of context hierarchy
+[2018-09-19 20:23:16] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/common/findComment]}" onto public xin.toheart.door.dto.ResponseDto xin.toheart.door.controller.CommonController.findComment(int,int)
+[2018-09-19 20:23:16] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/common/increaseComment]}" onto public xin.toheart.door.dto.ResponseDto xin.toheart.door.controller.CommonController.increaseComment(int,int,int,java.lang.String,javax.servlet.http.HttpSession)
+[2018-09-19 20:23:16] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/common/increaseZan]}" onto public xin.toheart.door.dto.ResponseDto xin.toheart.door.controller.CommonController.increaseZan(int,int,javax.servlet.http.HttpSession)
+[2018-09-19 20:23:16] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/confession/addConfession]}" onto public xin.toheart.door.dto.ResponseDto xin.toheart.door.controller.ConfessionController.addConfession(xin.toheart.door.pojo.Confession)
+[2018-09-19 20:23:16] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/confession/splendidConfession/inHome]}" onto public xin.toheart.door.dto.ResponseDto xin.toheart.door.controller.ConfessionController.splendidConfession()
+[2018-09-19 20:23:16] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/confession/getConfession/{id}]}" onto public xin.toheart.door.dto.ResponseDto xin.toheart.door.controller.ConfessionController.getConfessionById(java.lang.String)
+[2018-09-19 20:23:16] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/confession/confessionList/{index}/{size}]}" onto public xin.toheart.door.dto.ResponseDto xin.toheart.door.controller.ConfessionController.confessionList(java.lang.String,java.lang.String)
+[2018-09-19 20:23:16] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/game/2048]}" onto public java.lang.String xin.toheart.door.controller.GameController.game2048()
+[2018-09-19 20:23:16] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/game/gameHome]}" onto public java.lang.String xin.toheart.door.controller.GameController.gameHome()
+[2018-09-19 20:23:16] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/QQLogin]}" onto public java.lang.String xin.toheart.door.controller.HomeController.QQLogin(java.lang.String,javax.servlet.http.HttpSession) throws java.text.ParseException
+[2018-09-19 20:23:16] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/logout]}" onto public java.lang.String xin.toheart.door.controller.HomeController.logout(javax.servlet.http.HttpSession)
+[2018-09-19 20:23:16] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/login]}" onto public java.lang.String xin.toheart.door.controller.HomeController.login()
+[2018-09-19 20:23:16] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/pic/upload]}" onto public java.lang.String xin.toheart.door.controller.PicUplodController.upload(org.springframework.web.multipart.MultipartFile)
+[2018-09-19 20:23:16] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/story/showStory/{id}],methods=[GET]}" onto public xin.toheart.door.dto.ResponseDto xin.toheart.door.controller.StoryController.showStory(int)
+[2018-09-19 20:23:16] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/story/storyList/{index}/{size}],methods=[GET]}" onto public xin.toheart.door.dto.ResponseDto xin.toheart.door.controller.StoryController.storyList(java.lang.String,java.lang.String)
+[2018-09-19 20:23:16] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/story/saveStory],methods=[POST]}" onto public xin.toheart.door.dto.ResponseDto xin.toheart.door.controller.StoryController.saveStory(xin.toheart.door.pojo.Story)
+[2018-09-19 20:23:16] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/story/splendidStory/inHome]}" onto public xin.toheart.door.dto.ResponseDto xin.toheart.door.controller.StoryController.splendidStoryInHome()
+[2018-09-19 20:23:16] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+[2018-09-19 20:23:16] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+[2018-09-19 20:23:16] [INFO ] [org.springframework.web.servlet.handler.SimpleUrlHandlerMapping:373]-- Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[2018-09-19 20:23:16] [INFO ] [org.springframework.web.servlet.handler.SimpleUrlHandlerMapping:373]-- Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[2018-09-19 20:23:17] [INFO ] [org.springframework.jmx.export.annotation.AnnotationMBeanExporter:433]-- Registering beans for JMX exposure on startup
+[2018-09-19 20:23:17] [INFO ] [org.springframework.jmx.export.annotation.AnnotationMBeanExporter:895]-- Bean with name 'dataSource' has been autodetected for JMX exposure
+[2018-09-19 20:23:17] [INFO ] [org.springframework.jmx.export.annotation.AnnotationMBeanExporter:668]-- Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+[2018-09-19 20:23:17] [INFO ] [org.apache.coyote.http11.Http11NioProtocol:180]-- Starting ProtocolHandler ["http-nio-5201"]
+[2018-09-19 20:23:17] [INFO ] [org.apache.tomcat.util.net.NioSelectorPool:180]-- Using a shared selector for servlet write/read
+[2018-09-19 20:23:17] [INFO ] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:206]-- Tomcat started on port(s): 5201 (http) with context path ''
+[2018-09-19 20:23:17] [INFO ] [xin.toheart.door.DoorApplication:59]-- Started DoorApplication in 4.581 seconds (JVM running for 5.109)
+[2018-09-19 20:23:49] [INFO ] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:180]-- Initializing Spring FrameworkServlet 'dispatcherServlet'
+[2018-09-19 20:23:49] [INFO ] [org.springframework.web.servlet.DispatcherServlet:494]-- FrameworkServlet 'dispatcherServlet': initialization started
+[2018-09-19 20:23:49] [INFO ] [org.springframework.web.servlet.DispatcherServlet:509]-- FrameworkServlet 'dispatcherServlet': initialization completed in 29 ms
+[2018-09-19 20:23:49] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:21]-- HandleInterceptor1 ...... preHandle
+[2018-09-19 20:23:49] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:33]-- 
+-------------------------------------
+Controller: xin.toheart.door.controller.CommonController$$EnhancerBySpringCGLIB$$61ab548d
+Method    : findComment
+Params    : id=18	type=2	
+URI       : /common/findComment
+-------------------------------------
+
+[2018-09-19 20:23:49] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:21]-- HandleInterceptor1 ...... preHandle
+[2018-09-19 20:23:49] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:33]-- 
+-------------------------------------
+Controller: xin.toheart.door.controller.ConfessionController$$EnhancerBySpringCGLIB$$2442ffe1
+Method    : getConfessionById
+Params    : 
+URI       : /confession/getConfession/18
+-------------------------------------
+
+[2018-09-19 20:23:49] [INFO ] [com.zaxxer.hikari.HikariDataSource:110]-- HikariPool-1 - Starting...
+[2018-09-19 20:23:49] [INFO ] [com.zaxxer.hikari.HikariDataSource:123]-- HikariPool-1 - Start completed.
+[2018-09-19 20:23:49] [INFO ] [xin.toheart.door.aspect.TimeCostAspect:60]-- [time cost] 523 ms [path is xin.toheart.door.controller.ConfessionController.getConfessionById]
+[2018-09-19 20:23:49] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:45]-- 
+========处理请求后，渲染页面前======
+[2018-09-19 20:23:49] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:55]-- 
+========视图渲染结束了，请求处理完毕====
+[2018-09-19 20:23:50] [INFO ] [xin.toheart.door.aspect.TimeCostAspect:60]-- [time cost] 662 ms [path is xin.toheart.door.controller.CommonController.findComment]
+[2018-09-19 20:23:50] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:45]-- 
+========处理请求后，渲染页面前======
+[2018-09-19 20:23:50] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:55]-- 
+========视图渲染结束了，请求处理完毕====
+[2018-09-19 20:28:48] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:21]-- HandleInterceptor1 ...... preHandle
+[2018-09-19 20:28:48] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:33]-- 
+-------------------------------------
+Controller: xin.toheart.door.controller.CommonController$$EnhancerBySpringCGLIB$$61ab548d
+Method    : increaseComment
+Params    : id=18	type=2	fatherId=0	content=这张图片不错	
+URI       : /common/increaseComment
+-------------------------------------
+
+[2018-09-19 20:28:48] [INFO ] [xin.toheart.door.controller.ConfessionController:87]-- userId:---3
+[2018-09-19 20:28:48] [INFO ] [xin.toheart.door.aspect.TimeCostAspect:60]-- [time cost] 47 ms [path is xin.toheart.door.controller.CommonController.increaseComment]
+[2018-09-19 20:28:48] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:45]-- 
+========处理请求后，渲染页面前======
+[2018-09-19 20:28:48] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:55]-- 
+========视图渲染结束了，请求处理完毕====
+[2018-09-19 20:28:48] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:21]-- HandleInterceptor1 ...... preHandle
+[2018-09-19 20:28:48] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:33]-- 
+-------------------------------------
+Controller: xin.toheart.door.controller.CommonController$$EnhancerBySpringCGLIB$$61ab548d
+Method    : findComment
+Params    : id=18	type=2	
+URI       : /common/findComment
+-------------------------------------
+
+[2018-09-19 20:28:49] [INFO ] [xin.toheart.door.aspect.TimeCostAspect:60]-- [time cost] 197 ms [path is xin.toheart.door.controller.CommonController.findComment]
+[2018-09-19 20:28:49] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:45]-- 
+========处理请求后，渲染页面前======
+[2018-09-19 20:28:49] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:55]-- 
+========视图渲染结束了，请求处理完毕====
+[2018-09-19 20:30:21] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:21]-- HandleInterceptor1 ...... preHandle
+[2018-09-19 20:30:21] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:33]-- 
+-------------------------------------
+Controller: xin.toheart.door.controller.StoryController$$EnhancerBySpringCGLIB$$ccbcc087
+Method    : splendidStoryInHome
+Params    : 
+URI       : /story/splendidStory/inHome
+-------------------------------------
+
+[2018-09-19 20:30:21] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:21]-- HandleInterceptor1 ...... preHandle
+[2018-09-19 20:30:21] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:33]-- 
+-------------------------------------
+Controller: xin.toheart.door.controller.StoryController$$EnhancerBySpringCGLIB$$ccbcc087
+Method    : storyList
+Params    : 
+URI       : /story/storyList/1/5
+-------------------------------------
+
+[2018-09-19 20:30:21] [INFO ] [xin.toheart.door.aspect.TimeCostAspect:60]-- [time cost] 51 ms [path is xin.toheart.door.controller.StoryController.splendidStoryInHome]
+[2018-09-19 20:30:21] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:45]-- 
+========处理请求后，渲染页面前======
+[2018-09-19 20:30:21] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:55]-- 
+========视图渲染结束了，请求处理完毕====
+[2018-09-19 20:30:21] [INFO ] [xin.toheart.door.aspect.TimeCostAspect:60]-- [time cost] 67 ms [path is xin.toheart.door.controller.StoryController.storyList]
+[2018-09-19 20:30:21] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:45]-- 
+========处理请求后，渲染页面前======
+[2018-09-19 20:30:21] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:55]-- 
+========视图渲染结束了，请求处理完毕====
+[2018-09-19 20:30:23] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:21]-- HandleInterceptor1 ...... preHandle
+[2018-09-19 20:30:23] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:33]-- 
+-------------------------------------
+Controller: xin.toheart.door.controller.StoryController$$EnhancerBySpringCGLIB$$ccbcc087
+Method    : showStory
+Params    : 
+URI       : /story/showStory/15
+-------------------------------------
+
+[2018-09-19 20:30:23] [INFO ] [xin.toheart.door.aspect.TimeCostAspect:60]-- [time cost] 33 ms [path is xin.toheart.door.controller.StoryController.showStory]
+[2018-09-19 20:30:23] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:45]-- 
+========处理请求后，渲染页面前======
+[2018-09-19 20:30:23] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:55]-- 
+========视图渲染结束了，请求处理完毕====

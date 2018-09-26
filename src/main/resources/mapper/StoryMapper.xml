@@ -21,4 +21,10 @@
     <select id="findLikeEightStory" resultType="xin.toheart.door.pojo.Story">
         SELECT * FROM story ORDER BY storyZan DESC LIMIT 0,8
     </select>
+    <update id="updateStoryLike">
+        UPDATE story SET storyZan= #{praiseNum} WHERE storyId=#{id}
+    </update>
+    <update id="updateStoryCommentNum">
+        UPDATE story SET storyCommentNum= #{commentNum} WHERE storyId=#{id}
+    </update>
 </mapper>

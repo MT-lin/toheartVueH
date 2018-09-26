@@ -1,0 +1,1140 @@
+[2018-09-25 10:23:03] [INFO ] [xin.toheart.door.DoorApplication:50]-- Starting DoorApplication on PC-2018HWL with PID 2668 (D:\toheartH\toheart\target\classes started by Administrator in D:\toheartH\toheart)
+[2018-09-25 10:23:03] [INFO ] [xin.toheart.door.DoorApplication:659]-- No active profile set, falling back to default profiles: default
+[2018-09-25 10:23:03] [INFO ] [org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext:590]-- Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@45ac5f9b: startup date [Tue Sep 25 10:23:03 CST 2018]; root of context hierarchy
+[2018-09-25 10:23:06] [INFO ] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:91]-- Tomcat initialized with port(s): 5201 (http)
+[2018-09-25 10:23:06] [INFO ] [org.apache.coyote.http11.Http11NioProtocol:180]-- Initializing ProtocolHandler ["http-nio-5201"]
+[2018-09-25 10:23:06] [INFO ] [org.apache.catalina.core.StandardService:180]-- Starting service [Tomcat]
+[2018-09-25 10:23:06] [INFO ] [org.apache.catalina.core.StandardEngine:180]-- Starting Servlet Engine: Apache Tomcat/8.5.31
+[2018-09-25 10:23:06] [INFO ] [org.apache.catalina.core.AprLifecycleListener:180]-- The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [D:\Program Files\Java\jdk1.8.0_161\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;D:\Program Files\Java\jdk1.8.0_161\bin;D:\Program Files\Git\cmd;D:\work\apache-maven-3.5.3\bin;D:\Program Files\nodejs\;C:\Program Files (x86)\Windows Kits\8.1\Windows Performance Toolkit\;D:\Program Files\PuTTY\;D:\Program Files\TortoiseSVN\bin;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;C:\Users\Administrator\AppData\Roaming\npm;.]
+[2018-09-25 10:23:07] [INFO ] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:180]-- Initializing Spring embedded WebApplicationContext
+[2018-09-25 10:23:07] [INFO ] [org.springframework.web.context.ContextLoader:285]-- Root WebApplicationContext: initialization completed in 3259 ms
+[2018-09-25 10:23:07] [INFO ] [org.springframework.boot.web.servlet.ServletRegistrationBean:186]-- Servlet dispatcherServlet mapped to [/]
+[2018-09-25 10:23:07] [INFO ] [org.springframework.boot.web.servlet.FilterRegistrationBean:245]-- Mapping filter: 'characterEncodingFilter' to: [/*]
+[2018-09-25 10:23:07] [INFO ] [org.springframework.boot.web.servlet.FilterRegistrationBean:245]-- Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+[2018-09-25 10:23:07] [INFO ] [org.springframework.boot.web.servlet.FilterRegistrationBean:245]-- Mapping filter: 'httpPutFormContentFilter' to: [/*]
+[2018-09-25 10:23:07] [INFO ] [org.springframework.boot.web.servlet.FilterRegistrationBean:245]-- Mapping filter: 'requestContextFilter' to: [/*]
+[2018-09-25 10:23:07] [INFO ] [org.springframework.boot.web.servlet.FilterRegistrationBean:258]-- Mapping filter: 'loginAuthFilter' to urls: [/*]
+[2018-09-25 10:23:08] [INFO ] [org.springframework.web.servlet.handler.SimpleUrlHandlerMapping:373]-- Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[2018-09-25 10:23:08] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter:574]-- Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@45ac5f9b: startup date [Tue Sep 25 10:23:03 CST 2018]; root of context hierarchy
+[2018-09-25 10:23:08] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/common/increaseComment]}" onto public xin.toheart.door.dto.ResponseDto xin.toheart.door.controller.CommonController.increaseComment(int,int,int,java.lang.String,javax.servlet.http.HttpSession)
+[2018-09-25 10:23:08] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/common/increaseZan]}" onto public xin.toheart.door.dto.ResponseDto xin.toheart.door.controller.CommonController.increaseZan(int,int,javax.servlet.http.HttpSession)
+[2018-09-25 10:23:08] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/common/findComment]}" onto public xin.toheart.door.dto.ResponseDto xin.toheart.door.controller.CommonController.findComment(int,int)
+[2018-09-25 10:23:08] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/confession/addConfession]}" onto public xin.toheart.door.dto.ResponseDto xin.toheart.door.controller.ConfessionController.addConfession(xin.toheart.door.pojo.Confession)
+[2018-09-25 10:23:08] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/confession/confessionList/{index}/{size}]}" onto public xin.toheart.door.dto.ResponseDto xin.toheart.door.controller.ConfessionController.confessionList(java.lang.String,java.lang.String)
+[2018-09-25 10:23:08] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/confession/getConfession/{id}]}" onto public xin.toheart.door.dto.ResponseDto xin.toheart.door.controller.ConfessionController.getConfessionById(java.lang.String)
+[2018-09-25 10:23:08] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/confession/splendidConfession/inHome]}" onto public xin.toheart.door.dto.ResponseDto xin.toheart.door.controller.ConfessionController.splendidConfession()
+[2018-09-25 10:23:08] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/game/gameHome]}" onto public java.lang.String xin.toheart.door.controller.GameController.gameHome()
+[2018-09-25 10:23:08] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/game/2048]}" onto public java.lang.String xin.toheart.door.controller.GameController.game2048()
+[2018-09-25 10:23:08] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/QQLogin]}" onto public java.lang.String xin.toheart.door.controller.HomeController.QQLogin(java.lang.String,javax.servlet.http.HttpSession) throws java.text.ParseException
+[2018-09-25 10:23:08] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/login]}" onto public java.lang.String xin.toheart.door.controller.HomeController.login()
+[2018-09-25 10:23:08] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/logout]}" onto public java.lang.String xin.toheart.door.controller.HomeController.logout(javax.servlet.http.HttpSession)
+[2018-09-25 10:23:08] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/pic/upload]}" onto public java.lang.String xin.toheart.door.controller.PicUplodController.upload(org.springframework.web.multipart.MultipartFile)
+[2018-09-25 10:23:08] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/story/showStory/{id}],methods=[GET]}" onto public xin.toheart.door.dto.ResponseDto xin.toheart.door.controller.StoryController.showStory(int)
+[2018-09-25 10:23:08] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/story/saveStory],methods=[POST]}" onto public xin.toheart.door.dto.ResponseDto xin.toheart.door.controller.StoryController.saveStory(xin.toheart.door.pojo.Story)
+[2018-09-25 10:23:08] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/story/storyList/{index}/{size}],methods=[GET]}" onto public xin.toheart.door.dto.ResponseDto xin.toheart.door.controller.StoryController.storyList(java.lang.String,java.lang.String)
+[2018-09-25 10:23:08] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/story/splendidStory/inHome]}" onto public xin.toheart.door.dto.ResponseDto xin.toheart.door.controller.StoryController.splendidStoryInHome()
+[2018-09-25 10:23:09] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+[2018-09-25 10:23:09] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+[2018-09-25 10:23:09] [INFO ] [org.springframework.web.servlet.handler.SimpleUrlHandlerMapping:373]-- Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[2018-09-25 10:23:09] [INFO ] [org.springframework.web.servlet.handler.SimpleUrlHandlerMapping:373]-- Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[2018-09-25 10:23:09] [INFO ] [org.springframework.jmx.export.annotation.AnnotationMBeanExporter:433]-- Registering beans for JMX exposure on startup
+[2018-09-25 10:23:09] [INFO ] [org.springframework.jmx.export.annotation.AnnotationMBeanExporter:895]-- Bean with name 'dataSource' has been autodetected for JMX exposure
+[2018-09-25 10:23:09] [INFO ] [org.springframework.jmx.export.annotation.AnnotationMBeanExporter:668]-- Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+[2018-09-25 10:23:09] [INFO ] [org.apache.coyote.http11.Http11NioProtocol:180]-- Starting ProtocolHandler ["http-nio-5201"]
+[2018-09-25 10:23:09] [INFO ] [org.apache.tomcat.util.net.NioSelectorPool:180]-- Using a shared selector for servlet write/read
+[2018-09-25 10:23:09] [INFO ] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:206]-- Tomcat started on port(s): 5201 (http) with context path ''
+[2018-09-25 10:23:09] [INFO ] [xin.toheart.door.DoorApplication:59]-- Started DoorApplication in 6.611 seconds (JVM running for 7.944)
+[2018-09-25 10:24:10] [INFO ] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:180]-- Initializing Spring FrameworkServlet 'dispatcherServlet'
+[2018-09-25 10:24:10] [INFO ] [org.springframework.web.servlet.DispatcherServlet:494]-- FrameworkServlet 'dispatcherServlet': initialization started
+[2018-09-25 10:24:10] [INFO ] [org.springframework.web.servlet.DispatcherServlet:509]-- FrameworkServlet 'dispatcherServlet': initialization completed in 21 ms
+[2018-09-25 10:24:10] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:21]-- HandleInterceptor1 ...... preHandle
+[2018-09-25 10:24:10] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:21]-- HandleInterceptor1 ...... preHandle
+[2018-09-25 10:24:10] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:21]-- HandleInterceptor1 ...... preHandle
+[2018-09-25 10:24:10] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:33]-- 
+-------------------------------------
+Controller: xin.toheart.door.controller.StoryController$$EnhancerBySpringCGLIB$$b6eb3442
+Method    : splendidStoryInHome
+Params    : 
+URI       : /story/splendidStory/inHome
+-------------------------------------
+
+[2018-09-25 10:24:10] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:33]-- 
+-------------------------------------
+Controller: xin.toheart.door.controller.StoryController$$EnhancerBySpringCGLIB$$b6eb3442
+Method    : storyList
+Params    : 
+URI       : /story/storyList/1/5
+-------------------------------------
+
+[2018-09-25 10:24:10] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:21]-- HandleInterceptor1 ...... preHandle
+[2018-09-25 10:24:10] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:33]-- 
+-------------------------------------
+Controller: xin.toheart.door.controller.ConfessionController$$EnhancerBySpringCGLIB$$e71739c
+Method    : confessionList
+Params    : 
+URI       : /confession/confessionList/1/5
+-------------------------------------
+
+[2018-09-25 10:24:10] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:33]-- 
+-------------------------------------
+Controller: xin.toheart.door.controller.ConfessionController$$EnhancerBySpringCGLIB$$e71739c
+Method    : splendidConfession
+Params    : 
+URI       : /confession/splendidConfession/inHome
+-------------------------------------
+
+[2018-09-25 10:24:10] [INFO ] [com.zaxxer.hikari.HikariDataSource:110]-- HikariPool-1 - Starting...
+[2018-09-25 10:24:10] [INFO ] [com.zaxxer.hikari.HikariDataSource:123]-- HikariPool-1 - Start completed.
+[2018-09-25 10:24:10] [INFO ] [xin.toheart.door.aspect.TimeCostAspect:60]-- [time cost] 388 ms [path is xin.toheart.door.controller.StoryController.splendidStoryInHome]
+[2018-09-25 10:24:10] [INFO ] [xin.toheart.door.aspect.TimeCostAspect:60]-- [time cost] 404 ms [path is xin.toheart.door.controller.ConfessionController.splendidConfession]
+[2018-09-25 10:24:10] [INFO ] [xin.toheart.door.aspect.TimeCostAspect:60]-- [time cost] 404 ms [path is xin.toheart.door.controller.StoryController.storyList]
+[2018-09-25 10:24:10] [INFO ] [xin.toheart.door.aspect.TimeCostAspect:60]-- [time cost] 404 ms [path is xin.toheart.door.controller.ConfessionController.confessionList]
+[2018-09-25 10:24:10] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:45]-- 
+========处理请求后，渲染页面前======
+[2018-09-25 10:24:10] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:55]-- 
+========视图渲染结束了，请求处理完毕====
+[2018-09-25 10:24:10] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:45]-- 
+========处理请求后，渲染页面前======
+[2018-09-25 10:24:10] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:55]-- 
+========视图渲染结束了，请求处理完毕====
+[2018-09-25 10:24:10] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:45]-- 
+========处理请求后，渲染页面前======
+[2018-09-25 10:24:10] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:45]-- 
+========处理请求后，渲染页面前======
+[2018-09-25 10:24:10] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:55]-- 
+========视图渲染结束了，请求处理完毕====
+[2018-09-25 10:24:10] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:55]-- 
+========视图渲染结束了，请求处理完毕====
+[2018-09-25 11:43:12] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:21]-- HandleInterceptor1 ...... preHandle
+[2018-09-25 11:43:12] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:33]-- 
+-------------------------------------
+Controller: xin.toheart.door.controller.StoryController$$EnhancerBySpringCGLIB$$b6eb3442
+Method    : splendidStoryInHome
+Params    : 
+URI       : /story/splendidStory/inHome
+-------------------------------------
+
+[2018-09-25 11:43:12] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:21]-- HandleInterceptor1 ...... preHandle
+[2018-09-25 11:43:12] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:33]-- 
+-------------------------------------
+Controller: xin.toheart.door.controller.ConfessionController$$EnhancerBySpringCGLIB$$e71739c
+Method    : splendidConfession
+Params    : 
+URI       : /confession/splendidConfession/inHome
+-------------------------------------
+
+[2018-09-25 11:43:12] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:21]-- HandleInterceptor1 ...... preHandle
+[2018-09-25 11:43:12] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:33]-- 
+-------------------------------------
+Controller: xin.toheart.door.controller.ConfessionController$$EnhancerBySpringCGLIB$$e71739c
+Method    : confessionList
+Params    : 
+URI       : /confession/confessionList/1/5
+-------------------------------------
+
+[2018-09-25 11:43:12] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:21]-- HandleInterceptor1 ...... preHandle
+[2018-09-25 11:43:12] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:33]-- 
+-------------------------------------
+Controller: xin.toheart.door.controller.StoryController$$EnhancerBySpringCGLIB$$b6eb3442
+Method    : storyList
+Params    : 
+URI       : /story/storyList/1/5
+-------------------------------------
+
+[2018-09-25 11:43:22] [INFO ] [xin.toheart.door.aspect.TimeCostAspect:60]-- [time cost] 10136 ms [path is xin.toheart.door.controller.ConfessionController.splendidConfession]
+[2018-09-25 11:43:22] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:45]-- 
+========处理请求后，渲染页面前======
+[2018-09-25 11:43:22] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:55]-- 
+========视图渲染结束了，请求处理完毕====
+[2018-09-25 11:43:22] [INFO ] [xin.toheart.door.aspect.TimeCostAspect:60]-- [time cost] 10158 ms [path is xin.toheart.door.controller.ConfessionController.confessionList]
+[2018-09-25 11:43:22] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:45]-- 
+========处理请求后，渲染页面前======
+[2018-09-25 11:43:22] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:55]-- 
+========视图渲染结束了，请求处理完毕====
+[2018-09-25 11:43:27] [INFO ] [xin.toheart.door.aspect.TimeCostAspect:60]-- [time cost] 15142 ms [path is xin.toheart.door.controller.StoryController.splendidStoryInHome]
+[2018-09-25 11:43:27] [INFO ] [xin.toheart.door.aspect.TimeCostAspect:60]-- [time cost] 15134 ms [path is xin.toheart.door.controller.StoryController.storyList]
+[2018-09-25 11:43:27] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:55]-- 
+========视图渲染结束了，请求处理完毕====
+[2018-09-25 11:43:27] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:55]-- 
+========视图渲染结束了，请求处理完毕====
+[2018-09-25 11:48:51] [INFO ] [xin.toheart.door.DoorApplicationTests:50]-- Starting DoorApplicationTests on PC-2018HWL with PID 1076 (started by Administrator in D:\toheartH\toheart)
+[2018-09-25 11:48:51] [INFO ] [xin.toheart.door.DoorApplicationTests:659]-- No active profile set, falling back to default profiles: default
+[2018-09-25 11:48:51] [INFO ] [org.springframework.web.context.support.GenericWebApplicationContext:590]-- Refreshing org.springframework.web.context.support.GenericWebApplicationContext@1a5a4e19: startup date [Tue Sep 25 11:48:51 CST 2018]; root of context hierarchy
+[2018-09-25 11:48:53] [INFO ] [org.springframework.web.servlet.handler.SimpleUrlHandlerMapping:373]-- Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[2018-09-25 11:48:53] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter:574]-- Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@1a5a4e19: startup date [Tue Sep 25 11:48:51 CST 2018]; root of context hierarchy
+[2018-09-25 11:48:53] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/common/increaseZan]}" onto public xin.toheart.door.dto.ResponseDto xin.toheart.door.controller.CommonController.increaseZan(int,int,javax.servlet.http.HttpSession)
+[2018-09-25 11:48:53] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/common/findComment]}" onto public xin.toheart.door.dto.ResponseDto xin.toheart.door.controller.CommonController.findComment(int,int)
+[2018-09-25 11:48:53] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/common/increaseComment]}" onto public xin.toheart.door.dto.ResponseDto xin.toheart.door.controller.CommonController.increaseComment(int,int,int,java.lang.String,javax.servlet.http.HttpSession)
+[2018-09-25 11:48:53] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/confession/splendidConfession/inHome]}" onto public xin.toheart.door.dto.ResponseDto xin.toheart.door.controller.ConfessionController.splendidConfession()
+[2018-09-25 11:48:53] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/confession/getConfession/{id}]}" onto public xin.toheart.door.dto.ResponseDto xin.toheart.door.controller.ConfessionController.getConfessionById(java.lang.String)
+[2018-09-25 11:48:53] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/confession/addConfession]}" onto public xin.toheart.door.dto.ResponseDto xin.toheart.door.controller.ConfessionController.addConfession(xin.toheart.door.pojo.Confession)
+[2018-09-25 11:48:53] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/confession/confessionList/{index}/{size}]}" onto public xin.toheart.door.dto.ResponseDto xin.toheart.door.controller.ConfessionController.confessionList(java.lang.String,java.lang.String)
+[2018-09-25 11:48:53] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/game/2048]}" onto public java.lang.String xin.toheart.door.controller.GameController.game2048()
+[2018-09-25 11:48:53] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/game/gameHome]}" onto public java.lang.String xin.toheart.door.controller.GameController.gameHome()
+[2018-09-25 11:48:53] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/logout]}" onto public java.lang.String xin.toheart.door.controller.HomeController.logout(javax.servlet.http.HttpSession)
+[2018-09-25 11:48:53] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/login]}" onto public java.lang.String xin.toheart.door.controller.HomeController.login()
+[2018-09-25 11:48:53] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/QQLogin]}" onto public java.lang.String xin.toheart.door.controller.HomeController.QQLogin(java.lang.String,javax.servlet.http.HttpSession) throws java.text.ParseException
+[2018-09-25 11:48:53] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/pic/upload]}" onto public java.lang.String xin.toheart.door.controller.PicUplodController.upload(org.springframework.web.multipart.MultipartFile)
+[2018-09-25 11:48:53] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/story/splendidStory/inHome]}" onto public xin.toheart.door.dto.ResponseDto xin.toheart.door.controller.StoryController.splendidStoryInHome()
+[2018-09-25 11:48:53] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/story/saveStory],methods=[POST]}" onto public xin.toheart.door.dto.ResponseDto xin.toheart.door.controller.StoryController.saveStory(xin.toheart.door.pojo.Story)
+[2018-09-25 11:48:53] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/story/showStory/{id}],methods=[GET]}" onto public xin.toheart.door.dto.ResponseDto xin.toheart.door.controller.StoryController.showStory(int)
+[2018-09-25 11:48:53] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/story/storyList/{index}/{size}],methods=[GET]}" onto public xin.toheart.door.dto.ResponseDto xin.toheart.door.controller.StoryController.storyList(java.lang.String,java.lang.String)
+[2018-09-25 11:48:53] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+[2018-09-25 11:48:53] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+[2018-09-25 11:48:53] [INFO ] [org.springframework.web.servlet.handler.SimpleUrlHandlerMapping:373]-- Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[2018-09-25 11:48:53] [INFO ] [org.springframework.web.servlet.handler.SimpleUrlHandlerMapping:373]-- Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[2018-09-25 11:48:54] [INFO ] [xin.toheart.door.DoorApplicationTests:59]-- Started DoorApplicationTests in 3.415 seconds (JVM running for 4.289)
+[2018-09-25 11:48:54] [INFO ] [org.springframework.web.context.support.GenericWebApplicationContext:993]-- Closing org.springframework.web.context.support.GenericWebApplicationContext@1a5a4e19: startup date [Tue Sep 25 11:48:51 CST 2018]; root of context hierarchy
+[2018-09-25 13:34:57] [INFO ] [xin.toheart.door.DoorApplicationTests:50]-- Starting DoorApplicationTests on PC-2018HWL with PID 9864 (started by Administrator in D:\toheartH\toheart)
+[2018-09-25 13:34:57] [INFO ] [xin.toheart.door.DoorApplicationTests:659]-- No active profile set, falling back to default profiles: default
+[2018-09-25 13:34:57] [INFO ] [org.springframework.web.context.support.GenericWebApplicationContext:590]-- Refreshing org.springframework.web.context.support.GenericWebApplicationContext@461ad730: startup date [Tue Sep 25 13:34:57 CST 2018]; root of context hierarchy
+[2018-09-25 13:34:59] [INFO ] [org.springframework.web.servlet.handler.SimpleUrlHandlerMapping:373]-- Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[2018-09-25 13:35:00] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter:574]-- Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@461ad730: startup date [Tue Sep 25 13:34:57 CST 2018]; root of context hierarchy
+[2018-09-25 13:35:00] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/common/increaseZan]}" onto public xin.toheart.door.dto.ResponseDto xin.toheart.door.controller.CommonController.increaseZan(int,int,javax.servlet.http.HttpSession)
+[2018-09-25 13:35:00] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/common/findComment]}" onto public xin.toheart.door.dto.ResponseDto xin.toheart.door.controller.CommonController.findComment(int,int)
+[2018-09-25 13:35:00] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/common/increaseComment]}" onto public xin.toheart.door.dto.ResponseDto xin.toheart.door.controller.CommonController.increaseComment(int,int,int,java.lang.String,javax.servlet.http.HttpSession)
+[2018-09-25 13:35:00] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/confession/addConfession]}" onto public xin.toheart.door.dto.ResponseDto xin.toheart.door.controller.ConfessionController.addConfession(xin.toheart.door.pojo.Confession)
+[2018-09-25 13:35:00] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/confession/confessionList/{index}/{size}]}" onto public xin.toheart.door.dto.ResponseDto xin.toheart.door.controller.ConfessionController.confessionList(java.lang.String,java.lang.String)
+[2018-09-25 13:35:00] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/confession/splendidConfession/inHome]}" onto public xin.toheart.door.dto.ResponseDto xin.toheart.door.controller.ConfessionController.splendidConfession()
+[2018-09-25 13:35:00] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/confession/getConfession/{id}]}" onto public xin.toheart.door.dto.ResponseDto xin.toheart.door.controller.ConfessionController.getConfessionById(java.lang.String)
+[2018-09-25 13:35:00] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/game/2048]}" onto public java.lang.String xin.toheart.door.controller.GameController.game2048()
+[2018-09-25 13:35:00] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/game/gameHome]}" onto public java.lang.String xin.toheart.door.controller.GameController.gameHome()
+[2018-09-25 13:35:00] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/login]}" onto public java.lang.String xin.toheart.door.controller.HomeController.login()
+[2018-09-25 13:35:00] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/logout]}" onto public java.lang.String xin.toheart.door.controller.HomeController.logout(javax.servlet.http.HttpSession)
+[2018-09-25 13:35:00] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/QQLogin]}" onto public java.lang.String xin.toheart.door.controller.HomeController.QQLogin(java.lang.String,javax.servlet.http.HttpSession) throws java.text.ParseException
+[2018-09-25 13:35:00] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/pic/upload]}" onto public java.lang.String xin.toheart.door.controller.PicUplodController.upload(org.springframework.web.multipart.MultipartFile)
+[2018-09-25 13:35:00] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/story/saveStory],methods=[POST]}" onto public xin.toheart.door.dto.ResponseDto xin.toheart.door.controller.StoryController.saveStory(xin.toheart.door.pojo.Story)
+[2018-09-25 13:35:00] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/story/showStory/{id}],methods=[GET]}" onto public xin.toheart.door.dto.ResponseDto xin.toheart.door.controller.StoryController.showStory(int)
+[2018-09-25 13:35:00] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/story/storyList/{index}/{size}],methods=[GET]}" onto public xin.toheart.door.dto.ResponseDto xin.toheart.door.controller.StoryController.storyList(java.lang.String,java.lang.String)
+[2018-09-25 13:35:00] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/story/splendidStory/inHome]}" onto public xin.toheart.door.dto.ResponseDto xin.toheart.door.controller.StoryController.splendidStoryInHome()
+[2018-09-25 13:35:00] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+[2018-09-25 13:35:00] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+[2018-09-25 13:35:00] [INFO ] [org.springframework.web.servlet.handler.SimpleUrlHandlerMapping:373]-- Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[2018-09-25 13:35:00] [INFO ] [org.springframework.web.servlet.handler.SimpleUrlHandlerMapping:373]-- Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[2018-09-25 13:35:00] [INFO ] [xin.toheart.door.DoorApplicationTests:59]-- Started DoorApplicationTests in 3.684 seconds (JVM running for 4.916)
+[2018-09-25 13:35:01] [INFO ] [org.springframework.web.context.support.GenericWebApplicationContext:993]-- Closing org.springframework.web.context.support.GenericWebApplicationContext@461ad730: startup date [Tue Sep 25 13:34:57 CST 2018]; root of context hierarchy
+[2018-09-25 13:40:42] [INFO ] [xin.toheart.door.DoorApplicationTests:50]-- Starting DoorApplicationTests on PC-2018HWL with PID 7244 (started by Administrator in D:\toheartH\toheart)
+[2018-09-25 13:40:42] [INFO ] [xin.toheart.door.DoorApplicationTests:659]-- No active profile set, falling back to default profiles: default
+[2018-09-25 13:40:42] [INFO ] [org.springframework.web.context.support.GenericWebApplicationContext:590]-- Refreshing org.springframework.web.context.support.GenericWebApplicationContext@461ad730: startup date [Tue Sep 25 13:40:42 CST 2018]; root of context hierarchy
+[2018-09-25 13:40:45] [INFO ] [org.springframework.web.servlet.handler.SimpleUrlHandlerMapping:373]-- Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[2018-09-25 13:40:45] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter:574]-- Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@461ad730: startup date [Tue Sep 25 13:40:42 CST 2018]; root of context hierarchy
+[2018-09-25 13:40:45] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/common/increaseZan]}" onto public xin.toheart.door.dto.ResponseDto xin.toheart.door.controller.CommonController.increaseZan(int,int,javax.servlet.http.HttpSession)
+[2018-09-25 13:40:45] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/common/increaseComment]}" onto public xin.toheart.door.dto.ResponseDto xin.toheart.door.controller.CommonController.increaseComment(int,int,int,java.lang.String,javax.servlet.http.HttpSession)
+[2018-09-25 13:40:45] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/common/findComment]}" onto public xin.toheart.door.dto.ResponseDto xin.toheart.door.controller.CommonController.findComment(int,int)
+[2018-09-25 13:40:45] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/confession/addConfession]}" onto public xin.toheart.door.dto.ResponseDto xin.toheart.door.controller.ConfessionController.addConfession(xin.toheart.door.pojo.Confession)
+[2018-09-25 13:40:45] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/confession/confessionList/{index}/{size}]}" onto public xin.toheart.door.dto.ResponseDto xin.toheart.door.controller.ConfessionController.confessionList(java.lang.String,java.lang.String)
+[2018-09-25 13:40:45] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/confession/getConfession/{id}]}" onto public xin.toheart.door.dto.ResponseDto xin.toheart.door.controller.ConfessionController.getConfessionById(java.lang.String)
+[2018-09-25 13:40:45] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/confession/splendidConfession/inHome]}" onto public xin.toheart.door.dto.ResponseDto xin.toheart.door.controller.ConfessionController.splendidConfession()
+[2018-09-25 13:40:45] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/game/gameHome]}" onto public java.lang.String xin.toheart.door.controller.GameController.gameHome()
+[2018-09-25 13:40:45] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/game/2048]}" onto public java.lang.String xin.toheart.door.controller.GameController.game2048()
+[2018-09-25 13:40:45] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/login]}" onto public java.lang.String xin.toheart.door.controller.HomeController.login()
+[2018-09-25 13:40:45] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/logout]}" onto public java.lang.String xin.toheart.door.controller.HomeController.logout(javax.servlet.http.HttpSession)
+[2018-09-25 13:40:45] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/QQLogin]}" onto public java.lang.String xin.toheart.door.controller.HomeController.QQLogin(java.lang.String,javax.servlet.http.HttpSession) throws java.text.ParseException
+[2018-09-25 13:40:45] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/pic/upload]}" onto public java.lang.String xin.toheart.door.controller.PicUplodController.upload(org.springframework.web.multipart.MultipartFile)
+[2018-09-25 13:40:45] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/story/showStory/{id}],methods=[GET]}" onto public xin.toheart.door.dto.ResponseDto xin.toheart.door.controller.StoryController.showStory(int)
+[2018-09-25 13:40:45] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/story/saveStory],methods=[POST]}" onto public xin.toheart.door.dto.ResponseDto xin.toheart.door.controller.StoryController.saveStory(xin.toheart.door.pojo.Story)
+[2018-09-25 13:40:45] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/story/storyList/{index}/{size}],methods=[GET]}" onto public xin.toheart.door.dto.ResponseDto xin.toheart.door.controller.StoryController.storyList(java.lang.String,java.lang.String)
+[2018-09-25 13:40:45] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/story/splendidStory/inHome]}" onto public xin.toheart.door.dto.ResponseDto xin.toheart.door.controller.StoryController.splendidStoryInHome()
+[2018-09-25 13:40:45] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+[2018-09-25 13:40:45] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+[2018-09-25 13:40:45] [INFO ] [org.springframework.web.servlet.handler.SimpleUrlHandlerMapping:373]-- Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[2018-09-25 13:40:45] [INFO ] [org.springframework.web.servlet.handler.SimpleUrlHandlerMapping:373]-- Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[2018-09-25 13:40:46] [INFO ] [xin.toheart.door.DoorApplicationTests:59]-- Started DoorApplicationTests in 4.697 seconds (JVM running for 6.358)
+[2018-09-25 13:40:46] [INFO ] [org.springframework.web.context.support.GenericWebApplicationContext:993]-- Closing org.springframework.web.context.support.GenericWebApplicationContext@461ad730: startup date [Tue Sep 25 13:40:42 CST 2018]; root of context hierarchy
+[2018-09-25 19:19:43] [INFO ] [xin.toheart.door.DoorApplicationTests:50]-- Starting DoorApplicationTests on PC-2018HWL with PID 10696 (started by Administrator in D:\toheartH\toheart)
+[2018-09-25 19:19:43] [INFO ] [xin.toheart.door.DoorApplicationTests:659]-- No active profile set, falling back to default profiles: default
+[2018-09-25 19:19:43] [INFO ] [org.springframework.web.context.support.GenericWebApplicationContext:590]-- Refreshing org.springframework.web.context.support.GenericWebApplicationContext@e3b3b2f: startup date [Tue Sep 25 19:19:43 CST 2018]; root of context hierarchy
+[2018-09-25 19:19:47] [INFO ] [org.springframework.web.servlet.handler.SimpleUrlHandlerMapping:373]-- Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[2018-09-25 19:19:48] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter:574]-- Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@e3b3b2f: startup date [Tue Sep 25 19:19:43 CST 2018]; root of context hierarchy
+[2018-09-25 19:19:48] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/common/increaseZan]}" onto public xin.toheart.door.dto.ResponseDto xin.toheart.door.controller.CommonController.increaseZan(int,int,javax.servlet.http.HttpSession)
+[2018-09-25 19:19:48] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/common/increaseComment]}" onto public xin.toheart.door.dto.ResponseDto xin.toheart.door.controller.CommonController.increaseComment(int,int,int,java.lang.String,javax.servlet.http.HttpSession)
+[2018-09-25 19:19:48] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/common/findComment]}" onto public xin.toheart.door.dto.ResponseDto xin.toheart.door.controller.CommonController.findComment(int,int)
+[2018-09-25 19:19:48] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/confession/addConfession]}" onto public xin.toheart.door.dto.ResponseDto xin.toheart.door.controller.ConfessionController.addConfession(xin.toheart.door.pojo.Confession)
+[2018-09-25 19:19:48] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/confession/confessionList/{index}/{size}]}" onto public xin.toheart.door.dto.ResponseDto xin.toheart.door.controller.ConfessionController.confessionList(java.lang.String,java.lang.String)
+[2018-09-25 19:19:48] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/confession/splendidConfession/inHome]}" onto public xin.toheart.door.dto.ResponseDto xin.toheart.door.controller.ConfessionController.splendidConfession()
+[2018-09-25 19:19:48] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/confession/getConfession/{id}]}" onto public xin.toheart.door.dto.ResponseDto xin.toheart.door.controller.ConfessionController.getConfessionById(java.lang.String)
+[2018-09-25 19:19:48] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/game/2048]}" onto public java.lang.String xin.toheart.door.controller.GameController.game2048()
+[2018-09-25 19:19:48] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/game/gameHome]}" onto public java.lang.String xin.toheart.door.controller.GameController.gameHome()
+[2018-09-25 19:19:48] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/logout]}" onto public java.lang.String xin.toheart.door.controller.HomeController.logout(javax.servlet.http.HttpSession)
+[2018-09-25 19:19:48] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/login]}" onto public com.alibaba.fastjson.JSONObject xin.toheart.door.controller.HomeController.login()
+[2018-09-25 19:19:48] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/QQLogin]}" onto public java.lang.String xin.toheart.door.controller.HomeController.QQLogin(java.lang.String,javax.servlet.http.HttpSession) throws java.text.ParseException
+[2018-09-25 19:19:48] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/pic/upload]}" onto public java.lang.String xin.toheart.door.controller.PicUplodController.upload(org.springframework.web.multipart.MultipartFile)
+[2018-09-25 19:19:48] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/story/storyList/{index}/{size}],methods=[GET]}" onto public xin.toheart.door.dto.ResponseDto xin.toheart.door.controller.StoryController.storyList(java.lang.String,java.lang.String)
+[2018-09-25 19:19:48] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/story/showStory/{id}],methods=[GET]}" onto public xin.toheart.door.dto.ResponseDto xin.toheart.door.controller.StoryController.showStory(int)
+[2018-09-25 19:19:48] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/story/saveStory],methods=[POST]}" onto public xin.toheart.door.dto.ResponseDto xin.toheart.door.controller.StoryController.saveStory(xin.toheart.door.pojo.Story)
+[2018-09-25 19:19:48] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/story/splendidStory/inHome]}" onto public xin.toheart.door.dto.ResponseDto xin.toheart.door.controller.StoryController.splendidStoryInHome()
+[2018-09-25 19:19:48] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+[2018-09-25 19:19:48] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+[2018-09-25 19:19:48] [INFO ] [org.springframework.web.servlet.handler.SimpleUrlHandlerMapping:373]-- Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[2018-09-25 19:19:48] [INFO ] [org.springframework.web.servlet.handler.SimpleUrlHandlerMapping:373]-- Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[2018-09-25 19:19:49] [INFO ] [xin.toheart.door.DoorApplicationTests:59]-- Started DoorApplicationTests in 6.525 seconds (JVM running for 8.428)
+[2018-09-25 19:19:49] [INFO ] [org.springframework.web.context.support.GenericWebApplicationContext:993]-- Closing org.springframework.web.context.support.GenericWebApplicationContext@e3b3b2f: startup date [Tue Sep 25 19:19:43 CST 2018]; root of context hierarchy
+[2018-09-25 19:22:24] [INFO ] [xin.toheart.door.DoorApplicationTests:50]-- Starting DoorApplicationTests on PC-2018HWL with PID 8736 (started by Administrator in D:\toheartH\toheart)
+[2018-09-25 19:22:24] [INFO ] [xin.toheart.door.DoorApplicationTests:659]-- No active profile set, falling back to default profiles: default
+[2018-09-25 19:22:24] [INFO ] [org.springframework.web.context.support.GenericWebApplicationContext:590]-- Refreshing org.springframework.web.context.support.GenericWebApplicationContext@461ad730: startup date [Tue Sep 25 19:22:24 CST 2018]; root of context hierarchy
+[2018-09-25 19:22:28] [INFO ] [org.springframework.web.servlet.handler.SimpleUrlHandlerMapping:373]-- Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[2018-09-25 19:22:28] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter:574]-- Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@461ad730: startup date [Tue Sep 25 19:22:24 CST 2018]; root of context hierarchy
+[2018-09-25 19:22:28] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/common/increaseZan]}" onto public xin.toheart.door.dto.ResponseDto xin.toheart.door.controller.CommonController.increaseZan(int,int,javax.servlet.http.HttpSession)
+[2018-09-25 19:22:28] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/common/findComment]}" onto public xin.toheart.door.dto.ResponseDto xin.toheart.door.controller.CommonController.findComment(int,int)
+[2018-09-25 19:22:28] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/common/increaseComment]}" onto public xin.toheart.door.dto.ResponseDto xin.toheart.door.controller.CommonController.increaseComment(int,int,int,java.lang.String,javax.servlet.http.HttpSession)
+[2018-09-25 19:22:28] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/confession/confessionList/{index}/{size}]}" onto public xin.toheart.door.dto.ResponseDto xin.toheart.door.controller.ConfessionController.confessionList(java.lang.String,java.lang.String)
+[2018-09-25 19:22:28] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/confession/addConfession]}" onto public xin.toheart.door.dto.ResponseDto xin.toheart.door.controller.ConfessionController.addConfession(xin.toheart.door.pojo.Confession)
+[2018-09-25 19:22:28] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/confession/splendidConfession/inHome]}" onto public xin.toheart.door.dto.ResponseDto xin.toheart.door.controller.ConfessionController.splendidConfession()
+[2018-09-25 19:22:28] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/confession/getConfession/{id}]}" onto public xin.toheart.door.dto.ResponseDto xin.toheart.door.controller.ConfessionController.getConfessionById(java.lang.String)
+[2018-09-25 19:22:28] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/game/2048]}" onto public java.lang.String xin.toheart.door.controller.GameController.game2048()
+[2018-09-25 19:22:28] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/game/gameHome]}" onto public java.lang.String xin.toheart.door.controller.GameController.gameHome()
+[2018-09-25 19:22:28] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/logout]}" onto public java.lang.String xin.toheart.door.controller.HomeController.logout(javax.servlet.http.HttpSession)
+[2018-09-25 19:22:28] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/login]}" onto public com.alibaba.fastjson.JSONObject xin.toheart.door.controller.HomeController.login()
+[2018-09-25 19:22:28] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/QQLogin]}" onto public xin.toheart.door.pojo.User xin.toheart.door.controller.HomeController.QQLogin(java.lang.String,javax.servlet.http.HttpSession) throws java.text.ParseException
+[2018-09-25 19:22:28] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/pic/upload]}" onto public java.lang.String xin.toheart.door.controller.PicUplodController.upload(org.springframework.web.multipart.MultipartFile)
+[2018-09-25 19:22:28] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/story/showStory/{id}],methods=[GET]}" onto public xin.toheart.door.dto.ResponseDto xin.toheart.door.controller.StoryController.showStory(int)
+[2018-09-25 19:22:28] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/story/saveStory],methods=[POST]}" onto public xin.toheart.door.dto.ResponseDto xin.toheart.door.controller.StoryController.saveStory(xin.toheart.door.pojo.Story)
+[2018-09-25 19:22:28] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/story/storyList/{index}/{size}],methods=[GET]}" onto public xin.toheart.door.dto.ResponseDto xin.toheart.door.controller.StoryController.storyList(java.lang.String,java.lang.String)
+[2018-09-25 19:22:28] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/story/splendidStory/inHome]}" onto public xin.toheart.door.dto.ResponseDto xin.toheart.door.controller.StoryController.splendidStoryInHome()
+[2018-09-25 19:22:28] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+[2018-09-25 19:22:28] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+[2018-09-25 19:22:28] [INFO ] [org.springframework.web.servlet.handler.SimpleUrlHandlerMapping:373]-- Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[2018-09-25 19:22:28] [INFO ] [org.springframework.web.servlet.handler.SimpleUrlHandlerMapping:373]-- Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[2018-09-25 19:22:30] [INFO ] [xin.toheart.door.DoorApplicationTests:59]-- Started DoorApplicationTests in 5.914 seconds (JVM running for 7.463)
+[2018-09-25 19:22:30] [INFO ] [org.springframework.web.context.support.GenericWebApplicationContext:993]-- Closing org.springframework.web.context.support.GenericWebApplicationContext@461ad730: startup date [Tue Sep 25 19:22:24 CST 2018]; root of context hierarchy
+[2018-09-25 19:28:49] [INFO ] [xin.toheart.door.DoorApplication:50]-- Starting DoorApplication on PC-2018HWL with PID 1488 (D:\toheartH\toheart\target\classes started by Administrator in D:\toheartH\toheart)
+[2018-09-25 19:28:49] [INFO ] [xin.toheart.door.DoorApplication:659]-- No active profile set, falling back to default profiles: default
+[2018-09-25 19:28:49] [INFO ] [org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext:590]-- Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@7d322cad: startup date [Tue Sep 25 19:28:49 CST 2018]; root of context hierarchy
+[2018-09-25 19:28:54] [INFO ] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:91]-- Tomcat initialized with port(s): 5201 (http)
+[2018-09-25 19:28:54] [INFO ] [org.apache.coyote.http11.Http11NioProtocol:180]-- Initializing ProtocolHandler ["http-nio-5201"]
+[2018-09-25 19:28:54] [INFO ] [org.apache.catalina.core.StandardService:180]-- Starting service [Tomcat]
+[2018-09-25 19:28:54] [INFO ] [org.apache.catalina.core.StandardEngine:180]-- Starting Servlet Engine: Apache Tomcat/8.5.31
+[2018-09-25 19:28:54] [INFO ] [org.apache.catalina.core.AprLifecycleListener:180]-- The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [D:\Program Files\Java\jdk1.8.0_161\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;D:\Program Files\Java\jdk1.8.0_161\bin;D:\Program Files\Git\cmd;D:\work\apache-maven-3.5.3\bin;D:\Program Files\nodejs\;C:\Program Files (x86)\Windows Kits\8.1\Windows Performance Toolkit\;D:\Program Files\PuTTY\;D:\Program Files\TortoiseSVN\bin;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;C:\Users\Administrator\AppData\Roaming\npm;.]
+[2018-09-25 19:28:55] [INFO ] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:180]-- Initializing Spring embedded WebApplicationContext
+[2018-09-25 19:28:55] [INFO ] [org.springframework.web.context.ContextLoader:285]-- Root WebApplicationContext: initialization completed in 5084 ms
+[2018-09-25 19:28:55] [INFO ] [org.springframework.boot.web.servlet.ServletRegistrationBean:186]-- Servlet dispatcherServlet mapped to [/]
+[2018-09-25 19:28:55] [INFO ] [org.springframework.boot.web.servlet.FilterRegistrationBean:245]-- Mapping filter: 'characterEncodingFilter' to: [/*]
+[2018-09-25 19:28:55] [INFO ] [org.springframework.boot.web.servlet.FilterRegistrationBean:245]-- Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+[2018-09-25 19:28:55] [INFO ] [org.springframework.boot.web.servlet.FilterRegistrationBean:245]-- Mapping filter: 'httpPutFormContentFilter' to: [/*]
+[2018-09-25 19:28:55] [INFO ] [org.springframework.boot.web.servlet.FilterRegistrationBean:245]-- Mapping filter: 'requestContextFilter' to: [/*]
+[2018-09-25 19:28:55] [INFO ] [org.springframework.boot.web.servlet.FilterRegistrationBean:258]-- Mapping filter: 'loginAuthFilter' to urls: [/*]
+[2018-09-25 19:28:56] [INFO ] [org.springframework.web.servlet.handler.SimpleUrlHandlerMapping:373]-- Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[2018-09-25 19:28:57] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter:574]-- Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@7d322cad: startup date [Tue Sep 25 19:28:49 CST 2018]; root of context hierarchy
+[2018-09-25 19:28:57] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/common/increaseComment]}" onto public xin.toheart.door.dto.ResponseDto xin.toheart.door.controller.CommonController.increaseComment(int,int,int,java.lang.String,javax.servlet.http.HttpSession)
+[2018-09-25 19:28:57] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/common/increaseZan]}" onto public xin.toheart.door.dto.ResponseDto xin.toheart.door.controller.CommonController.increaseZan(int,int,javax.servlet.http.HttpSession)
+[2018-09-25 19:28:57] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/common/findComment]}" onto public xin.toheart.door.dto.ResponseDto xin.toheart.door.controller.CommonController.findComment(int,int)
+[2018-09-25 19:28:57] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/confession/addConfession]}" onto public xin.toheart.door.dto.ResponseDto xin.toheart.door.controller.ConfessionController.addConfession(xin.toheart.door.pojo.Confession)
+[2018-09-25 19:28:57] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/confession/confessionList/{index}/{size}]}" onto public xin.toheart.door.dto.ResponseDto xin.toheart.door.controller.ConfessionController.confessionList(java.lang.String,java.lang.String)
+[2018-09-25 19:28:57] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/confession/getConfession/{id}]}" onto public xin.toheart.door.dto.ResponseDto xin.toheart.door.controller.ConfessionController.getConfessionById(java.lang.String)
+[2018-09-25 19:28:57] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/confession/splendidConfession/inHome]}" onto public xin.toheart.door.dto.ResponseDto xin.toheart.door.controller.ConfessionController.splendidConfession()
+[2018-09-25 19:28:57] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/game/2048]}" onto public java.lang.String xin.toheart.door.controller.GameController.game2048()
+[2018-09-25 19:28:57] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/game/gameHome]}" onto public java.lang.String xin.toheart.door.controller.GameController.gameHome()
+[2018-09-25 19:28:57] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/login]}" onto public com.alibaba.fastjson.JSONObject xin.toheart.door.controller.HomeController.login()
+[2018-09-25 19:28:57] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/logout]}" onto public java.lang.String xin.toheart.door.controller.HomeController.logout(javax.servlet.http.HttpSession)
+[2018-09-25 19:28:57] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/QQLogin]}" onto public xin.toheart.door.pojo.User xin.toheart.door.controller.HomeController.QQLogin(java.lang.String,javax.servlet.http.HttpSession) throws java.text.ParseException
+[2018-09-25 19:28:57] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/pic/upload]}" onto public java.lang.String xin.toheart.door.controller.PicUplodController.upload(org.springframework.web.multipart.MultipartFile)
+[2018-09-25 19:28:57] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/story/showStory/{id}],methods=[GET]}" onto public xin.toheart.door.dto.ResponseDto xin.toheart.door.controller.StoryController.showStory(int)
+[2018-09-25 19:28:57] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/story/storyList/{index}/{size}],methods=[GET]}" onto public xin.toheart.door.dto.ResponseDto xin.toheart.door.controller.StoryController.storyList(java.lang.String,java.lang.String)
+[2018-09-25 19:28:57] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/story/saveStory],methods=[POST]}" onto public xin.toheart.door.dto.ResponseDto xin.toheart.door.controller.StoryController.saveStory(xin.toheart.door.pojo.Story)
+[2018-09-25 19:28:57] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/story/splendidStory/inHome]}" onto public xin.toheart.door.dto.ResponseDto xin.toheart.door.controller.StoryController.splendidStoryInHome()
+[2018-09-25 19:28:57] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+[2018-09-25 19:28:57] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+[2018-09-25 19:28:57] [INFO ] [org.springframework.web.servlet.handler.SimpleUrlHandlerMapping:373]-- Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[2018-09-25 19:28:57] [INFO ] [org.springframework.web.servlet.handler.SimpleUrlHandlerMapping:373]-- Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[2018-09-25 19:28:58] [INFO ] [org.springframework.jmx.export.annotation.AnnotationMBeanExporter:433]-- Registering beans for JMX exposure on startup
+[2018-09-25 19:28:58] [INFO ] [org.springframework.jmx.export.annotation.AnnotationMBeanExporter:895]-- Bean with name 'dataSource' has been autodetected for JMX exposure
+[2018-09-25 19:28:58] [INFO ] [org.springframework.jmx.export.annotation.AnnotationMBeanExporter:668]-- Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+[2018-09-25 19:28:58] [INFO ] [org.apache.coyote.http11.Http11NioProtocol:180]-- Starting ProtocolHandler ["http-nio-5201"]
+[2018-09-25 19:28:58] [INFO ] [org.apache.tomcat.util.net.NioSelectorPool:180]-- Using a shared selector for servlet write/read
+[2018-09-25 19:28:58] [INFO ] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:206]-- Tomcat started on port(s): 5201 (http) with context path ''
+[2018-09-25 19:28:58] [INFO ] [xin.toheart.door.DoorApplication:59]-- Started DoorApplication in 10.131 seconds (JVM running for 11.513)
+[2018-09-25 19:29:28] [INFO ] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:180]-- Initializing Spring FrameworkServlet 'dispatcherServlet'
+[2018-09-25 19:29:28] [INFO ] [org.springframework.web.servlet.DispatcherServlet:494]-- FrameworkServlet 'dispatcherServlet': initialization started
+[2018-09-25 19:29:28] [INFO ] [org.springframework.web.servlet.DispatcherServlet:509]-- FrameworkServlet 'dispatcherServlet': initialization completed in 36 ms
+[2018-09-25 19:29:28] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:21]-- HandleInterceptor1 ...... preHandle
+[2018-09-25 19:29:28] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:33]-- 
+-------------------------------------
+Controller: xin.toheart.door.controller.HomeController$$EnhancerBySpringCGLIB$$67a821f9
+Method    : login
+Params    : 
+URI       : /login
+-------------------------------------
+
+[2018-09-25 19:29:28] [INFO ] [xin.toheart.door.aspect.TimeCostAspect:60]-- [time cost] 120 ms [path is xin.toheart.door.controller.HomeController.login]
+[2018-09-25 19:29:28] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:45]-- 
+========处理请求后，渲染页面前======
+[2018-09-25 19:29:28] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:55]-- 
+========视图渲染结束了，请求处理完毕====
+[2018-09-25 19:29:50] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:21]-- HandleInterceptor1 ...... preHandle
+[2018-09-25 19:29:50] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:33]-- 
+-------------------------------------
+Controller: xin.toheart.door.controller.HomeController$$EnhancerBySpringCGLIB$$67a821f9
+Method    : login
+Params    : 
+URI       : /login
+-------------------------------------
+
+[2018-09-25 19:29:50] [INFO ] [xin.toheart.door.aspect.TimeCostAspect:60]-- [time cost] 3 ms [path is xin.toheart.door.controller.HomeController.login]
+[2018-09-25 19:29:50] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:45]-- 
+========处理请求后，渲染页面前======
+[2018-09-25 19:29:50] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:55]-- 
+========视图渲染结束了，请求处理完毕====
+[2018-09-25 19:29:59] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:21]-- HandleInterceptor1 ...... preHandle
+[2018-09-25 19:29:59] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:33]-- 
+-------------------------------------
+Controller: xin.toheart.door.controller.HomeController$$EnhancerBySpringCGLIB$$67a821f9
+Method    : login
+Params    : 
+URI       : /login
+-------------------------------------
+
+[2018-09-25 19:29:59] [INFO ] [xin.toheart.door.aspect.TimeCostAspect:60]-- [time cost] 3 ms [path is xin.toheart.door.controller.HomeController.login]
+[2018-09-25 19:29:59] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:45]-- 
+========处理请求后，渲染页面前======
+[2018-09-25 19:29:59] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:55]-- 
+========视图渲染结束了，请求处理完毕====
+[2018-09-25 19:30:14] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:21]-- HandleInterceptor1 ...... preHandle
+[2018-09-25 19:30:14] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:33]-- 
+-------------------------------------
+Controller: xin.toheart.door.controller.HomeController$$EnhancerBySpringCGLIB$$67a821f9
+Method    : login
+Params    : 
+URI       : /login
+-------------------------------------
+
+[2018-09-25 19:30:40] [INFO ] [xin.toheart.door.aspect.TimeCostAspect:60]-- [time cost] 26346 ms [path is xin.toheart.door.controller.HomeController.login]
+[2018-09-25 19:30:40] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:45]-- 
+========处理请求后，渲染页面前======
+[2018-09-25 19:30:40] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:55]-- 
+========视图渲染结束了，请求处理完毕====
+[2018-09-25 19:30:43] [INFO ] [xin.toheart.door.DoorApplication:50]-- Starting DoorApplication on PC-2018HWL with PID 10864 (D:\toheartH\toheart\target\classes started by Administrator in D:\toheartH\toheart)
+[2018-09-25 19:30:43] [INFO ] [xin.toheart.door.DoorApplication:659]-- No active profile set, falling back to default profiles: default
+[2018-09-25 19:30:43] [INFO ] [org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext:590]-- Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@a307a8c: startup date [Tue Sep 25 19:30:43 CST 2018]; root of context hierarchy
+[2018-09-25 19:30:46] [INFO ] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:91]-- Tomcat initialized with port(s): 5201 (http)
+[2018-09-25 19:30:46] [INFO ] [org.apache.coyote.http11.Http11NioProtocol:180]-- Initializing ProtocolHandler ["http-nio-5201"]
+[2018-09-25 19:30:46] [INFO ] [org.apache.catalina.core.StandardService:180]-- Starting service [Tomcat]
+[2018-09-25 19:30:46] [INFO ] [org.apache.catalina.core.StandardEngine:180]-- Starting Servlet Engine: Apache Tomcat/8.5.31
+[2018-09-25 19:30:46] [INFO ] [org.apache.catalina.core.AprLifecycleListener:180]-- The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [D:\Program Files\Java\jdk1.8.0_161\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;D:\Program Files\Java\jdk1.8.0_161\bin;D:\Program Files\Git\cmd;D:\work\apache-maven-3.5.3\bin;D:\Program Files\nodejs\;C:\Program Files (x86)\Windows Kits\8.1\Windows Performance Toolkit\;D:\Program Files\PuTTY\;D:\Program Files\TortoiseSVN\bin;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;C:\Users\Administrator\AppData\Roaming\npm;.]
+[2018-09-25 19:30:46] [INFO ] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:180]-- Initializing Spring embedded WebApplicationContext
+[2018-09-25 19:30:46] [INFO ] [org.springframework.web.context.ContextLoader:285]-- Root WebApplicationContext: initialization completed in 2837 ms
+[2018-09-25 19:30:46] [INFO ] [org.springframework.boot.web.servlet.ServletRegistrationBean:186]-- Servlet dispatcherServlet mapped to [/]
+[2018-09-25 19:30:46] [INFO ] [org.springframework.boot.web.servlet.FilterRegistrationBean:245]-- Mapping filter: 'characterEncodingFilter' to: [/*]
+[2018-09-25 19:30:46] [INFO ] [org.springframework.boot.web.servlet.FilterRegistrationBean:245]-- Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+[2018-09-25 19:30:46] [INFO ] [org.springframework.boot.web.servlet.FilterRegistrationBean:245]-- Mapping filter: 'httpPutFormContentFilter' to: [/*]
+[2018-09-25 19:30:46] [INFO ] [org.springframework.boot.web.servlet.FilterRegistrationBean:245]-- Mapping filter: 'requestContextFilter' to: [/*]
+[2018-09-25 19:30:46] [INFO ] [org.springframework.boot.web.servlet.FilterRegistrationBean:258]-- Mapping filter: 'loginAuthFilter' to urls: [/*]
+[2018-09-25 19:30:47] [INFO ] [org.springframework.web.servlet.handler.SimpleUrlHandlerMapping:373]-- Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[2018-09-25 19:30:48] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter:574]-- Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@a307a8c: startup date [Tue Sep 25 19:30:43 CST 2018]; root of context hierarchy
+[2018-09-25 19:30:48] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/common/increaseZan]}" onto public xin.toheart.door.dto.ResponseDto xin.toheart.door.controller.CommonController.increaseZan(int,int,javax.servlet.http.HttpSession)
+[2018-09-25 19:30:48] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/common/increaseComment]}" onto public xin.toheart.door.dto.ResponseDto xin.toheart.door.controller.CommonController.increaseComment(int,int,int,java.lang.String,javax.servlet.http.HttpSession)
+[2018-09-25 19:30:48] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/common/findComment]}" onto public xin.toheart.door.dto.ResponseDto xin.toheart.door.controller.CommonController.findComment(int,int)
+[2018-09-25 19:30:48] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/confession/addConfession]}" onto public xin.toheart.door.dto.ResponseDto xin.toheart.door.controller.ConfessionController.addConfession(xin.toheart.door.pojo.Confession)
+[2018-09-25 19:30:48] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/confession/confessionList/{index}/{size}]}" onto public xin.toheart.door.dto.ResponseDto xin.toheart.door.controller.ConfessionController.confessionList(java.lang.String,java.lang.String)
+[2018-09-25 19:30:48] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/confession/splendidConfession/inHome]}" onto public xin.toheart.door.dto.ResponseDto xin.toheart.door.controller.ConfessionController.splendidConfession()
+[2018-09-25 19:30:48] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/confession/getConfession/{id}]}" onto public xin.toheart.door.dto.ResponseDto xin.toheart.door.controller.ConfessionController.getConfessionById(java.lang.String)
+[2018-09-25 19:30:48] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/game/2048]}" onto public java.lang.String xin.toheart.door.controller.GameController.game2048()
+[2018-09-25 19:30:48] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/game/gameHome]}" onto public java.lang.String xin.toheart.door.controller.GameController.gameHome()
+[2018-09-25 19:30:48] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/login]}" onto public com.alibaba.fastjson.JSONObject xin.toheart.door.controller.HomeController.login()
+[2018-09-25 19:30:48] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/logout]}" onto public java.lang.String xin.toheart.door.controller.HomeController.logout(javax.servlet.http.HttpSession)
+[2018-09-25 19:30:48] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/QQLogin]}" onto public xin.toheart.door.pojo.User xin.toheart.door.controller.HomeController.QQLogin(java.lang.String,javax.servlet.http.HttpSession) throws java.text.ParseException
+[2018-09-25 19:30:48] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/pic/upload]}" onto public java.lang.String xin.toheart.door.controller.PicUplodController.upload(org.springframework.web.multipart.MultipartFile)
+[2018-09-25 19:30:48] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/story/splendidStory/inHome]}" onto public xin.toheart.door.dto.ResponseDto xin.toheart.door.controller.StoryController.splendidStoryInHome()
+[2018-09-25 19:30:48] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/story/saveStory],methods=[POST]}" onto public xin.toheart.door.dto.ResponseDto xin.toheart.door.controller.StoryController.saveStory(xin.toheart.door.pojo.Story)
+[2018-09-25 19:30:48] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/story/showStory/{id}],methods=[GET]}" onto public xin.toheart.door.dto.ResponseDto xin.toheart.door.controller.StoryController.showStory(int)
+[2018-09-25 19:30:48] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/story/storyList/{index}/{size}],methods=[GET]}" onto public xin.toheart.door.dto.ResponseDto xin.toheart.door.controller.StoryController.storyList(java.lang.String,java.lang.String)
+[2018-09-25 19:30:48] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+[2018-09-25 19:30:48] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+[2018-09-25 19:30:48] [INFO ] [org.springframework.web.servlet.handler.SimpleUrlHandlerMapping:373]-- Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[2018-09-25 19:30:48] [INFO ] [org.springframework.web.servlet.handler.SimpleUrlHandlerMapping:373]-- Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[2018-09-25 19:30:48] [INFO ] [org.springframework.jmx.export.annotation.AnnotationMBeanExporter:433]-- Registering beans for JMX exposure on startup
+[2018-09-25 19:30:48] [INFO ] [org.springframework.jmx.export.annotation.AnnotationMBeanExporter:895]-- Bean with name 'dataSource' has been autodetected for JMX exposure
+[2018-09-25 19:30:48] [INFO ] [org.springframework.jmx.export.annotation.AnnotationMBeanExporter:668]-- Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+[2018-09-25 19:30:48] [INFO ] [org.apache.coyote.http11.Http11NioProtocol:180]-- Starting ProtocolHandler ["http-nio-5201"]
+[2018-09-25 19:30:48] [INFO ] [org.apache.tomcat.util.net.NioSelectorPool:180]-- Using a shared selector for servlet write/read
+[2018-09-25 19:30:48] [INFO ] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:206]-- Tomcat started on port(s): 5201 (http) with context path ''
+[2018-09-25 19:30:48] [INFO ] [xin.toheart.door.DoorApplication:59]-- Started DoorApplication in 6.276 seconds (JVM running for 6.956)
+[2018-09-25 19:31:33] [INFO ] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:180]-- Initializing Spring FrameworkServlet 'dispatcherServlet'
+[2018-09-25 19:31:33] [INFO ] [org.springframework.web.servlet.DispatcherServlet:494]-- FrameworkServlet 'dispatcherServlet': initialization started
+[2018-09-25 19:31:33] [INFO ] [org.springframework.web.servlet.DispatcherServlet:509]-- FrameworkServlet 'dispatcherServlet': initialization completed in 45 ms
+[2018-09-25 19:31:33] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:21]-- HandleInterceptor1 ...... preHandle
+[2018-09-25 19:31:33] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:33]-- 
+-------------------------------------
+Controller: xin.toheart.door.controller.HomeController$$EnhancerBySpringCGLIB$$5f74a1c7
+Method    : login
+Params    : 
+URI       : /login
+-------------------------------------
+
+[2018-09-25 19:31:33] [INFO ] [xin.toheart.door.aspect.TimeCostAspect:60]-- [time cost] 133 ms [path is xin.toheart.door.controller.HomeController.login]
+[2018-09-25 19:31:33] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:45]-- 
+========处理请求后，渲染页面前======
+[2018-09-25 19:31:33] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:55]-- 
+========视图渲染结束了，请求处理完毕====
+[2018-09-25 19:36:32] [INFO ] [xin.toheart.door.DoorApplication:50]-- Starting DoorApplication on PC-2018HWL with PID 8696 (D:\toheartH\toheart\target\classes started by Administrator in D:\toheartH\toheart)
+[2018-09-25 19:36:32] [INFO ] [xin.toheart.door.DoorApplication:659]-- No active profile set, falling back to default profiles: default
+[2018-09-25 19:36:32] [INFO ] [org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext:590]-- Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@2438dcd: startup date [Tue Sep 25 19:36:32 CST 2018]; root of context hierarchy
+[2018-09-25 19:36:34] [INFO ] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:91]-- Tomcat initialized with port(s): 5201 (http)
+[2018-09-25 19:36:34] [INFO ] [org.apache.coyote.http11.Http11NioProtocol:180]-- Initializing ProtocolHandler ["http-nio-5201"]
+[2018-09-25 19:36:34] [INFO ] [org.apache.catalina.core.StandardService:180]-- Starting service [Tomcat]
+[2018-09-25 19:36:34] [INFO ] [org.apache.catalina.core.StandardEngine:180]-- Starting Servlet Engine: Apache Tomcat/8.5.31
+[2018-09-25 19:36:34] [INFO ] [org.apache.catalina.core.AprLifecycleListener:180]-- The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [D:\Program Files\Java\jdk1.8.0_161\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;D:\Program Files\Java\jdk1.8.0_161\bin;D:\Program Files\Git\cmd;D:\work\apache-maven-3.5.3\bin;D:\Program Files\nodejs\;C:\Program Files (x86)\Windows Kits\8.1\Windows Performance Toolkit\;D:\Program Files\PuTTY\;D:\Program Files\TortoiseSVN\bin;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;C:\Users\Administrator\AppData\Roaming\npm;.]
+[2018-09-25 19:36:34] [INFO ] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:180]-- Initializing Spring embedded WebApplicationContext
+[2018-09-25 19:36:34] [INFO ] [org.springframework.web.context.ContextLoader:285]-- Root WebApplicationContext: initialization completed in 2609 ms
+[2018-09-25 19:36:35] [INFO ] [org.springframework.boot.web.servlet.ServletRegistrationBean:186]-- Servlet dispatcherServlet mapped to [/]
+[2018-09-25 19:36:35] [INFO ] [org.springframework.boot.web.servlet.FilterRegistrationBean:245]-- Mapping filter: 'characterEncodingFilter' to: [/*]
+[2018-09-25 19:36:35] [INFO ] [org.springframework.boot.web.servlet.FilterRegistrationBean:245]-- Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+[2018-09-25 19:36:35] [INFO ] [org.springframework.boot.web.servlet.FilterRegistrationBean:245]-- Mapping filter: 'httpPutFormContentFilter' to: [/*]
+[2018-09-25 19:36:35] [INFO ] [org.springframework.boot.web.servlet.FilterRegistrationBean:245]-- Mapping filter: 'requestContextFilter' to: [/*]
+[2018-09-25 19:36:35] [INFO ] [org.springframework.boot.web.servlet.FilterRegistrationBean:258]-- Mapping filter: 'loginAuthFilter' to urls: [/*]
+[2018-09-25 19:36:35] [INFO ] [org.springframework.web.servlet.handler.SimpleUrlHandlerMapping:373]-- Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[2018-09-25 19:36:36] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter:574]-- Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@2438dcd: startup date [Tue Sep 25 19:36:32 CST 2018]; root of context hierarchy
+[2018-09-25 19:36:36] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/common/increaseZan]}" onto public xin.toheart.door.dto.ResponseDto xin.toheart.door.controller.CommonController.increaseZan(int,int,javax.servlet.http.HttpSession)
+[2018-09-25 19:36:36] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/common/increaseComment]}" onto public xin.toheart.door.dto.ResponseDto xin.toheart.door.controller.CommonController.increaseComment(int,int,int,java.lang.String,javax.servlet.http.HttpSession)
+[2018-09-25 19:36:36] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/common/findComment]}" onto public xin.toheart.door.dto.ResponseDto xin.toheart.door.controller.CommonController.findComment(int,int)
+[2018-09-25 19:36:36] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/confession/confessionList/{index}/{size}]}" onto public xin.toheart.door.dto.ResponseDto xin.toheart.door.controller.ConfessionController.confessionList(java.lang.String,java.lang.String)
+[2018-09-25 19:36:36] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/confession/addConfession]}" onto public xin.toheart.door.dto.ResponseDto xin.toheart.door.controller.ConfessionController.addConfession(xin.toheart.door.pojo.Confession)
+[2018-09-25 19:36:36] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/confession/getConfession/{id}]}" onto public xin.toheart.door.dto.ResponseDto xin.toheart.door.controller.ConfessionController.getConfessionById(java.lang.String)
+[2018-09-25 19:36:36] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/confession/splendidConfession/inHome]}" onto public xin.toheart.door.dto.ResponseDto xin.toheart.door.controller.ConfessionController.splendidConfession()
+[2018-09-25 19:36:36] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/game/gameHome]}" onto public java.lang.String xin.toheart.door.controller.GameController.gameHome()
+[2018-09-25 19:36:36] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/game/2048]}" onto public java.lang.String xin.toheart.door.controller.GameController.game2048()
+[2018-09-25 19:36:36] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/login]}" onto public com.alibaba.fastjson.JSONObject xin.toheart.door.controller.HomeController.login()
+[2018-09-25 19:36:36] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/logout]}" onto public java.lang.String xin.toheart.door.controller.HomeController.logout(javax.servlet.http.HttpSession)
+[2018-09-25 19:36:36] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/QQLogin]}" onto public xin.toheart.door.pojo.User xin.toheart.door.controller.HomeController.QQLogin(java.lang.String,javax.servlet.http.HttpSession) throws java.text.ParseException
+[2018-09-25 19:36:36] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/pic/upload]}" onto public java.lang.String xin.toheart.door.controller.PicUplodController.upload(org.springframework.web.multipart.MultipartFile)
+[2018-09-25 19:36:36] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/story/saveStory],methods=[POST]}" onto public xin.toheart.door.dto.ResponseDto xin.toheart.door.controller.StoryController.saveStory(xin.toheart.door.pojo.Story)
+[2018-09-25 19:36:36] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/story/storyList/{index}/{size}],methods=[GET]}" onto public xin.toheart.door.dto.ResponseDto xin.toheart.door.controller.StoryController.storyList(java.lang.String,java.lang.String)
+[2018-09-25 19:36:36] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/story/showStory/{id}],methods=[GET]}" onto public xin.toheart.door.dto.ResponseDto xin.toheart.door.controller.StoryController.showStory(int)
+[2018-09-25 19:36:36] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/story/splendidStory/inHome]}" onto public xin.toheart.door.dto.ResponseDto xin.toheart.door.controller.StoryController.splendidStoryInHome()
+[2018-09-25 19:36:36] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+[2018-09-25 19:36:36] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+[2018-09-25 19:36:36] [INFO ] [org.springframework.web.servlet.handler.SimpleUrlHandlerMapping:373]-- Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[2018-09-25 19:36:36] [INFO ] [org.springframework.web.servlet.handler.SimpleUrlHandlerMapping:373]-- Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[2018-09-25 19:36:37] [INFO ] [org.springframework.jmx.export.annotation.AnnotationMBeanExporter:433]-- Registering beans for JMX exposure on startup
+[2018-09-25 19:36:37] [INFO ] [org.springframework.jmx.export.annotation.AnnotationMBeanExporter:895]-- Bean with name 'dataSource' has been autodetected for JMX exposure
+[2018-09-25 19:36:37] [INFO ] [org.springframework.jmx.export.annotation.AnnotationMBeanExporter:668]-- Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+[2018-09-25 19:36:37] [INFO ] [org.apache.coyote.http11.Http11NioProtocol:180]-- Starting ProtocolHandler ["http-nio-5201"]
+[2018-09-25 19:36:37] [INFO ] [org.apache.tomcat.util.net.NioSelectorPool:180]-- Using a shared selector for servlet write/read
+[2018-09-25 19:36:37] [INFO ] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:206]-- Tomcat started on port(s): 5201 (http) with context path ''
+[2018-09-25 19:36:37] [INFO ] [xin.toheart.door.DoorApplication:59]-- Started DoorApplication in 5.874 seconds (JVM running for 6.701)
+[2018-09-25 19:37:28] [INFO ] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:180]-- Initializing Spring FrameworkServlet 'dispatcherServlet'
+[2018-09-25 19:37:28] [INFO ] [org.springframework.web.servlet.DispatcherServlet:494]-- FrameworkServlet 'dispatcherServlet': initialization started
+[2018-09-25 19:37:28] [INFO ] [org.springframework.web.servlet.DispatcherServlet:509]-- FrameworkServlet 'dispatcherServlet': initialization completed in 64 ms
+[2018-09-25 19:37:28] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:21]-- HandleInterceptor1 ...... preHandle
+[2018-09-25 19:37:28] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:33]-- 
+-------------------------------------
+Controller: xin.toheart.door.controller.HomeController$$EnhancerBySpringCGLIB$$8d4fb5ac
+Method    : login
+Params    : 
+URI       : /login
+-------------------------------------
+
+[2018-09-25 19:37:30] [INFO ] [xin.toheart.door.common.util.HttpUtil:152]-- 
+get=https://graph.qq.com/oauth2.0/authorize?response_type=code&client_id=101484099&redirect_uri=http://www.toheart.xin/QQLogin&state=test 
+result=<!DOCTYPE html>
+
+
+<html lang="zh-cn">
+<head>
+    <!-- @fragment_top Start-->
+<meta charset="UTF-8">
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>QQ帐号安全登录</title>
+<meta name="keywords" content="QQ互联、QQ登录、安全登录、网站接入、腾讯开放平台">
+<meta name="description" content="接入QQ互联，可实现与腾讯各项服务的无缝连接，安全帐号登录体系，用户动态同步腾讯各社交平台，调用腾讯公司各业务服务。">
+<meta name="copyright" content="Tencent" >
+<meta name="author" content="rtx://tencent/sng/yuanyan" >
+<link rel="Shortcut Icon" href="https://imgcache.qq.com/qzone/openapi/favicon.ico?t=20130219" type="image/x-icon">
+<link rel="icon" href="https://imgcache.qq.com/qzone/openapi/favicon.ico?t=20130219" type="image/x-icon">
+<link href="https://imgcache.qq.com/open/connect/widget/pc/login/qlogin_v2.min.css?max_age=2592000&v=20140818" rel="stylesheet">
+<script type="text/javascript">
+    window.__start = +new Date();
+    
+    document.domain = 'qq.com'; // todo 这里为什么要跨域
+    var _speedTiming = [+new Date];
+    (function error(monitorId){
+        var BID = 130;
+        var errorTransport = null;
+        var monitorTransport = null;
+        window.onerror = function(errorMsg, url, lineNumber) {
+            var bid = 'bid=' + BID;
+            var mid = '';
+            var msg = 'msg=' + encodeURIComponent([errorMsg, url, lineNumber, navigator.userAgent].join("|_|"));
+            var src = 'https://badjs.qq.com/cgi-bin/js_report?'+ [bid,mid,msg].join("&");
+            errorTransport = new Image;
+            errorTransport.onerror = errorTransport.onload = function(){
+                errorTransport = errorTransport.onerror = errorTransport.onload = null ;
+            };
+            // errorTransport.src = src;
+            monitorTransport = new Image;
+            monitorTransport.onerror = monitorTransport.onload = function(){
+                monitorTransport = monitorTransport.onerror = monitorTransport.onload = null ;
+            };
+            // monitorTransport.src = "http://cgi.connect.qq.com/report/report_vm?monitors=" +"["+monitorId+"]";
+
+          var img = document.createElement('img');
+          var url = 'https://graph.qq.com/oauth2.0/report?';
+          var data = {
+            attr_id: 2775276,
+            uls: 'Script Error: ' + errorMsg + ', line:' + lineNumber + ', url:' + location.href + ' referer:' + document.referrer,
+            content_type: 0,
+            client_id: Q.getParameter('client_id')
+          }
+          for(var key in data){
+            if(url[url.length - 1] != '?')
+              url += '&';
+            url += key + '=' + encodeURIComponent(data[key]);
+          }
+          img.src = url;
+        };
+    })(302299);
+</script>
+<!-- @fragment_top End -->
+
+</head>
+<body style="overflow-x: hidden;">
+
+<div class="page_accredit page_error">
+    <!-- @header Start-->
+<div class="lay_top">
+    <div class="lay_top_inner">
+        <h1 class="logo text_hide">QQ登录</h1>
+        <div class="lat_top_other">
+            <a href="http://connect.qq.com" target="_blank" title="什么是QQ登录"><i class="icon_help_white"></i>QQ登录</a>
+            <span class="line">|</span>
+            <a href="http://connect.qq.com/toc/auth_manager?from=auth" id="auth_manager_link" target="_blank" title="登录授权管理">授权管理</a>
+            <span class="line">|</span>
+            <a href="http://connect.qq.com/manage" target="_blank" title="申请接入">申请接入</a>
+        </div>
+    </div>
+</div>
+<!-- @header End -->
+
+
+    <div class="lay_main lay_main_single">
+        <div class="lay_login_warn">
+            <div class="fn_login_warn">
+                
+                <!-- 以下对错误码为100008的情况单独处理 -->
+                <p><span class="warn_txt">
+                    
+                    redirect uri is illegal(100010)
+                    
+                    </span></p>
+                
+                <p class="warn_tips"></p>
+                
+                <p class="warn_tips">
+                    
+
+		    <a id="notice" href="http://wiki.connect.qq.com/%E4%BA%92%E8%81%94%E5%8A%A0%E5%BC%BA%E7%BD%91%E7%AB%99%E5%BA%94%E7%94%A8%E5%9B%9E%E8%B0%83%E5%9C%B0%E5%9D%80%E6%A0%A1%E9%AA%8C%E9%80%9A%E7%9F%A5" target="_blank" style="color:red;">通知: QQ互联加强网站应用回调地址校验</a>
+			<p></p>
+                    <a id="feed_back_link_err" href="http://support.qq.com/write.shtml?fid=780" target="_blank">点此报错</a>
+                    <span>&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                    <a id="feed_back_link_err" href="http://wiki.connect.qq.com/%E5%9B%9E%E8%B0%83%E5%9C%B0%E5%9D%80%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98%E5%8F%8A%E4%BF%AE%E6%94%B9%E6%96%B9%E6%B3%95" target="_blank">解决方案</a>
+                    
+                    <span>&nbsp;</span>
+                    
+                </p>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- @footer Start-->
+<div class="lay_footer">
+    <div class="lay_footer_inner">
+        <div class="lay_footer_r">
+            <a href="http://zc.qq.com/chs/index.html" title="注册QQ号" target="_blank">注册QQ号</a>
+            <a href="http://support.qq.com/write.shtml?fid=780" target="_blank" title="反馈意见" id="feed_back_link">反馈意见</a>
+        </div>
+    </div>
+</div>
+<!-- @footer End -->
+
+</div>
+<!--@fragment_bottom Start-->
+<script src="https://imgcache.qq.com/c/=/open/connect/widget/pc/login/pt_adapt.js,qlogin_v2.js?v=20140527" charset="UTF-8"></script>
+<script>
+    document.write('<script src="https://tajs.qq.com/stats?sId=52725868" charset="UTF-8"><\/script>');
+</script>
+<!--@fragment_bottom End -->
+
+<script>
+    // PC错误页曝光量
+    Q.monitor(302300);
+    // support论坛逻辑
+    var feed_back_link = document.getElementById("feed_back_link_err");
+    var dmRe = /http:\/\/([^/]*)\/?/i;
+    window.crtDomain = 'http://toheart.xin' || (Q.getParameter && Q.getParameter("redirect_uri"));
+    var errcode = '100010';
+    var dmHost = window.crtDomain.match(dmRe);
+    if(feed_back_link) {
+        feed_back_link.href += ("&SSTAG="+encodeURIComponent((dmHost&&dmHost[1])+".errorcode"+errcode));
+    }
+
+    var t = +new Date() - Q.getParameter('auth_time');
+
+    // 授权失败
+    Q.mta('LoginFailed', {Appid: Q.appid, Ext1: Q.getParameter('error')});
+
+    // mm上报注册
+    var uin = Q.getCookie('uin') || 0;
+    if (uin && (/^o([0-9]+)$/).test(uin)) uin = parseFloat(RegExp.$1);
+
+    Q.mm.init(1000128, uin, 'QC_WEB');
+    Q.mm.report(Q.cgi, Q.getParameter('error'), t);
+</script>
+</body>
+</html>
+
+[2018-09-25 19:37:30] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:55]-- 
+========视图渲染结束了，请求处理完毕====
+[2018-09-25 19:37:30] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:21]-- HandleInterceptor1 ...... preHandle
+[2018-09-25 19:37:30] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:33]-- 
+-------------------------------------
+Controller: org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController
+Method    : errorHtml
+Params    : 
+URI       : /error
+-------------------------------------
+
+[2018-09-25 19:37:30] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:45]-- 
+========处理请求后，渲染页面前======
+[2018-09-25 19:37:30] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:55]-- 
+========视图渲染结束了，请求处理完毕====
+[2018-09-25 19:45:19] [INFO ] [xin.toheart.door.DoorApplication:50]-- Starting DoorApplication on PC-2018HWL with PID 2748 (D:\toheartH\toheart\target\classes started by Administrator in D:\toheartH\toheart)
+[2018-09-25 19:45:19] [INFO ] [xin.toheart.door.DoorApplication:659]-- No active profile set, falling back to default profiles: default
+[2018-09-25 19:45:19] [INFO ] [org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext:590]-- Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@4f49f6af: startup date [Tue Sep 25 19:45:19 CST 2018]; root of context hierarchy
+[2018-09-25 19:45:22] [INFO ] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:91]-- Tomcat initialized with port(s): 5201 (http)
+[2018-09-25 19:45:22] [INFO ] [org.apache.coyote.http11.Http11NioProtocol:180]-- Initializing ProtocolHandler ["http-nio-5201"]
+[2018-09-25 19:45:22] [INFO ] [org.apache.catalina.core.StandardService:180]-- Starting service [Tomcat]
+[2018-09-25 19:45:22] [INFO ] [org.apache.catalina.core.StandardEngine:180]-- Starting Servlet Engine: Apache Tomcat/8.5.31
+[2018-09-25 19:45:22] [INFO ] [org.apache.catalina.core.AprLifecycleListener:180]-- The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [D:\Program Files\Java\jdk1.8.0_161\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;D:\Program Files\Java\jdk1.8.0_161\bin;D:\Program Files\Git\cmd;D:\work\apache-maven-3.5.3\bin;D:\Program Files\nodejs\;C:\Program Files (x86)\Windows Kits\8.1\Windows Performance Toolkit\;D:\Program Files\PuTTY\;D:\Program Files\TortoiseSVN\bin;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;C:\Users\Administrator\AppData\Roaming\npm;.]
+[2018-09-25 19:45:22] [INFO ] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:180]-- Initializing Spring embedded WebApplicationContext
+[2018-09-25 19:45:22] [INFO ] [org.springframework.web.context.ContextLoader:285]-- Root WebApplicationContext: initialization completed in 3028 ms
+[2018-09-25 19:45:23] [INFO ] [org.springframework.boot.web.servlet.ServletRegistrationBean:186]-- Servlet dispatcherServlet mapped to [/]
+[2018-09-25 19:45:23] [INFO ] [org.springframework.boot.web.servlet.FilterRegistrationBean:245]-- Mapping filter: 'characterEncodingFilter' to: [/*]
+[2018-09-25 19:45:23] [INFO ] [org.springframework.boot.web.servlet.FilterRegistrationBean:245]-- Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+[2018-09-25 19:45:23] [INFO ] [org.springframework.boot.web.servlet.FilterRegistrationBean:245]-- Mapping filter: 'httpPutFormContentFilter' to: [/*]
+[2018-09-25 19:45:23] [INFO ] [org.springframework.boot.web.servlet.FilterRegistrationBean:245]-- Mapping filter: 'requestContextFilter' to: [/*]
+[2018-09-25 19:45:23] [INFO ] [org.springframework.boot.web.servlet.FilterRegistrationBean:258]-- Mapping filter: 'loginAuthFilter' to urls: [/*]
+[2018-09-25 19:45:24] [INFO ] [org.springframework.web.servlet.handler.SimpleUrlHandlerMapping:373]-- Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[2018-09-25 19:45:24] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter:574]-- Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@4f49f6af: startup date [Tue Sep 25 19:45:19 CST 2018]; root of context hierarchy
+[2018-09-25 19:45:24] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/common/increaseZan]}" onto public xin.toheart.door.dto.ResponseDto xin.toheart.door.controller.CommonController.increaseZan(int,int,javax.servlet.http.HttpSession)
+[2018-09-25 19:45:24] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/common/increaseComment]}" onto public xin.toheart.door.dto.ResponseDto xin.toheart.door.controller.CommonController.increaseComment(int,int,int,java.lang.String,javax.servlet.http.HttpSession)
+[2018-09-25 19:45:24] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/common/findComment]}" onto public xin.toheart.door.dto.ResponseDto xin.toheart.door.controller.CommonController.findComment(int,int)
+[2018-09-25 19:45:24] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/confession/splendidConfession/inHome]}" onto public xin.toheart.door.dto.ResponseDto xin.toheart.door.controller.ConfessionController.splendidConfession()
+[2018-09-25 19:45:24] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/confession/getConfession/{id}]}" onto public xin.toheart.door.dto.ResponseDto xin.toheart.door.controller.ConfessionController.getConfessionById(java.lang.String)
+[2018-09-25 19:45:24] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/confession/addConfession]}" onto public xin.toheart.door.dto.ResponseDto xin.toheart.door.controller.ConfessionController.addConfession(xin.toheart.door.pojo.Confession)
+[2018-09-25 19:45:24] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/confession/confessionList/{index}/{size}]}" onto public xin.toheart.door.dto.ResponseDto xin.toheart.door.controller.ConfessionController.confessionList(java.lang.String,java.lang.String)
+[2018-09-25 19:45:24] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/game/gameHome]}" onto public java.lang.String xin.toheart.door.controller.GameController.gameHome()
+[2018-09-25 19:45:24] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/game/2048]}" onto public java.lang.String xin.toheart.door.controller.GameController.game2048()
+[2018-09-25 19:45:24] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/logout]}" onto public java.lang.String xin.toheart.door.controller.HomeController.logout(javax.servlet.http.HttpSession)
+[2018-09-25 19:45:24] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/login]}" onto public java.lang.String xin.toheart.door.controller.HomeController.login()
+[2018-09-25 19:45:24] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/QQLogin]}" onto public java.lang.String xin.toheart.door.controller.HomeController.QQLogin(java.lang.String,javax.servlet.http.HttpSession) throws java.text.ParseException
+[2018-09-25 19:45:24] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/pic/upload]}" onto public java.lang.String xin.toheart.door.controller.PicUplodController.upload(org.springframework.web.multipart.MultipartFile)
+[2018-09-25 19:45:24] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/story/splendidStory/inHome]}" onto public xin.toheart.door.dto.ResponseDto xin.toheart.door.controller.StoryController.splendidStoryInHome()
+[2018-09-25 19:45:24] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/story/storyList/{index}/{size}],methods=[GET]}" onto public xin.toheart.door.dto.ResponseDto xin.toheart.door.controller.StoryController.storyList(java.lang.String,java.lang.String)
+[2018-09-25 19:45:24] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/story/saveStory],methods=[POST]}" onto public xin.toheart.door.dto.ResponseDto xin.toheart.door.controller.StoryController.saveStory(xin.toheart.door.pojo.Story)
+[2018-09-25 19:45:24] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/story/showStory/{id}],methods=[GET]}" onto public xin.toheart.door.dto.ResponseDto xin.toheart.door.controller.StoryController.showStory(int)
+[2018-09-25 19:45:24] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+[2018-09-25 19:45:24] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+[2018-09-25 19:45:24] [INFO ] [org.springframework.web.servlet.handler.SimpleUrlHandlerMapping:373]-- Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[2018-09-25 19:45:24] [INFO ] [org.springframework.web.servlet.handler.SimpleUrlHandlerMapping:373]-- Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[2018-09-25 19:45:25] [INFO ] [org.springframework.jmx.export.annotation.AnnotationMBeanExporter:433]-- Registering beans for JMX exposure on startup
+[2018-09-25 19:45:25] [INFO ] [org.springframework.jmx.export.annotation.AnnotationMBeanExporter:895]-- Bean with name 'dataSource' has been autodetected for JMX exposure
+[2018-09-25 19:45:25] [INFO ] [org.springframework.jmx.export.annotation.AnnotationMBeanExporter:668]-- Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+[2018-09-25 19:45:25] [INFO ] [org.apache.coyote.http11.Http11NioProtocol:180]-- Starting ProtocolHandler ["http-nio-5201"]
+[2018-09-25 19:45:25] [INFO ] [org.apache.tomcat.util.net.NioSelectorPool:180]-- Using a shared selector for servlet write/read
+[2018-09-25 19:45:25] [INFO ] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:206]-- Tomcat started on port(s): 5201 (http) with context path ''
+[2018-09-25 19:45:25] [INFO ] [xin.toheart.door.DoorApplication:59]-- Started DoorApplication in 6.553 seconds (JVM running for 7.299)
+[2018-09-25 19:45:30] [INFO ] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:180]-- Initializing Spring FrameworkServlet 'dispatcherServlet'
+[2018-09-25 19:45:30] [INFO ] [org.springframework.web.servlet.DispatcherServlet:494]-- FrameworkServlet 'dispatcherServlet': initialization started
+[2018-09-25 19:45:30] [INFO ] [org.springframework.web.servlet.DispatcherServlet:509]-- FrameworkServlet 'dispatcherServlet': initialization completed in 37 ms
+[2018-09-25 19:45:30] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:21]-- HandleInterceptor1 ...... preHandle
+[2018-09-25 19:45:30] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:33]-- 
+-------------------------------------
+Controller: xin.toheart.door.controller.HomeController$$EnhancerBySpringCGLIB$$4ed97290
+Method    : login
+Params    : 
+URI       : /login
+-------------------------------------
+
+[2018-09-25 19:45:30] [INFO ] [xin.toheart.door.aspect.TimeCostAspect:60]-- [time cost] 10 ms [path is xin.toheart.door.controller.HomeController.login]
+[2018-09-25 19:45:30] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:45]-- 
+========处理请求后，渲染页面前======
+[2018-09-25 19:45:30] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:55]-- 
+========视图渲染结束了，请求处理完毕====
+[2018-09-25 19:45:34] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:21]-- HandleInterceptor1 ...... preHandle
+[2018-09-25 19:45:34] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:33]-- 
+-------------------------------------
+Controller: xin.toheart.door.controller.HomeController$$EnhancerBySpringCGLIB$$4ed97290
+Method    : login
+Params    : 
+URI       : /login
+-------------------------------------
+
+[2018-09-25 19:45:34] [INFO ] [xin.toheart.door.aspect.TimeCostAspect:60]-- [time cost] 0 ms [path is xin.toheart.door.controller.HomeController.login]
+[2018-09-25 19:45:34] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:45]-- 
+========处理请求后，渲染页面前======
+[2018-09-25 19:45:34] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:55]-- 
+========视图渲染结束了，请求处理完毕====
+[2018-09-25 19:48:06] [INFO ] [xin.toheart.door.DoorApplication:50]-- Starting DoorApplication on PC-2018HWL with PID 10732 (D:\toheartH\toheart\target\classes started by Administrator in D:\toheartH\toheart)
+[2018-09-25 19:48:06] [INFO ] [xin.toheart.door.DoorApplication:659]-- No active profile set, falling back to default profiles: default
+[2018-09-25 19:48:06] [INFO ] [org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext:590]-- Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@21be3395: startup date [Tue Sep 25 19:48:06 CST 2018]; root of context hierarchy
+[2018-09-25 19:48:09] [INFO ] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:91]-- Tomcat initialized with port(s): 5201 (http)
+[2018-09-25 19:48:09] [INFO ] [org.apache.coyote.http11.Http11NioProtocol:180]-- Initializing ProtocolHandler ["http-nio-5201"]
+[2018-09-25 19:48:09] [INFO ] [org.apache.catalina.core.StandardService:180]-- Starting service [Tomcat]
+[2018-09-25 19:48:09] [INFO ] [org.apache.catalina.core.StandardEngine:180]-- Starting Servlet Engine: Apache Tomcat/8.5.31
+[2018-09-25 19:48:09] [INFO ] [org.apache.catalina.core.AprLifecycleListener:180]-- The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [D:\Program Files\Java\jdk1.8.0_161\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;D:\Program Files\Java\jdk1.8.0_161\bin;D:\Program Files\Git\cmd;D:\work\apache-maven-3.5.3\bin;D:\Program Files\nodejs\;C:\Program Files (x86)\Windows Kits\8.1\Windows Performance Toolkit\;D:\Program Files\PuTTY\;D:\Program Files\TortoiseSVN\bin;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;C:\Users\Administrator\AppData\Roaming\npm;.]
+[2018-09-25 19:48:09] [INFO ] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:180]-- Initializing Spring embedded WebApplicationContext
+[2018-09-25 19:48:09] [INFO ] [org.springframework.web.context.ContextLoader:285]-- Root WebApplicationContext: initialization completed in 2934 ms
+[2018-09-25 19:48:09] [INFO ] [org.springframework.boot.web.servlet.ServletRegistrationBean:186]-- Servlet dispatcherServlet mapped to [/]
+[2018-09-25 19:48:09] [INFO ] [org.springframework.boot.web.servlet.FilterRegistrationBean:245]-- Mapping filter: 'characterEncodingFilter' to: [/*]
+[2018-09-25 19:48:09] [INFO ] [org.springframework.boot.web.servlet.FilterRegistrationBean:245]-- Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+[2018-09-25 19:48:09] [INFO ] [org.springframework.boot.web.servlet.FilterRegistrationBean:245]-- Mapping filter: 'httpPutFormContentFilter' to: [/*]
+[2018-09-25 19:48:09] [INFO ] [org.springframework.boot.web.servlet.FilterRegistrationBean:245]-- Mapping filter: 'requestContextFilter' to: [/*]
+[2018-09-25 19:48:09] [INFO ] [org.springframework.boot.web.servlet.FilterRegistrationBean:258]-- Mapping filter: 'loginAuthFilter' to urls: [/*]
+[2018-09-25 19:48:11] [INFO ] [org.springframework.web.servlet.handler.SimpleUrlHandlerMapping:373]-- Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[2018-09-25 19:48:11] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter:574]-- Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@21be3395: startup date [Tue Sep 25 19:48:06 CST 2018]; root of context hierarchy
+[2018-09-25 19:48:11] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/common/increaseZan]}" onto public xin.toheart.door.dto.ResponseDto xin.toheart.door.controller.CommonController.increaseZan(int,int,javax.servlet.http.HttpSession)
+[2018-09-25 19:48:11] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/common/increaseComment]}" onto public xin.toheart.door.dto.ResponseDto xin.toheart.door.controller.CommonController.increaseComment(int,int,int,java.lang.String,javax.servlet.http.HttpSession)
+[2018-09-25 19:48:11] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/common/findComment]}" onto public xin.toheart.door.dto.ResponseDto xin.toheart.door.controller.CommonController.findComment(int,int)
+[2018-09-25 19:48:11] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/confession/addConfession]}" onto public xin.toheart.door.dto.ResponseDto xin.toheart.door.controller.ConfessionController.addConfession(xin.toheart.door.pojo.Confession)
+[2018-09-25 19:48:11] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/confession/confessionList/{index}/{size}]}" onto public xin.toheart.door.dto.ResponseDto xin.toheart.door.controller.ConfessionController.confessionList(java.lang.String,java.lang.String)
+[2018-09-25 19:48:11] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/confession/splendidConfession/inHome]}" onto public xin.toheart.door.dto.ResponseDto xin.toheart.door.controller.ConfessionController.splendidConfession()
+[2018-09-25 19:48:11] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/confession/getConfession/{id}]}" onto public xin.toheart.door.dto.ResponseDto xin.toheart.door.controller.ConfessionController.getConfessionById(java.lang.String)
+[2018-09-25 19:48:11] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/game/gameHome]}" onto public java.lang.String xin.toheart.door.controller.GameController.gameHome()
+[2018-09-25 19:48:11] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/game/2048]}" onto public java.lang.String xin.toheart.door.controller.GameController.game2048()
+[2018-09-25 19:48:11] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/login]}" onto public java.lang.String xin.toheart.door.controller.HomeController.login(javax.servlet.http.HttpServletResponse) throws java.io.IOException
+[2018-09-25 19:48:11] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/logout]}" onto public java.lang.String xin.toheart.door.controller.HomeController.logout(javax.servlet.http.HttpSession)
+[2018-09-25 19:48:11] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/QQLogin]}" onto public java.lang.String xin.toheart.door.controller.HomeController.QQLogin(java.lang.String,javax.servlet.http.HttpSession) throws java.text.ParseException
+[2018-09-25 19:48:11] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/pic/upload]}" onto public java.lang.String xin.toheart.door.controller.PicUplodController.upload(org.springframework.web.multipart.MultipartFile)
+[2018-09-25 19:48:11] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/story/storyList/{index}/{size}],methods=[GET]}" onto public xin.toheart.door.dto.ResponseDto xin.toheart.door.controller.StoryController.storyList(java.lang.String,java.lang.String)
+[2018-09-25 19:48:11] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/story/showStory/{id}],methods=[GET]}" onto public xin.toheart.door.dto.ResponseDto xin.toheart.door.controller.StoryController.showStory(int)
+[2018-09-25 19:48:11] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/story/saveStory],methods=[POST]}" onto public xin.toheart.door.dto.ResponseDto xin.toheart.door.controller.StoryController.saveStory(xin.toheart.door.pojo.Story)
+[2018-09-25 19:48:11] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/story/splendidStory/inHome]}" onto public xin.toheart.door.dto.ResponseDto xin.toheart.door.controller.StoryController.splendidStoryInHome()
+[2018-09-25 19:48:11] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+[2018-09-25 19:48:11] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+[2018-09-25 19:48:11] [INFO ] [org.springframework.web.servlet.handler.SimpleUrlHandlerMapping:373]-- Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[2018-09-25 19:48:11] [INFO ] [org.springframework.web.servlet.handler.SimpleUrlHandlerMapping:373]-- Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[2018-09-25 19:48:12] [INFO ] [org.springframework.jmx.export.annotation.AnnotationMBeanExporter:433]-- Registering beans for JMX exposure on startup
+[2018-09-25 19:48:12] [INFO ] [org.springframework.jmx.export.annotation.AnnotationMBeanExporter:895]-- Bean with name 'dataSource' has been autodetected for JMX exposure
+[2018-09-25 19:48:12] [INFO ] [org.springframework.jmx.export.annotation.AnnotationMBeanExporter:668]-- Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+[2018-09-25 19:48:12] [INFO ] [org.apache.coyote.http11.Http11NioProtocol:180]-- Starting ProtocolHandler ["http-nio-5201"]
+[2018-09-25 19:48:12] [INFO ] [org.apache.tomcat.util.net.NioSelectorPool:180]-- Using a shared selector for servlet write/read
+[2018-09-25 19:48:12] [INFO ] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:206]-- Tomcat started on port(s): 5201 (http) with context path ''
+[2018-09-25 19:48:12] [INFO ] [xin.toheart.door.DoorApplication:59]-- Started DoorApplication in 6.695 seconds (JVM running for 7.428)
+[2018-09-25 19:48:49] [INFO ] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:180]-- Initializing Spring FrameworkServlet 'dispatcherServlet'
+[2018-09-25 19:48:49] [INFO ] [org.springframework.web.servlet.DispatcherServlet:494]-- FrameworkServlet 'dispatcherServlet': initialization started
+[2018-09-25 19:48:49] [INFO ] [org.springframework.web.servlet.DispatcherServlet:509]-- FrameworkServlet 'dispatcherServlet': initialization completed in 42 ms
+[2018-09-25 19:48:49] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:21]-- HandleInterceptor1 ...... preHandle
+[2018-09-25 19:48:49] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:33]-- 
+-------------------------------------
+Controller: xin.toheart.door.controller.HomeController$$EnhancerBySpringCGLIB$$6245ac48
+Method    : login
+Params    : 
+URI       : /login
+-------------------------------------
+
+[2018-09-25 19:48:49] [INFO ] [xin.toheart.door.aspect.TimeCostAspect:60]-- [time cost] 15 ms [path is xin.toheart.door.controller.HomeController.login]
+[2018-09-25 19:48:49] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:45]-- 
+========处理请求后，渲染页面前======
+[2018-09-25 19:48:49] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:55]-- 
+========视图渲染结束了，请求处理完毕====
+[2018-09-25 19:49:15] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:21]-- HandleInterceptor1 ...... preHandle
+[2018-09-25 19:49:15] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:33]-- 
+-------------------------------------
+Controller: xin.toheart.door.controller.HomeController$$EnhancerBySpringCGLIB$$6245ac48
+Method    : login
+Params    : 
+URI       : /login
+-------------------------------------
+
+[2018-09-25 19:49:15] [INFO ] [xin.toheart.door.aspect.TimeCostAspect:60]-- [time cost] 0 ms [path is xin.toheart.door.controller.HomeController.login]
+[2018-09-25 19:49:15] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:45]-- 
+========处理请求后，渲染页面前======
+[2018-09-25 19:49:15] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:55]-- 
+========视图渲染结束了，请求处理完毕====
+[2018-09-25 19:49:28] [INFO ] [xin.toheart.door.DoorApplication:50]-- Starting DoorApplication on PC-2018HWL with PID 216 (D:\toheartH\toheart\target\classes started by Administrator in D:\toheartH\toheart)
+[2018-09-25 19:49:28] [INFO ] [xin.toheart.door.DoorApplication:659]-- No active profile set, falling back to default profiles: default
+[2018-09-25 19:49:28] [INFO ] [org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext:590]-- Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@14fa86ae: startup date [Tue Sep 25 19:49:28 CST 2018]; root of context hierarchy
+[2018-09-25 19:49:31] [INFO ] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:91]-- Tomcat initialized with port(s): 5201 (http)
+[2018-09-25 19:49:31] [INFO ] [org.apache.coyote.http11.Http11NioProtocol:180]-- Initializing ProtocolHandler ["http-nio-5201"]
+[2018-09-25 19:49:31] [INFO ] [org.apache.catalina.core.StandardService:180]-- Starting service [Tomcat]
+[2018-09-25 19:49:31] [INFO ] [org.apache.catalina.core.StandardEngine:180]-- Starting Servlet Engine: Apache Tomcat/8.5.31
+[2018-09-25 19:49:31] [INFO ] [org.apache.catalina.core.AprLifecycleListener:180]-- The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [D:\Program Files\Java\jdk1.8.0_161\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;D:\Program Files\Java\jdk1.8.0_161\bin;D:\Program Files\Git\cmd;D:\work\apache-maven-3.5.3\bin;D:\Program Files\nodejs\;C:\Program Files (x86)\Windows Kits\8.1\Windows Performance Toolkit\;D:\Program Files\PuTTY\;D:\Program Files\TortoiseSVN\bin;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;C:\Users\Administrator\AppData\Roaming\npm;.]
+[2018-09-25 19:49:31] [INFO ] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:180]-- Initializing Spring embedded WebApplicationContext
+[2018-09-25 19:49:31] [INFO ] [org.springframework.web.context.ContextLoader:285]-- Root WebApplicationContext: initialization completed in 3156 ms
+[2018-09-25 19:49:32] [INFO ] [org.springframework.boot.web.servlet.ServletRegistrationBean:186]-- Servlet dispatcherServlet mapped to [/]
+[2018-09-25 19:49:32] [INFO ] [org.springframework.boot.web.servlet.FilterRegistrationBean:245]-- Mapping filter: 'characterEncodingFilter' to: [/*]
+[2018-09-25 19:49:32] [INFO ] [org.springframework.boot.web.servlet.FilterRegistrationBean:245]-- Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+[2018-09-25 19:49:32] [INFO ] [org.springframework.boot.web.servlet.FilterRegistrationBean:245]-- Mapping filter: 'httpPutFormContentFilter' to: [/*]
+[2018-09-25 19:49:32] [INFO ] [org.springframework.boot.web.servlet.FilterRegistrationBean:245]-- Mapping filter: 'requestContextFilter' to: [/*]
+[2018-09-25 19:49:32] [INFO ] [org.springframework.boot.web.servlet.FilterRegistrationBean:258]-- Mapping filter: 'loginAuthFilter' to urls: [/*]
+[2018-09-25 19:49:33] [INFO ] [org.springframework.web.servlet.handler.SimpleUrlHandlerMapping:373]-- Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[2018-09-25 19:49:33] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter:574]-- Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@14fa86ae: startup date [Tue Sep 25 19:49:28 CST 2018]; root of context hierarchy
+[2018-09-25 19:49:33] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/common/increaseComment]}" onto public xin.toheart.door.dto.ResponseDto xin.toheart.door.controller.CommonController.increaseComment(int,int,int,java.lang.String,javax.servlet.http.HttpSession)
+[2018-09-25 19:49:33] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/common/increaseZan]}" onto public xin.toheart.door.dto.ResponseDto xin.toheart.door.controller.CommonController.increaseZan(int,int,javax.servlet.http.HttpSession)
+[2018-09-25 19:49:33] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/common/findComment]}" onto public xin.toheart.door.dto.ResponseDto xin.toheart.door.controller.CommonController.findComment(int,int)
+[2018-09-25 19:49:33] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/confession/confessionList/{index}/{size}]}" onto public xin.toheart.door.dto.ResponseDto xin.toheart.door.controller.ConfessionController.confessionList(java.lang.String,java.lang.String)
+[2018-09-25 19:49:33] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/confession/addConfession]}" onto public xin.toheart.door.dto.ResponseDto xin.toheart.door.controller.ConfessionController.addConfession(xin.toheart.door.pojo.Confession)
+[2018-09-25 19:49:33] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/confession/splendidConfession/inHome]}" onto public xin.toheart.door.dto.ResponseDto xin.toheart.door.controller.ConfessionController.splendidConfession()
+[2018-09-25 19:49:33] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/confession/getConfession/{id}]}" onto public xin.toheart.door.dto.ResponseDto xin.toheart.door.controller.ConfessionController.getConfessionById(java.lang.String)
+[2018-09-25 19:49:33] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/game/gameHome]}" onto public java.lang.String xin.toheart.door.controller.GameController.gameHome()
+[2018-09-25 19:49:33] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/game/2048]}" onto public java.lang.String xin.toheart.door.controller.GameController.game2048()
+[2018-09-25 19:49:33] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/logout]}" onto public java.lang.String xin.toheart.door.controller.HomeController.logout(javax.servlet.http.HttpSession)
+[2018-09-25 19:49:33] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/login]}" onto public java.lang.String xin.toheart.door.controller.HomeController.login(javax.servlet.http.HttpServletResponse) throws java.io.IOException
+[2018-09-25 19:49:33] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/QQLogin]}" onto public java.lang.String xin.toheart.door.controller.HomeController.QQLogin(java.lang.String,javax.servlet.http.HttpSession) throws java.text.ParseException
+[2018-09-25 19:49:33] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/pic/upload]}" onto public java.lang.String xin.toheart.door.controller.PicUplodController.upload(org.springframework.web.multipart.MultipartFile)
+[2018-09-25 19:49:33] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/story/saveStory],methods=[POST]}" onto public xin.toheart.door.dto.ResponseDto xin.toheart.door.controller.StoryController.saveStory(xin.toheart.door.pojo.Story)
+[2018-09-25 19:49:33] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/story/showStory/{id}],methods=[GET]}" onto public xin.toheart.door.dto.ResponseDto xin.toheart.door.controller.StoryController.showStory(int)
+[2018-09-25 19:49:33] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/story/storyList/{index}/{size}],methods=[GET]}" onto public xin.toheart.door.dto.ResponseDto xin.toheart.door.controller.StoryController.storyList(java.lang.String,java.lang.String)
+[2018-09-25 19:49:33] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/story/splendidStory/inHome]}" onto public xin.toheart.door.dto.ResponseDto xin.toheart.door.controller.StoryController.splendidStoryInHome()
+[2018-09-25 19:49:33] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+[2018-09-25 19:49:33] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+[2018-09-25 19:49:33] [INFO ] [org.springframework.web.servlet.handler.SimpleUrlHandlerMapping:373]-- Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[2018-09-25 19:49:33] [INFO ] [org.springframework.web.servlet.handler.SimpleUrlHandlerMapping:373]-- Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[2018-09-25 19:49:34] [INFO ] [org.springframework.jmx.export.annotation.AnnotationMBeanExporter:433]-- Registering beans for JMX exposure on startup
+[2018-09-25 19:49:34] [INFO ] [org.springframework.jmx.export.annotation.AnnotationMBeanExporter:895]-- Bean with name 'dataSource' has been autodetected for JMX exposure
+[2018-09-25 19:49:34] [INFO ] [org.springframework.jmx.export.annotation.AnnotationMBeanExporter:668]-- Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+[2018-09-25 19:49:34] [INFO ] [org.apache.coyote.http11.Http11NioProtocol:180]-- Starting ProtocolHandler ["http-nio-5201"]
+[2018-09-25 19:49:34] [INFO ] [org.apache.tomcat.util.net.NioSelectorPool:180]-- Using a shared selector for servlet write/read
+[2018-09-25 19:49:34] [INFO ] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:206]-- Tomcat started on port(s): 5201 (http) with context path ''
+[2018-09-25 19:49:34] [INFO ] [xin.toheart.door.DoorApplication:59]-- Started DoorApplication in 6.97 seconds (JVM running for 7.849)
+[2018-09-25 19:49:46] [INFO ] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:180]-- Initializing Spring FrameworkServlet 'dispatcherServlet'
+[2018-09-25 19:49:46] [INFO ] [org.springframework.web.servlet.DispatcherServlet:494]-- FrameworkServlet 'dispatcherServlet': initialization started
+[2018-09-25 19:49:46] [INFO ] [org.springframework.web.servlet.DispatcherServlet:509]-- FrameworkServlet 'dispatcherServlet': initialization completed in 40 ms
+[2018-09-25 19:49:46] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:21]-- HandleInterceptor1 ...... preHandle
+[2018-09-25 19:49:46] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:33]-- 
+-------------------------------------
+Controller: xin.toheart.door.controller.HomeController$$EnhancerBySpringCGLIB$$5dff26df
+Method    : login
+Params    : 
+URI       : /login
+-------------------------------------
+
+[2018-09-25 19:49:46] [INFO ] [xin.toheart.door.aspect.TimeCostAspect:60]-- [time cost] 17 ms [path is xin.toheart.door.controller.HomeController.login]
+[2018-09-25 19:49:46] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:45]-- 
+========处理请求后，渲染页面前======
+[2018-09-25 19:49:46] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:55]-- 
+========视图渲染结束了，请求处理完毕====
+[2018-09-25 19:51:30] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:21]-- HandleInterceptor1 ...... preHandle
+[2018-09-25 19:51:30] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:33]-- 
+-------------------------------------
+Controller: xin.toheart.door.controller.HomeController$$EnhancerBySpringCGLIB$$5dff26df
+Method    : login
+Params    : 
+URI       : /login
+-------------------------------------
+
+[2018-09-25 19:51:30] [INFO ] [xin.toheart.door.aspect.TimeCostAspect:60]-- [time cost] 0 ms [path is xin.toheart.door.controller.HomeController.login]
+[2018-09-25 19:51:30] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:45]-- 
+========处理请求后，渲染页面前======
+[2018-09-25 19:51:30] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:55]-- 
+========视图渲染结束了，请求处理完毕====
+[2018-09-25 19:53:07] [INFO ] [xin.toheart.door.DoorApplication:50]-- Starting DoorApplication on PC-2018HWL with PID 10580 (D:\toheartH\toheart\target\classes started by Administrator in D:\toheartH\toheart)
+[2018-09-25 19:53:07] [INFO ] [xin.toheart.door.DoorApplication:659]-- No active profile set, falling back to default profiles: default
+[2018-09-25 19:53:07] [INFO ] [org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext:590]-- Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@1a5a4e19: startup date [Tue Sep 25 19:53:07 CST 2018]; root of context hierarchy
+[2018-09-25 19:53:10] [INFO ] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:91]-- Tomcat initialized with port(s): 5201 (http)
+[2018-09-25 19:53:10] [INFO ] [org.apache.coyote.http11.Http11NioProtocol:180]-- Initializing ProtocolHandler ["http-nio-5201"]
+[2018-09-25 19:53:10] [INFO ] [org.apache.catalina.core.StandardService:180]-- Starting service [Tomcat]
+[2018-09-25 19:53:10] [INFO ] [org.apache.catalina.core.StandardEngine:180]-- Starting Servlet Engine: Apache Tomcat/8.5.31
+[2018-09-25 19:53:10] [INFO ] [org.apache.catalina.core.AprLifecycleListener:180]-- The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [D:\Program Files\Java\jdk1.8.0_161\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;D:\Program Files\Java\jdk1.8.0_161\bin;D:\Program Files\Git\cmd;D:\work\apache-maven-3.5.3\bin;D:\Program Files\nodejs\;C:\Program Files (x86)\Windows Kits\8.1\Windows Performance Toolkit\;D:\Program Files\PuTTY\;D:\Program Files\TortoiseSVN\bin;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;C:\Users\Administrator\AppData\Roaming\npm;.]
+[2018-09-25 19:53:10] [INFO ] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:180]-- Initializing Spring embedded WebApplicationContext
+[2018-09-25 19:53:10] [INFO ] [org.springframework.web.context.ContextLoader:285]-- Root WebApplicationContext: initialization completed in 3060 ms
+[2018-09-25 19:53:11] [INFO ] [org.springframework.boot.web.servlet.ServletRegistrationBean:186]-- Servlet dispatcherServlet mapped to [/]
+[2018-09-25 19:53:11] [INFO ] [org.springframework.boot.web.servlet.FilterRegistrationBean:245]-- Mapping filter: 'characterEncodingFilter' to: [/*]
+[2018-09-25 19:53:11] [INFO ] [org.springframework.boot.web.servlet.FilterRegistrationBean:245]-- Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+[2018-09-25 19:53:11] [INFO ] [org.springframework.boot.web.servlet.FilterRegistrationBean:245]-- Mapping filter: 'httpPutFormContentFilter' to: [/*]
+[2018-09-25 19:53:11] [INFO ] [org.springframework.boot.web.servlet.FilterRegistrationBean:245]-- Mapping filter: 'requestContextFilter' to: [/*]
+[2018-09-25 19:53:11] [INFO ] [org.springframework.boot.web.servlet.FilterRegistrationBean:258]-- Mapping filter: 'loginAuthFilter' to urls: [/*]
+[2018-09-25 19:53:12] [INFO ] [org.springframework.web.servlet.handler.SimpleUrlHandlerMapping:373]-- Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[2018-09-25 19:53:12] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter:574]-- Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@1a5a4e19: startup date [Tue Sep 25 19:53:07 CST 2018]; root of context hierarchy
+[2018-09-25 19:53:12] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/common/increaseComment]}" onto public xin.toheart.door.dto.ResponseDto xin.toheart.door.controller.CommonController.increaseComment(int,int,int,java.lang.String,javax.servlet.http.HttpSession)
+[2018-09-25 19:53:12] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/common/findComment]}" onto public xin.toheart.door.dto.ResponseDto xin.toheart.door.controller.CommonController.findComment(int,int)
+[2018-09-25 19:53:12] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/common/increaseZan]}" onto public xin.toheart.door.dto.ResponseDto xin.toheart.door.controller.CommonController.increaseZan(int,int,javax.servlet.http.HttpSession)
+[2018-09-25 19:53:12] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/confession/confessionList/{index}/{size}]}" onto public xin.toheart.door.dto.ResponseDto xin.toheart.door.controller.ConfessionController.confessionList(java.lang.String,java.lang.String)
+[2018-09-25 19:53:12] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/confession/addConfession]}" onto public xin.toheart.door.dto.ResponseDto xin.toheart.door.controller.ConfessionController.addConfession(xin.toheart.door.pojo.Confession)
+[2018-09-25 19:53:12] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/confession/splendidConfession/inHome]}" onto public xin.toheart.door.dto.ResponseDto xin.toheart.door.controller.ConfessionController.splendidConfession()
+[2018-09-25 19:53:12] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/confession/getConfession/{id}]}" onto public xin.toheart.door.dto.ResponseDto xin.toheart.door.controller.ConfessionController.getConfessionById(java.lang.String)
+[2018-09-25 19:53:12] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/game/gameHome]}" onto public java.lang.String xin.toheart.door.controller.GameController.gameHome()
+[2018-09-25 19:53:12] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/game/2048]}" onto public java.lang.String xin.toheart.door.controller.GameController.game2048()
+[2018-09-25 19:53:12] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/login]}" onto public java.lang.String xin.toheart.door.controller.HomeController.login(javax.servlet.http.HttpServletResponse) throws java.io.IOException
+[2018-09-25 19:53:12] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/logout]}" onto public java.lang.String xin.toheart.door.controller.HomeController.logout(javax.servlet.http.HttpSession)
+[2018-09-25 19:53:12] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/QQLogin]}" onto public java.lang.String xin.toheart.door.controller.HomeController.QQLogin(java.lang.String,javax.servlet.http.HttpSession) throws java.text.ParseException
+[2018-09-25 19:53:12] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/pic/upload]}" onto public java.lang.String xin.toheart.door.controller.PicUplodController.upload(org.springframework.web.multipart.MultipartFile)
+[2018-09-25 19:53:12] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/story/showStory/{id}],methods=[GET]}" onto public xin.toheart.door.dto.ResponseDto xin.toheart.door.controller.StoryController.showStory(int)
+[2018-09-25 19:53:12] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/story/storyList/{index}/{size}],methods=[GET]}" onto public xin.toheart.door.dto.ResponseDto xin.toheart.door.controller.StoryController.storyList(java.lang.String,java.lang.String)
+[2018-09-25 19:53:12] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/story/saveStory],methods=[POST]}" onto public xin.toheart.door.dto.ResponseDto xin.toheart.door.controller.StoryController.saveStory(xin.toheart.door.pojo.Story)
+[2018-09-25 19:53:12] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/story/splendidStory/inHome]}" onto public xin.toheart.door.dto.ResponseDto xin.toheart.door.controller.StoryController.splendidStoryInHome()
+[2018-09-25 19:53:12] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+[2018-09-25 19:53:12] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+[2018-09-25 19:53:12] [INFO ] [org.springframework.web.servlet.handler.SimpleUrlHandlerMapping:373]-- Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[2018-09-25 19:53:12] [INFO ] [org.springframework.web.servlet.handler.SimpleUrlHandlerMapping:373]-- Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[2018-09-25 19:53:13] [INFO ] [org.springframework.jmx.export.annotation.AnnotationMBeanExporter:433]-- Registering beans for JMX exposure on startup
+[2018-09-25 19:53:13] [INFO ] [org.springframework.jmx.export.annotation.AnnotationMBeanExporter:895]-- Bean with name 'dataSource' has been autodetected for JMX exposure
+[2018-09-25 19:53:13] [INFO ] [org.springframework.jmx.export.annotation.AnnotationMBeanExporter:668]-- Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+[2018-09-25 19:53:13] [INFO ] [org.apache.coyote.http11.Http11NioProtocol:180]-- Starting ProtocolHandler ["http-nio-5201"]
+[2018-09-25 19:53:13] [INFO ] [org.apache.tomcat.util.net.NioSelectorPool:180]-- Using a shared selector for servlet write/read
+[2018-09-25 19:53:13] [INFO ] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:206]-- Tomcat started on port(s): 5201 (http) with context path ''
+[2018-09-25 19:53:13] [INFO ] [xin.toheart.door.DoorApplication:59]-- Started DoorApplication in 6.724 seconds (JVM running for 7.406)
+[2018-09-25 19:53:22] [INFO ] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:180]-- Initializing Spring FrameworkServlet 'dispatcherServlet'
+[2018-09-25 19:53:22] [INFO ] [org.springframework.web.servlet.DispatcherServlet:494]-- FrameworkServlet 'dispatcherServlet': initialization started
+[2018-09-25 19:53:23] [INFO ] [org.springframework.web.servlet.DispatcherServlet:509]-- FrameworkServlet 'dispatcherServlet': initialization completed in 39 ms
+[2018-09-25 19:53:23] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:21]-- HandleInterceptor1 ...... preHandle
+[2018-09-25 19:53:23] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:33]-- 
+-------------------------------------
+Controller: xin.toheart.door.controller.HomeController$$EnhancerBySpringCGLIB$$3597b7be
+Method    : login
+Params    : 
+URI       : /login
+-------------------------------------
+
+[2018-09-25 19:53:23] [INFO ] [xin.toheart.door.aspect.TimeCostAspect:60]-- [time cost] 11 ms [path is xin.toheart.door.controller.HomeController.login]
+[2018-09-25 19:53:23] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:45]-- 
+========处理请求后，渲染页面前======
+[2018-09-25 19:53:23] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:55]-- 
+========视图渲染结束了，请求处理完毕====
+[2018-09-25 19:53:26] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:21]-- HandleInterceptor1 ...... preHandle
+[2018-09-25 19:53:26] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:33]-- 
+-------------------------------------
+Controller: xin.toheart.door.controller.HomeController$$EnhancerBySpringCGLIB$$3597b7be
+Method    : login
+Params    : 
+URI       : /login
+-------------------------------------
+
+[2018-09-25 19:53:26] [INFO ] [xin.toheart.door.aspect.TimeCostAspect:60]-- [time cost] 0 ms [path is xin.toheart.door.controller.HomeController.login]
+[2018-09-25 19:53:26] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:45]-- 
+========处理请求后，渲染页面前======
+[2018-09-25 19:53:26] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:55]-- 
+========视图渲染结束了，请求处理完毕====
+[2018-09-25 19:55:28] [INFO ] [xin.toheart.door.DoorApplication:50]-- Starting DoorApplication on PC-2018HWL with PID 9520 (D:\toheartH\toheart\target\classes started by Administrator in D:\toheartH\toheart)
+[2018-09-25 19:55:28] [INFO ] [xin.toheart.door.DoorApplication:659]-- No active profile set, falling back to default profiles: default
+[2018-09-25 19:55:28] [INFO ] [org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext:590]-- Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@41f69e84: startup date [Tue Sep 25 19:55:28 CST 2018]; root of context hierarchy
+[2018-09-25 19:55:31] [INFO ] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:91]-- Tomcat initialized with port(s): 5201 (http)
+[2018-09-25 19:55:31] [INFO ] [org.apache.coyote.http11.Http11NioProtocol:180]-- Initializing ProtocolHandler ["http-nio-5201"]
+[2018-09-25 19:55:31] [INFO ] [org.apache.catalina.core.StandardService:180]-- Starting service [Tomcat]
+[2018-09-25 19:55:31] [INFO ] [org.apache.catalina.core.StandardEngine:180]-- Starting Servlet Engine: Apache Tomcat/8.5.31
+[2018-09-25 19:55:31] [INFO ] [org.apache.catalina.core.AprLifecycleListener:180]-- The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [D:\Program Files\Java\jdk1.8.0_161\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;D:\Program Files\Java\jdk1.8.0_161\bin;D:\Program Files\Git\cmd;D:\work\apache-maven-3.5.3\bin;D:\Program Files\nodejs\;C:\Program Files (x86)\Windows Kits\8.1\Windows Performance Toolkit\;D:\Program Files\PuTTY\;D:\Program Files\TortoiseSVN\bin;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;C:\Users\Administrator\AppData\Roaming\npm;.]
+[2018-09-25 19:55:31] [INFO ] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:180]-- Initializing Spring embedded WebApplicationContext
+[2018-09-25 19:55:31] [INFO ] [org.springframework.web.context.ContextLoader:285]-- Root WebApplicationContext: initialization completed in 2809 ms
+[2018-09-25 19:55:32] [INFO ] [org.springframework.boot.web.servlet.ServletRegistrationBean:186]-- Servlet dispatcherServlet mapped to [/]
+[2018-09-25 19:55:32] [INFO ] [org.springframework.boot.web.servlet.FilterRegistrationBean:245]-- Mapping filter: 'characterEncodingFilter' to: [/*]
+[2018-09-25 19:55:32] [INFO ] [org.springframework.boot.web.servlet.FilterRegistrationBean:245]-- Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+[2018-09-25 19:55:32] [INFO ] [org.springframework.boot.web.servlet.FilterRegistrationBean:245]-- Mapping filter: 'httpPutFormContentFilter' to: [/*]
+[2018-09-25 19:55:32] [INFO ] [org.springframework.boot.web.servlet.FilterRegistrationBean:245]-- Mapping filter: 'requestContextFilter' to: [/*]
+[2018-09-25 19:55:32] [INFO ] [org.springframework.boot.web.servlet.FilterRegistrationBean:258]-- Mapping filter: 'loginAuthFilter' to urls: [/*]
+[2018-09-25 19:55:32] [INFO ] [org.springframework.web.servlet.handler.SimpleUrlHandlerMapping:373]-- Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[2018-09-25 19:55:33] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter:574]-- Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@41f69e84: startup date [Tue Sep 25 19:55:28 CST 2018]; root of context hierarchy
+[2018-09-25 19:55:33] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/common/findComment]}" onto public xin.toheart.door.dto.ResponseDto xin.toheart.door.controller.CommonController.findComment(int,int)
+[2018-09-25 19:55:33] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/common/increaseZan]}" onto public xin.toheart.door.dto.ResponseDto xin.toheart.door.controller.CommonController.increaseZan(int,int,javax.servlet.http.HttpSession)
+[2018-09-25 19:55:33] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/common/increaseComment]}" onto public xin.toheart.door.dto.ResponseDto xin.toheart.door.controller.CommonController.increaseComment(int,int,int,java.lang.String,javax.servlet.http.HttpSession)
+[2018-09-25 19:55:33] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/confession/splendidConfession/inHome]}" onto public xin.toheart.door.dto.ResponseDto xin.toheart.door.controller.ConfessionController.splendidConfession()
+[2018-09-25 19:55:33] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/confession/getConfession/{id}]}" onto public xin.toheart.door.dto.ResponseDto xin.toheart.door.controller.ConfessionController.getConfessionById(java.lang.String)
+[2018-09-25 19:55:33] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/confession/confessionList/{index}/{size}]}" onto public xin.toheart.door.dto.ResponseDto xin.toheart.door.controller.ConfessionController.confessionList(java.lang.String,java.lang.String)
+[2018-09-25 19:55:33] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/confession/addConfession]}" onto public xin.toheart.door.dto.ResponseDto xin.toheart.door.controller.ConfessionController.addConfession(xin.toheart.door.pojo.Confession)
+[2018-09-25 19:55:33] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/game/2048]}" onto public java.lang.String xin.toheart.door.controller.GameController.game2048()
+[2018-09-25 19:55:33] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/game/gameHome]}" onto public java.lang.String xin.toheart.door.controller.GameController.gameHome()
+[2018-09-25 19:55:33] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/logout]}" onto public java.lang.String xin.toheart.door.controller.HomeController.logout(javax.servlet.http.HttpSession)
+[2018-09-25 19:55:33] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/login]}" onto public java.lang.String xin.toheart.door.controller.HomeController.login(javax.servlet.http.HttpServletResponse) throws java.io.IOException
+[2018-09-25 19:55:33] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/QQLogin]}" onto public java.lang.String xin.toheart.door.controller.HomeController.QQLogin(java.lang.String,javax.servlet.http.HttpSession) throws java.text.ParseException
+[2018-09-25 19:55:33] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/pic/upload]}" onto public java.lang.String xin.toheart.door.controller.PicUplodController.upload(org.springframework.web.multipart.MultipartFile)
+[2018-09-25 19:55:33] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/story/splendidStory/inHome]}" onto public xin.toheart.door.dto.ResponseDto xin.toheart.door.controller.StoryController.splendidStoryInHome()
+[2018-09-25 19:55:33] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/story/saveStory],methods=[POST]}" onto public xin.toheart.door.dto.ResponseDto xin.toheart.door.controller.StoryController.saveStory(xin.toheart.door.pojo.Story)
+[2018-09-25 19:55:33] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/story/storyList/{index}/{size}],methods=[GET]}" onto public xin.toheart.door.dto.ResponseDto xin.toheart.door.controller.StoryController.storyList(java.lang.String,java.lang.String)
+[2018-09-25 19:55:33] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/story/showStory/{id}],methods=[GET]}" onto public xin.toheart.door.dto.ResponseDto xin.toheart.door.controller.StoryController.showStory(int)
+[2018-09-25 19:55:33] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+[2018-09-25 19:55:33] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+[2018-09-25 19:55:33] [INFO ] [org.springframework.web.servlet.handler.SimpleUrlHandlerMapping:373]-- Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[2018-09-25 19:55:33] [INFO ] [org.springframework.web.servlet.handler.SimpleUrlHandlerMapping:373]-- Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[2018-09-25 19:55:34] [INFO ] [org.springframework.jmx.export.annotation.AnnotationMBeanExporter:433]-- Registering beans for JMX exposure on startup
+[2018-09-25 19:55:34] [INFO ] [org.springframework.jmx.export.annotation.AnnotationMBeanExporter:895]-- Bean with name 'dataSource' has been autodetected for JMX exposure
+[2018-09-25 19:55:34] [INFO ] [org.springframework.jmx.export.annotation.AnnotationMBeanExporter:668]-- Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+[2018-09-25 19:55:34] [INFO ] [org.apache.coyote.http11.Http11NioProtocol:180]-- Starting ProtocolHandler ["http-nio-5201"]
+[2018-09-25 19:55:34] [INFO ] [org.apache.tomcat.util.net.NioSelectorPool:180]-- Using a shared selector for servlet write/read
+[2018-09-25 19:55:34] [INFO ] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:206]-- Tomcat started on port(s): 5201 (http) with context path ''
+[2018-09-25 19:55:34] [INFO ] [xin.toheart.door.DoorApplication:59]-- Started DoorApplication in 6.251 seconds (JVM running for 6.848)
+[2018-09-25 19:55:43] [INFO ] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:180]-- Initializing Spring FrameworkServlet 'dispatcherServlet'
+[2018-09-25 19:55:43] [INFO ] [org.springframework.web.servlet.DispatcherServlet:494]-- FrameworkServlet 'dispatcherServlet': initialization started
+[2018-09-25 19:55:43] [INFO ] [org.springframework.web.servlet.DispatcherServlet:509]-- FrameworkServlet 'dispatcherServlet': initialization completed in 33 ms
+[2018-09-25 19:55:43] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:21]-- HandleInterceptor1 ...... preHandle
+[2018-09-25 19:55:43] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:33]-- 
+-------------------------------------
+Controller: xin.toheart.door.controller.HomeController$$EnhancerBySpringCGLIB$$ddb0e685
+Method    : login
+Params    : 
+URI       : /login
+-------------------------------------
+
+[2018-09-25 19:55:43] [INFO ] [xin.toheart.door.aspect.TimeCostAspect:60]-- [time cost] 11 ms [path is xin.toheart.door.controller.HomeController.login]
+[2018-09-25 19:55:43] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:45]-- 
+========处理请求后，渲染页面前======
+[2018-09-25 19:55:43] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:55]-- 
+========视图渲染结束了，请求处理完毕====
+[2018-09-25 19:57:23] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:21]-- HandleInterceptor1 ...... preHandle
+[2018-09-25 19:57:23] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:33]-- 
+-------------------------------------
+Controller: xin.toheart.door.controller.HomeController$$EnhancerBySpringCGLIB$$ddb0e685
+Method    : login
+Params    : 
+URI       : /login
+-------------------------------------
+
+[2018-09-25 19:57:23] [INFO ] [xin.toheart.door.aspect.TimeCostAspect:60]-- [time cost] 0 ms [path is xin.toheart.door.controller.HomeController.login]
+[2018-09-25 19:57:23] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:45]-- 
+========处理请求后，渲染页面前======
+[2018-09-25 19:57:23] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:55]-- 
+========视图渲染结束了，请求处理完毕====
+[2018-09-25 20:01:01] [INFO ] [xin.toheart.door.DoorApplicationTests:50]-- Starting DoorApplicationTests on PC-2018HWL with PID 6016 (started by Administrator in D:\toheartH\toheart)
+[2018-09-25 20:01:01] [INFO ] [xin.toheart.door.DoorApplicationTests:659]-- No active profile set, falling back to default profiles: default
+[2018-09-25 20:01:01] [INFO ] [org.springframework.web.context.support.GenericWebApplicationContext:590]-- Refreshing org.springframework.web.context.support.GenericWebApplicationContext@769a1df5: startup date [Tue Sep 25 20:01:01 CST 2018]; root of context hierarchy
+[2018-09-25 20:01:04] [INFO ] [org.springframework.web.servlet.handler.SimpleUrlHandlerMapping:373]-- Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[2018-09-25 20:01:04] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter:574]-- Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@769a1df5: startup date [Tue Sep 25 20:01:01 CST 2018]; root of context hierarchy
+[2018-09-25 20:01:04] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/common/increaseZan]}" onto public xin.toheart.door.dto.ResponseDto xin.toheart.door.controller.CommonController.increaseZan(int,int,javax.servlet.http.HttpSession)
+[2018-09-25 20:01:04] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/common/increaseComment]}" onto public xin.toheart.door.dto.ResponseDto xin.toheart.door.controller.CommonController.increaseComment(int,int,int,java.lang.String,javax.servlet.http.HttpSession)
+[2018-09-25 20:01:04] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/common/findComment]}" onto public xin.toheart.door.dto.ResponseDto xin.toheart.door.controller.CommonController.findComment(int,int)
+[2018-09-25 20:01:04] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/confession/splendidConfession/inHome]}" onto public xin.toheart.door.dto.ResponseDto xin.toheart.door.controller.ConfessionController.splendidConfession()
+[2018-09-25 20:01:04] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/confession/getConfession/{id}]}" onto public xin.toheart.door.dto.ResponseDto xin.toheart.door.controller.ConfessionController.getConfessionById(java.lang.String)
+[2018-09-25 20:01:04] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/confession/confessionList/{index}/{size}]}" onto public xin.toheart.door.dto.ResponseDto xin.toheart.door.controller.ConfessionController.confessionList(java.lang.String,java.lang.String)
+[2018-09-25 20:01:04] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/confession/addConfession]}" onto public xin.toheart.door.dto.ResponseDto xin.toheart.door.controller.ConfessionController.addConfession(xin.toheart.door.pojo.Confession)
+[2018-09-25 20:01:04] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/game/2048]}" onto public java.lang.String xin.toheart.door.controller.GameController.game2048()
+[2018-09-25 20:01:04] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/game/gameHome]}" onto public java.lang.String xin.toheart.door.controller.GameController.gameHome()
+[2018-09-25 20:01:04] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/login]}" onto public java.lang.String xin.toheart.door.controller.HomeController.login(javax.servlet.http.HttpServletResponse) throws java.io.IOException
+[2018-09-25 20:01:04] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/logout]}" onto public java.lang.String xin.toheart.door.controller.HomeController.logout(javax.servlet.http.HttpSession)
+[2018-09-25 20:01:04] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/QQLogin]}" onto public java.lang.String xin.toheart.door.controller.HomeController.QQLogin(java.lang.String,javax.servlet.http.HttpSession,javax.servlet.http.HttpServletResponse) throws java.text.ParseException,java.io.IOException
+[2018-09-25 20:01:04] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/pic/upload]}" onto public java.lang.String xin.toheart.door.controller.PicUplodController.upload(org.springframework.web.multipart.MultipartFile)
+[2018-09-25 20:01:04] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/story/splendidStory/inHome]}" onto public xin.toheart.door.dto.ResponseDto xin.toheart.door.controller.StoryController.splendidStoryInHome()
+[2018-09-25 20:01:04] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/story/saveStory],methods=[POST]}" onto public xin.toheart.door.dto.ResponseDto xin.toheart.door.controller.StoryController.saveStory(xin.toheart.door.pojo.Story)
+[2018-09-25 20:01:04] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/story/storyList/{index}/{size}],methods=[GET]}" onto public xin.toheart.door.dto.ResponseDto xin.toheart.door.controller.StoryController.storyList(java.lang.String,java.lang.String)
+[2018-09-25 20:01:04] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/story/showStory/{id}],methods=[GET]}" onto public xin.toheart.door.dto.ResponseDto xin.toheart.door.controller.StoryController.showStory(int)
+[2018-09-25 20:01:04] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+[2018-09-25 20:01:04] [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547]-- Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+[2018-09-25 20:01:04] [INFO ] [org.springframework.web.servlet.handler.SimpleUrlHandlerMapping:373]-- Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[2018-09-25 20:01:04] [INFO ] [org.springframework.web.servlet.handler.SimpleUrlHandlerMapping:373]-- Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[2018-09-25 20:01:05] [INFO ] [xin.toheart.door.DoorApplicationTests:59]-- Started DoorApplicationTests in 4.984 seconds (JVM running for 6.477)
+[2018-09-25 20:01:06] [INFO ] [org.springframework.web.context.support.GenericWebApplicationContext:993]-- Closing org.springframework.web.context.support.GenericWebApplicationContext@769a1df5: startup date [Tue Sep 25 20:01:01 CST 2018]; root of context hierarchy
+[2018-09-25 20:01:59] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:21]-- HandleInterceptor1 ...... preHandle
+[2018-09-25 20:01:59] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:33]-- 
+-------------------------------------
+Controller: xin.toheart.door.controller.HomeController$$EnhancerBySpringCGLIB$$ddb0e685
+Method    : login
+Params    : 
+URI       : /login
+-------------------------------------
+
+[2018-09-25 20:01:59] [INFO ] [xin.toheart.door.aspect.TimeCostAspect:60]-- [time cost] 0 ms [path is xin.toheart.door.controller.HomeController.login]
+[2018-09-25 20:01:59] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:45]-- 
+========处理请求后，渲染页面前======
+[2018-09-25 20:01:59] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:55]-- 
+========视图渲染结束了，请求处理完毕====
+[2018-09-25 20:04:25] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:21]-- HandleInterceptor1 ...... preHandle
+[2018-09-25 20:04:25] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:33]-- 
+-------------------------------------
+Controller: xin.toheart.door.controller.HomeController$$EnhancerBySpringCGLIB$$ddb0e685
+Method    : login
+Params    : 
+URI       : /login
+-------------------------------------
+
+[2018-09-25 20:04:25] [INFO ] [xin.toheart.door.aspect.TimeCostAspect:60]-- [time cost] 0 ms [path is xin.toheart.door.controller.HomeController.login]
+[2018-09-25 20:04:25] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:45]-- 
+========处理请求后，渲染页面前======
+[2018-09-25 20:04:25] [INFO ] [xin.toheart.door.config.AuthorityHandlerInterceptor:55]-- 
+========视图渲染结束了，请求处理完毕====

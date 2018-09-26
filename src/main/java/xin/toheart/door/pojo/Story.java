@@ -11,10 +11,7 @@ public class Story {
     private Integer storyZan;
     private String storyContent;
     private String storyBrief;
-
-    public String getStoryBrief() {
-        return storyBrief;
-    }
+    private Integer storyCommentNum;
 
     @Override
     public String toString() {
@@ -27,7 +24,20 @@ public class Story {
                 ", storyZan=" + storyZan +
                 ", storyContent='" + storyContent + '\'' +
                 ", storyBrief='" + storyBrief + '\'' +
+                ", storyCommentNum=" + storyCommentNum +
                 '}';
+    }
+
+    public Integer getStoryCommentNum() {
+        return storyCommentNum;
+    }
+
+    public void setStoryCommentNum(Integer storyCommentNum) {
+        this.storyCommentNum = storyCommentNum;
+    }
+
+    public String getStoryBrief() {
+        return storyBrief;
     }
 
     public void setStoryBrief(String storyBrief) {

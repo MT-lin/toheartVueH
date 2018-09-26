@@ -62,11 +62,11 @@ public class FtpUplodUtil {
 
     }
     public static void main(String[] args) throws SocketException, IOException {
-        InputStream local = new FileInputStream(new File("D:\\Pictures\\dyh.jpg"));
+        InputStream local = new FileInputStream(new File("C:\\Users\\Administrator\\Desktop\\t01119d8046d7199bb1.jpg"));
         //初始化
         init("39.106.169.130", 21, "ftpuser", "ftpuser");
         //上传
-        String res = upload("/home/ftpuser","dyh.jpg", local);
+        String res = upload("/home/ftpuser","t01119d8046d7199bb1.jpg", local);
         System.out.println(res);
     }
 

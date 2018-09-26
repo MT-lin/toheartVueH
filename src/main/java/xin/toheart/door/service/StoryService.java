@@ -17,4 +17,8 @@ public interface StoryService {
     List<Story> findLikeEightStory();
 
     int totalCount();
+
+    int updateStoryLike(int id, int praiseNum);
+
+    int updateStoryCommentNum(int id, int commentNum);
 }

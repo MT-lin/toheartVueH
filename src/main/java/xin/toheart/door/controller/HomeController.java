@@ -9,24 +9,28 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RestController;
 import xin.toheart.door.annonation.TimeCostAnnotation;
 import xin.toheart.door.common.constant.CommonsConstant;
 import xin.toheart.door.common.util.DateUtil;
 import xin.toheart.door.common.util.HttpUtil;
+import xin.toheart.door.dto.ResponseDto;
 import xin.toheart.door.pojo.Confession;
 import xin.toheart.door.pojo.Story;
 import xin.toheart.door.pojo.User;
 import xin.toheart.door.service.HomeService;
 import xin.toheart.door.web.session.SessionProvider;
 
+import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
+import java.io.IOException;
 import java.sql.Date;
 import java.text.ParseException;
 import java.util.List;
 
-@Controller
+@RestController
 @RequestMapping("/")
-public class HomeController {
+public class HomeController extends BaseController{
     Logger LOGGER = LoggerFactory.getLogger(ConfessionController.class);
     @Autowired
     HomeService homeService;
@@ -41,9 +45,9 @@ public class HomeController {
      * @return
      */
     @RequestMapping("/logout")
-    public String logout(HttpSession session){
+    public ResponseDto logout(HttpSession session){
         session.removeAttribute(CommonsConstant.UserConstant.CURRENT_BUYER);
-        return "redirect:/";
+        return success();
     }
 
     /**
@@ -51,8 +55,9 @@ public class HomeController {
      * @return
      */
     @RequestMapping("/login")
-    public String login(){
-        return "redirect:https://graph.qq.com/oauth2.0/authorize?response_type=code&client_id=101484099&redirect_uri=http://www.toheart.xin/QQLogin&state=test";
+    public String login(HttpServletResponse response) throws IOException {
+        response.sendRedirect("https://graph.qq.com/oauth2.0/authorize?response_type=code&client_id=101484099&redirect_uri=http://www.toheart.xin:5201/QQLogin&state=test");
+        return "redirect";
     }
 
     /**
@@ -63,7 +68,8 @@ public class HomeController {
      * @throws ParseException
      */
     @RequestMapping("/QQLogin")
-    public String QQLogin(String code,HttpSession session) throws ParseException {
+    public String QQLogin(String code,HttpSession session,HttpServletResponse response) throws ParseException, IOException {
+        System.out.println(code);
         String accessToken=HttpUtil.getAccessToken(code);
         String openid = HttpUtil.getOpenId(accessToken);
         JSONObject userInfo = HttpUtil.getUserInfo(openid,accessToken);
@@ -85,7 +91,18 @@ public class HomeController {
             session.setAttribute( CommonsConstant.UserConstant.CURRENT_BUYER,isUser);
         }
         //JSONObject userInfo = HttpUtil.getUserInfo(accessToken,openid);
-        return "redirect:/";
+        response.sendRedirect("http://www.toheart.xin");
+        return "登录成功";
     }
 
+    /**
+     * 从session中获取user
+     * @return
+     */
+    @RequestMapping("/user")
+    public ResponseDto getUser(ModelMap map,HttpSession session){
+        User user=(User) session.getAttribute(CommonsConstant.UserConstant.CURRENT_BUYER);
+        map.put("user",user);
+        return success(map);
+    }
 }

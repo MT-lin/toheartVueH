@@ -1,8 +1,8 @@
 package xin.toheart.door.mapper;
 
 import org.apache.ibatis.annotations.Param;
+import xin.toheart.door.controller.VO.ConfessionVO;
 import xin.toheart.door.pojo.Confession;
-import xin.toheart.door.pojo.ConfessionHomeDTO;
 
 import java.util.List;
 
@@ -15,9 +15,13 @@ public interface ConfessionMapper {
 
     int updateConssesion(@Param("confessorId") int confessorId,@Param("praiseNum") int praiseNum);
 
-    Confession findFarConfession();
+    ConfessionVO findFarConfession();
 
     int totalCount();
 
-    List<Confession> getConfessionList(@Param("start") int start,@Param("size") int size);
+    List<ConfessionVO> getConfessionList(@Param("start") int start, @Param("size") int size);
+
+    ConfessionVO getConfessionById(String id);
+
+    int updateConssesionCommentNum(@Param("confessorId") int id,@Param("commentNum") int commentNum);
 }

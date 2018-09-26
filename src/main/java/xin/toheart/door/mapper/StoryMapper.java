@@ -16,4 +16,8 @@ public interface StoryMapper {
 
     int findTotalCount();
     List<Story> findLikeEightStory();
+
+    int updateStoryLike(@Param("id") int id,@Param("praiseNum") int praiseNum);
+
+    int updateStoryCommentNum(@Param("id") int id,@Param("commentNum") int commentNum);
 }

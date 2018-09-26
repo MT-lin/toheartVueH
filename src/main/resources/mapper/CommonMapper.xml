@@ -15,4 +15,30 @@
     <select id="getPraiseNumByPId" resultType="int">
         SELECT COUNT(*) FROM praise where articleId=#{confessorId} and articleType=#{type} and status=1
     </select>
+    <insert id="setComment">
+        INSERT INTO comment(userId,articleId,articleType,commentContent,fatherId,commentTime) VALUES(#{userId},#{id},#{type},#{content},#{fatherId},SYSDATE())
+    </insert>
+    <resultMap id="commentVO" type="xin.toheart.door.controller.VO.CommentVO">
+        <id column="commentId" property="commentId"></id>
+        <collection property="child" column="commentId"
+                    select="xin.toheart.door.mapper.CommonMapper.getCommentChild"
+                    javaType="java.util.List"
+        ofType="xin.toheart.door.controller.VO.CommentVO"></collection>
+    </resultMap>
+    <select id="getCommentList" resultMap="commentVO">
+        select * from comment c ,user u where c.userId=u.userId and c.articleId=#{articleId} and c.articleType=#{articleType} and c.fatherId=0 order by c.commentTime desc
+    </select>
+    <resultMap id="child" type="xin.toheart.door.controller.VO.CommentVO">
+        <id column="commentId" property="commentId"></id>
+        <collection property="child" column="commentId"
+                    select="xin.toheart.door.mapper.CommonMapper.getCommentChild"
+                    javaType="java.util.List"
+                    ofType="xin.toheart.door.controller.VO.CommentVO"></collection>
+    </resultMap>
+    <select id="getCommentChild" resultMap="child">
+        select * from comment  c ,user u where c.userId=u.userId and fatherId=#{commentId} order by c.commentTime desc
+    </select>
+    <select id="getCommentNumByPId" resultType="int">
+        SELECT COUNT(*) from comment WHERE articleId=#{id} AND articleType=#{type}
+    </select>
 </mapper>

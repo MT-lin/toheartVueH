@@ -45,4 +45,14 @@ public class StoryServiceImpl implements StoryService{
     public int totalCount() {
         return storyMapper.findTotalCount();
     }
+
+    @Override
+    public int updateStoryLike(int id, int praiseNum) {
+        return storyMapper.updateStoryLike(id,praiseNum);
+    }
+
+    @Override
+    public int updateStoryCommentNum(int id, int commentNum) {
+        return storyMapper.updateStoryCommentNum(id,commentNum);
+    }
 }

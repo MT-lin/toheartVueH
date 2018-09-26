@@ -1,0 +1,2 @@
+[2018-09-14 09:20:38] [WARN ] [org.springframework.boot.autoconfigure.thymeleaf.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration:104]-- Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+[2018-09-14 10:02:38] [WARN ] [org.springframework.boot.autoconfigure.thymeleaf.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration:104]-- Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)

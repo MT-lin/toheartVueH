@@ -1,7 +1,10 @@
 package xin.toheart.door.controller;
 
+import xin.toheart.door.common.constant.CommonsConstant;
 import xin.toheart.door.dto.ResponseDto;
+import xin.toheart.door.pojo.User;
 
+import javax.servlet.http.HttpSession;
 import java.util.Map;
 
 /**
@@ -56,4 +59,8 @@ public class BaseController {
         return  dto;
     }
 
+    public User getCurrentUser( HttpSession session) {
+        User user  = (User)session.getAttribute(CommonsConstant.UserConstant.CURRENT_BUYER);
+        return user;
+    }
 }

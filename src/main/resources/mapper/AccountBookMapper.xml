@@ -1,10 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
 <mapper namespace="xin.toheart.door.mapper.AccountBookMapper">
-    <insert id="setAccountBook" parameterType="xin.toheart.door.pojo.AccountBook">
-        INSERT INTO accountBook(bookName,userId,command,createTime) VALUES (#{accountBook.bookName},#{accountBook.userId},#{accountBook.command},SYSDATE())
+    <insert id="setAccountBook" useGeneratedKeys="true" keyProperty="id" keyColumn="id" parameterType="xin.toheart.door.pojo.AccountBook" >
+        INSERT INTO accountBook(bookName,userId,command,createTime) VALUES (#{bookName},#{userId},#{command},SYSDATE())
+    </insert>
+    <insert id="setAccountBookAndUser">
+        INSERT INTO accountBookAndUser(userId,accountBookId) VALUES (#{userId},#{accountBookId})
     </insert>
     <select id="getBookByUser" resultType="xin.toheart.door.controller.VO.AccountBookVO">
-        SELECT accountBook.createTime, user.userName, accountBook.bookName FROM accountBook, user WHERE accountBook.userId = user.userId AND accountBook.userId = #{userId} ORDER BY accountBook.createTime DESC
+        SELECT accountBook.createTime, user.userName, accountBook.bookName FROM accountBook, user, accountBookAndUser au WHERE accountBook.userId = user.userId AND accountBook.id = au.accountBookId AND au.userId = #{userId} ORDER BY accountBook.createTime DESC
     </select>
 </mapper>

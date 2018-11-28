@@ -1,11 +1,13 @@
 package xin.toheart.door.pojo;
 
+import java.io.Serializable;
 import java.util.Date;
 
 /**
  * 记账本
  */
-public class AccountBook {
+public class AccountBook implements Serializable {
+    private int id;
     private String bookName;
     private Integer userId;
     private Date createTime;
@@ -41,5 +43,24 @@ public class AccountBook {
 
     public void setCommand(String command) {
         this.command = command;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    @Override
+    public String toString() {
+        return "AccountBook{" +
+                "id=" + id +
+                ", bookName='" + bookName + '\'' +
+                ", userId=" + userId +
+                ", createTime=" + createTime +
+                ", command='" + command + '\'' +
+                '}';
     }
 }

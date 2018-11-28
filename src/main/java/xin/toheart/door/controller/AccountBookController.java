@@ -34,10 +34,16 @@ public class AccountBookController extends BaseController{
         }else if(Strings.isNullOrEmpty(accountBook.getCommand())) {
             return fail(data,"口令不能为空");
         }
-        User user = getCurrentUser(session);
-        // accountBook.setUserId(user.getUserId());
-        accountBook.setUserId(3);
-        int id = accountBookService.setAccountBook(accountBook);
+        try{
+            User user = getCurrentUser(session);
+            // accountBook.setUserId(user.getUserId());
+            accountBook.setUserId(3);
+            int id = accountBookService.setAccountBook(accountBook);
+            System.out.println(accountBook.toString());
+            int temp = accountBookService.setAccountBookAndUser(accountBook.getId(),3);
+        }catch (Exception e) {
+            return fail(data,"创建记账本失败");
+        }
         return success();
     }
     @RequestMapping("/book/get")

@@ -1,10 +1,13 @@
 package xin.toheart.door.controller.VO;
 
 
+import com.fasterxml.jackson.annotation.JsonFormat;
+
 import java.util.Date;
 
 public class AccountBookVO {
     private String bookName;
+    @JsonFormat(timezone = "GMT+8",pattern = "yyyy-MM-dd")
     private Date createTime;
     private String userName;
 

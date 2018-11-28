@@ -26,7 +26,8 @@ public class LoginAuthFilter implements Filter {
         HttpServletResponse rep = (HttpServletResponse) response;
         //设置允许跨域的配置
         // 这里填写你允许进行跨域的主机ip（正式上线时可以动态配置具体允许的域名和IP）
-        rep.setHeader("Access-Control-Allow-Origin", "http://www.toheart.xin");
+       //  rep.setHeader("Access-Control-Allow-Origin", "http://www.toheart.xin");
+        rep.setHeader("Access-Control-Allow-Origin", "http://localhost:8080");
 
         rep.setHeader("Access-Control-Allow-Credentials","true");
         // 允许的访问方法

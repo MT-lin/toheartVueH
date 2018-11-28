@@ -5,10 +5,8 @@ import org.springframework.stereotype.Service;
 import xin.toheart.door.controller.VO.AccountBookVO;
 import xin.toheart.door.mapper.AccountBookMapper;
 import xin.toheart.door.pojo.AccountBook;
-import xin.toheart.door.pojo.User;
 import xin.toheart.door.service.AccountBookService;
 
-import java.util.ArrayList;
 import java.util.List;
 
 @Service
@@ -23,5 +21,10 @@ public class AccountBookServiceImpl implements AccountBookService {
     @Override
     public List<AccountBookVO> getBookByUser(Integer userId) {
         return accountBookMapper.getBookByUser(userId);
+    }
+
+    @Override
+    public int setAccountBookAndUser(int accountBookId, int userId) {
+        return accountBookMapper.setAccountBookAndUser(accountBookId,userId);
     }
 }

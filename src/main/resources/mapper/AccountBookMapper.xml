@@ -8,6 +8,12 @@
         INSERT INTO accountBookAndUser(userId,accountBookId) VALUES (#{userId},#{accountBookId})
     </insert>
     <select id="getBookByUser" resultType="xin.toheart.door.controller.VO.AccountBookVO">
-        SELECT accountBook.createTime, user.userName, accountBook.bookName FROM accountBook, user, accountBookAndUser au WHERE accountBook.userId = user.userId AND accountBook.id = au.accountBookId AND au.userId = #{userId} ORDER BY accountBook.createTime DESC
+        SELECT au.id,au.accountBookId,accountBook.userId,accountBook.createTime, user.userName, accountBook.bookName FROM accountBook, user, accountBookAndUser au WHERE accountBook.userId = user.userId AND accountBook.id = au.accountBookId AND au.userId = #{userId} and au.flag = 1 and  accountBook.flag=1  ORDER BY accountBook.createTime DESC
     </select>
+    <update id="deleteAccountBook" parameterType="int">
+         UPDATE accountBook SET flag = 0 WHERE id = #{accountBookId}
+    </update>
+    <update id="removeAccountBook" parameterType="int">
+        UPDATE accountBookAndUser SET flag = 0 WHERE id = #{id}
+    </update>
 </mapper>

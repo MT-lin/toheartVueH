@@ -10,4 +10,8 @@ public interface AccountBookService {
     List<AccountBookVO> getBookByUser(Integer userId);
 
     int setAccountBookAndUser(int id, int i);
+
+    int deleteAccountBook(Integer accountBookId);
+
+    int removeAccountBook(Integer id);
 }

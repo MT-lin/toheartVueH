@@ -27,4 +27,14 @@ public class AccountBookServiceImpl implements AccountBookService {
     public int setAccountBookAndUser(int accountBookId, int userId) {
         return accountBookMapper.setAccountBookAndUser(accountBookId,userId);
     }
+
+    @Override
+    public int deleteAccountBook(Integer accountBookId) {
+        return accountBookMapper.deleteAccountBook(accountBookId);
+    }
+
+    @Override
+    public int removeAccountBook(Integer id) {
+        return accountBookMapper.removeAccountBook(id);
+    }
 }

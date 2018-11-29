@@ -4,6 +4,7 @@ import com.google.common.base.Strings;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 import xin.toheart.door.controller.VO.AccountBookVO;
 import xin.toheart.door.dto.ResponseDto;
@@ -51,8 +52,31 @@ public class AccountBookController extends BaseController{
         Map data = new HashMap();
         User user = getCurrentUser(session);
         List<AccountBookVO> list = accountBookService.getBookByUser(3);
-       //  ArrayList<AccountBookVO> list = accountBookService.getBookByUser(user.getUserId());
+       //  List<AccountBookVO> list = accountBookService.getBookByUser(user.getUserId());
         data.put("bookList", list);
         return success(data);
     }
+    @RequestMapping(value = "/book/remove",method = RequestMethod.POST)
+    public ResponseDto removeBook(HttpSession session,@RequestBody AccountBookVO accountBookVO) {
+        Map data = new HashMap();
+        User user = getCurrentUser(session);
+        try {
+            if(accountBookVO.getUserId().equals(3)){
+                int temp = accountBookService.deleteAccountBook(accountBookVO.getAccountBookId());
+                if(temp != 1) {
+                    return fail(data,"删除记事本失败");
+                }
+            }
+            int result = accountBookService.removeAccountBook(accountBookVO.getId());
+            if(result != 1) {
+                return fail(data,"删除记事本失败");
+            }
+        }catch (Exception e) {
+            return fail(data,"删除记事本发生异常");
+        }
+
+        return success();
+    }
+
+
 }

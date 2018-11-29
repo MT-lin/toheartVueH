@@ -12,4 +12,8 @@ public interface AccountBookMapper {
     ArrayList<AccountBookVO> getBookByUser(Integer userId);
 
     int setAccountBookAndUser(@Param("accountBookId") int accountBookId,@Param("userId") int userId);
+
+    int deleteAccountBook(Integer accountBookId);
+
+    int removeAccountBook(Integer id);
 }
